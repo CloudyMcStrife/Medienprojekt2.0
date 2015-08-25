@@ -6,6 +6,8 @@
 [Bb]uild
 [Ll]ibrary/
 sysinfo.txt
+
+*.pidb.meta
  
 # ===================================== #
 # Visual Studio / MonoDevelop generated #

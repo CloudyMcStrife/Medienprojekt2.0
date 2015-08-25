@@ -6,8 +6,7 @@
 [Bb]uild
 [Ll]ibrary/
 sysinfo.txt
- 
-*.pidb.meta
+
  
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
@@ -21,6 +20,10 @@ sysinfo.txt
 /*.user
 /*.unityproj
 /*.booproj
+/*.tmp
+
+# Unity3D generated meta files
+*.pidb.meta
  
 # ============ #
 # OS generated #

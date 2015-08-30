@@ -12,12 +12,19 @@ public class CharacterMovement : MonoBehaviour {
 	Rigidbody2D rigweapon;
 	ShootBehaviour shootbe;
 	ProjectilePoolingSystem PPS;
+	bool isFacingRight = false;
+
 
 	public float[] rangeAttackCooldown = {1.0f, 1.0f};
 	public float[] roleCooldown = {2.0f,2.0f};
-	public bool jumping;
+
 	public float speed = 4.0f;
-	public bool isFacingRight = false;
+
+	public bool grounded;
+	public LayerMask groundMask;
+	public float jumpheight;
+	public Transform groundCheck;
+	public float groundCheckRadius;
 	
 	// Use this for initialization
 	void Awake () {
@@ -29,14 +36,22 @@ public class CharacterMovement : MonoBehaviour {
 
 	
 	// Update is called once per frame
+
+	void FixedUpdate()
+	{
+		grounded = Physics2D.OverlapCircle (groundCheck.position, groundCheckRadius, groundMask);
+		Debug.Log (grounded);
+	}
 	void Update () 
 	{
 		float movePlayerVector = Input.GetAxis ("Horizontal");
-
-		Ray2D rayDown = new Ray2D (this.transform.position, new Vector2 (0, -1));
-		RaycastHit2D a = Physics2D.Raycast (this.transform.position, new Vector2 (0, -1));
+		/*
+		Vector2 origin = new Vector2 (trans.position.x, trans.position.y - collplayer.offset.y);
+		RaycastHit2D a = Physics2D.Raycast (origin, new Vector2 (0, -1),0.0f);
 
 		if (a.collider != null) {
+			Debug.Log (a.collider.gameObject.name);
+			//Debug.Log (a.distance);
 			// Calculate the distance from the surface and the "error" relative
 			// to the floating height.
 			float distance = Mathf.Abs(a.point.y - transform.position.y);
@@ -48,11 +63,15 @@ public class CharacterMovement : MonoBehaviour {
 			
 			// Apply the force to the rigidbody.
 			rigplayer.AddForce(Vector3.up * force);
-		}
 
+			jumping = false;
+		}
+*/
 		//cooldowns
-		roleCooldown [0] += Time.deltaTime;
-		rangeAttackCooldown [0] += Time.deltaTime;
+		if(roleCooldown[0] < roleCooldown[1])
+			roleCooldown [0] += Time.deltaTime;
+		if(rangeAttackCooldown[0] < rangeAttackCooldown[1])
+			rangeAttackCooldown [0] += Time.deltaTime;
 
 		//Funktion für gehen
 		if (Input.GetKey ("a") || Input.GetKey ("d")) {
@@ -72,20 +91,20 @@ public class CharacterMovement : MonoBehaviour {
 				trans.localScale = scale;
 			}
 		} else {
-			if (!jumping)
+			if (grounded)
 				rigplayer.velocity = new Vector2 (0, rigplayer.velocity.y);
 		}
 		//Funktion für Springen
 		if(Input.GetKey("w"))
 		{
-			if(!jumping){
-				rigplayer.velocity = new Vector2(movePlayerVector * speed, 6);
-				jumping = true;
+			if(grounded){
+				rigplayer.velocity = new Vector2(rigplayer.velocity.x, jumpheight);
+				grounded = false;
 			}
 		}
 		//Funktion für Rollen
 		if (Input.GetKey ("k")) {
-			if (!jumping) {
+			if (grounded) {
 				if (roleCooldown [0] > roleCooldown [1]) {
 					rigplayer.AddForce(new Vector2(movePlayerVector * speed * 2, 0), ForceMode2D.Force);
 					roleCooldown [0] = 0;

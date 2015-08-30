@@ -16,8 +16,8 @@ public class EnemyMovement : MonoBehaviour {
 	float distancex;
 	float distancey;
 	float speed = 1.0f;
-	public float[] attackCooldown = {2.0f,2.0f};
-	ShootBehaviour shooty;
+	public float[] attackCooldown = {1.0f,1.0f};
+	Projectile currentProjectile;
 	ProjectilePoolingSystem PPS;
 	// Use this for initialization
 	void Awake () {
@@ -28,7 +28,9 @@ public class EnemyMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		attackCooldown[0] += Time.deltaTime;
+		if (attackCooldown [0] < attackCooldown [1]) {
+			attackCooldown [0] += Time.deltaTime;
+		}
 		distancex = rigplayer.position.x - rigenemy.position.x;
 		distancey = rigplayer.position.y - rigenemy.position.y;
 		//prüft ob EnemyEntity links oder rechts in minimumDistance (=Angriffsreichweite) ist;
@@ -50,9 +52,13 @@ public class EnemyMovement : MonoBehaviour {
 			if(attackCooldown[0] >= attackCooldown[1])
 			{
 				//Setzt das Script auf das Projektil das als nächstes Geschossen werden soll(Oberstes des PPS)
-				shooty = (ShootBehaviour) PPS.getProjectile().GetComponent(typeof(ShootBehaviour));
-				attackCooldown[0] = 0;
-				shooty.shoot(rigenemy.gameObject);
+				GameObject projectile = PPS.getProjectile();
+				if(projectile != null)
+				{
+					currentProjectile = (Projectile) projectile.GetComponent(typeof(Projectile));
+					attackCooldown[0] = 0;
+					currentProjectile.shoot(rigenemy.gameObject,3.0f);
+				}
 			}
 		}
 	}

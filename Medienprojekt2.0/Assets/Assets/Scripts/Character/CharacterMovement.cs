@@ -10,9 +10,9 @@ public class CharacterMovement : MonoBehaviour {
 	Transform trans;
 	GameObject weapon;
 	Rigidbody2D rigweapon;
-	ShootBehaviour shootbe;
+	Projectile currentProjectile;
 	ProjectilePoolingSystem PPS;
-	bool isFacingRight = false;
+	bool facingRight = false;
 
 
 	public float[] rangeAttackCooldown = {1.0f, 1.0f};
@@ -40,33 +40,10 @@ public class CharacterMovement : MonoBehaviour {
 	void FixedUpdate()
 	{
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundCheckRadius, groundMask);
-		Debug.Log (grounded);
 	}
 	void Update () 
 	{
 		float movePlayerVector = Input.GetAxis ("Horizontal");
-		/*
-		Vector2 origin = new Vector2 (trans.position.x, trans.position.y - collplayer.offset.y);
-		RaycastHit2D a = Physics2D.Raycast (origin, new Vector2 (0, -1),0.0f);
-
-		if (a.collider != null) {
-			Debug.Log (a.collider.gameObject.name);
-			//Debug.Log (a.distance);
-			// Calculate the distance from the surface and the "error" relative
-			// to the floating height.
-			float distance = Mathf.Abs(a.point.y - transform.position.y);
-			var heightError = 3 - distance;
-			
-			// The force is proportional to the height error, but we remove a part of it
-			// according to the object's speed.
-			var force = 2 * heightError - rigplayer.velocity.y * 1;
-			
-			// Apply the force to the rigidbody.
-			rigplayer.AddForce(Vector3.up * force);
-
-			jumping = false;
-		}
-*/
 		//cooldowns
 		if(roleCooldown[0] < roleCooldown[1])
 			roleCooldown [0] += Time.deltaTime;
@@ -76,16 +53,16 @@ public class CharacterMovement : MonoBehaviour {
 		//Funktion für gehen
 		if (Input.GetKey ("a") || Input.GetKey ("d")) {
 			rigplayer.velocity = new Vector2 (movePlayerVector * speed, rigplayer.velocity.y);
-			if(movePlayerVector < 0 && isFacingRight)
+			if(movePlayerVector < 0 && facingRight)
 			{
-				isFacingRight = false;
+				facingRight = false;
 				Vector3 scale = transform.localScale;
 				scale.x *= -1;
 				trans.localScale = scale;
 			}
-			if(movePlayerVector > 0 && !isFacingRight)
+			if(movePlayerVector > 0 && !facingRight)
 			{
-				isFacingRight = true;
+				facingRight = true;
 				Vector3 scale = transform.localScale;
 				scale.x *= -1;
 				trans.localScale = scale;
@@ -115,20 +92,19 @@ public class CharacterMovement : MonoBehaviour {
 		if (Input.GetKeyDown ("s")) {
 			if(rangeAttackCooldown[0] >= rangeAttackCooldown[1]){
 				GameObject proj = PPS.getProjectile();
-				foreach(Component compo in proj.GetComponents<Component>()){
-					Debug.Log (compo.GetType());
+				if(proj!=null)
+				{
+					currentProjectile = proj.GetComponent<Projectile>();
+					rangeAttackCooldown[0] = 0;
+					currentProjectile.shoot (rigplayer.gameObject,2.0f);
 				}
-				shootbe = proj.GetComponent<ShootBehaviour>();
-				rangeAttackCooldown[0] = 0;
-				Debug.Log(shootbe);      
-				shootbe.shoot (rigplayer.gameObject);
 			}
 		}
 
 	}
 
-	public bool getIsFacingRight()
+	public bool isFacingRight()
 	{
-		return isFacingRight;
+		return facingRight;
 	}
 }

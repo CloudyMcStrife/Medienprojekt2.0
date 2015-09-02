@@ -19,12 +19,1968 @@ Loading C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.
 Platform assembly: C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.0\Medienprojekt2.0\Medienprojekt2.0\test_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.0\Medienprojekt2.0\Medienprojekt2.0\test_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
 Platform assembly: C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.0\Medienprojekt2.0\Medienprojekt2.0\test_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.211 seconds
+- Completed reload, in  0.089 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.0\Medienprojekt2.0\Medienprojekt2.0\test_Data\Managed\System.dll (this message is harmless)
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+hitEnemy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+hitEnemy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnityEngine.Transform
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnityEngine.BoxCollider2D
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnityEngine.SpriteRenderer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnityEngine.Rigidbody2D
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+ShootBehaviour
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+New Game Object (ShootBehaviour)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityEngine.Transform
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnityEngine.BoxCollider2D
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnityEngine.SpriteRenderer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnityEngine.Rigidbody2D
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+ShootBehaviour
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+New Game Object (ShootBehaviour)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+hitEnemy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+hitEnemy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityEngine.Transform
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnityEngine.BoxCollider2D
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnityEngine.SpriteRenderer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnityEngine.Rigidbody2D
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+ShootBehaviour
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+New Game Object (ShootBehaviour)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+hitEnemy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+hitEnemy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnityEngine.Transform
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnityEngine.BoxCollider2D
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnityEngine.SpriteRenderer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnityEngine.Rigidbody2D
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+ShootBehaviour
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+New Game Object (ShootBehaviour)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+hitEnemy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+hitEnemy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+hitEnemy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+hitEnemy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+hitWall
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
 NullReferenceException: Object reference not set to an instance of an object
   at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
   at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
@@ -117,6 +2073,50 @@ NullReferenceException: Object reference not set to an instance of an object
  
 (Filename:  Line: -1)
 
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+hitEnemy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+hitEnemy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
 NullReferenceException: Object reference not set to an instance of an object
   at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
   at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
@@ -152,6 +2152,1078 @@ NullReferenceException: Object reference not set to an instance of an object
   at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityEngine.Transform
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnityEngine.BoxCollider2D
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnityEngine.SpriteRenderer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnityEngine.Rigidbody2D
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+ShootBehaviour
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+New Game Object (ShootBehaviour)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+hitEnemy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+hitEnemy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Enemy1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
+  at ShootBehaviour.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Store
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
 NullReferenceException: Object reference not set to an instance of an object
   at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 

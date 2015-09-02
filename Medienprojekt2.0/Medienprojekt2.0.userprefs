@@ -5,7 +5,7 @@
       <File FileName="Assets\Assets\Scripts\Components\AttributeComponent.cs" Line="7" Column="19" />
       <File FileName="Assets\Assets\Scripts\Systems\ProjectilePoolingSystem.cs" Line="1" Column="1" />
       <File FileName="Assets\Assets\Scripts\Character\CharacterMovement.cs" Line="9" Column="14" />
-      <File FileName="Assets\Assets\Scripts\Systems\HealthSystem.cs" Line="18" Column="18" />
+      <File FileName="Assets\Assets\Scripts\Systems\HealthSystem.cs" Line="14" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -16,7 +16,9 @@ public class CharacterMovement : MonoBehaviour {
 
 
 	public float[] rangeAttackCooldown = {1.0f, 1.0f};
-	public float[] roleCooldown = {2.0f,2.0f};
+	public float[] rollCooldown = {2.0f,2.0f};
+	public float rollDuration;
+	bool rolling;
 
 	public float speed = 4.0f;
 
@@ -45,31 +47,27 @@ public class CharacterMovement : MonoBehaviour {
 	{
 		float movePlayerVector = Input.GetAxis ("Horizontal");
 		//cooldowns
-		if(roleCooldown[0] < roleCooldown[1])
-			roleCooldown [0] += Time.deltaTime;
+		if(rollCooldown[0] < rollCooldown[1])
+			rollCooldown [0] += Time.deltaTime;
+		rolling = rollCooldown [0] < rollDuration;
 		if(rangeAttackCooldown[0] < rangeAttackCooldown[1])
 			rangeAttackCooldown [0] += Time.deltaTime;
 
 		//Funktion für gehen
-		if (Input.GetKey ("a") || Input.GetKey ("d")) {
-			rigplayer.velocity = new Vector2 (movePlayerVector * speed, rigplayer.velocity.y);
-			if(movePlayerVector < 0 && facingRight)
-			{
-				facingRight = false;
-				Vector3 scale = transform.localScale;
-				scale.x *= -1;
-				trans.localScale = scale;
+		if (!rolling) {
+			if (Input.GetKey ("a") || Input.GetKey ("d")) {
+					rigplayer.velocity = new Vector2 (movePlayerVector * speed, rigplayer.velocity.y);
+					if (movePlayerVector < 0 && facingRight) {
+						facingRight = false;
+						trans.localScale = new Vector3 (1, 1, 1);
+					}
+					if (movePlayerVector > 0 && !facingRight) {
+						facingRight = true;
+						trans.localScale = new Vector3 (-1, 1, 1);
+					}
+			} else {
+					rigplayer.velocity = new Vector2 (0, rigplayer.velocity.y);
 			}
-			if(movePlayerVector > 0 && !facingRight)
-			{
-				facingRight = true;
-				Vector3 scale = transform.localScale;
-				scale.x *= -1;
-				trans.localScale = scale;
-			}
-		} else {
-			if (grounded)
-				rigplayer.velocity = new Vector2 (0, rigplayer.velocity.y);
 		}
 		//Funktion für Springen
 		if(Input.GetKey("w"))
@@ -82,9 +80,12 @@ public class CharacterMovement : MonoBehaviour {
 		//Funktion für Rollen
 		if (Input.GetKey ("k")) {
 			if (grounded) {
-				if (roleCooldown [0] > roleCooldown [1]) {
-					rigplayer.AddForce(new Vector2(movePlayerVector * speed * 2, 0), ForceMode2D.Force);
-					roleCooldown [0] = 0;
+				if (rollCooldown [0] >=	 rollCooldown [1]) {
+					if(facingRight)
+						rigplayer.velocity = new Vector2(speed*2,rigplayer.velocity.y);
+					else
+						rigplayer.velocity = new Vector2(speed*-2,rigplayer.velocity.y);
+					rollCooldown [0] = 0;
 				}
 			}
 		}

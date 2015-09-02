@@ -45,7 +45,7 @@ public class EnemyMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-		walkingRight = true;
+		walkingRight = false;
 		rigplayer  = (Rigidbody2D) GameObject.FindWithTag("Player").GetComponent(typeof(Rigidbody2D));
 		rigenemy  = (Rigidbody2D) GetComponent(typeof(Rigidbody2D));
 		PPS = (ProjectilePoolingSystem)GetComponent (typeof(ProjectilePoolingSystem));

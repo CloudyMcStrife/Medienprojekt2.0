@@ -20,6 +20,7 @@ public class ProjectilePoolingSystem : MonoBehaviour {
 		projectiles = new GameObject[projectileAmount];
 		for (int i = 0; i < projectileAmount; ++i) {
 			GameObject bullet = new GameObject();
+			bullet.name = "Projectile";
 			bullet.tag = "Projectile";
 			bullet.layer = LayerMask.NameToLayer("Projectiles");
 			bullet.AddComponent<BoxCollider2D>();
@@ -37,18 +38,6 @@ public class ProjectilePoolingSystem : MonoBehaviour {
 			s.sprite = proj;
 			projectiles[i] = bullet;
 		}
-
-		/* for (int i = 0; i < 4; i++) {
-			procoll = (BoxCollider2D) projectiles[i].GetComponent(typeof(BoxCollider2D));
-			procoll.enabled = false;
-			
-			prorender = (SpriteRenderer) projectiles[i].GetComponent(typeof(SpriteRenderer));
-			prorender.enabled = false;
-		} */
-
-
-
-	
 	}
 	
 	// Update is called once per frame
@@ -72,18 +61,6 @@ public class ProjectilePoolingSystem : MonoBehaviour {
 			return projectiles [pointer--];
 		}
 		return null;
-
-		/*procoll = (BoxCollider2D)projectiles [pointer].GetComponent (typeof(BoxCollider2D));
-		procoll.enabled = true;
-			
-		prorender = (SpriteRenderer) projectiles[pointer].GetComponent(typeof(SpriteRenderer));
-		prorender.enabled = true;
-			
-		Debug.Log ("AuasgabrejGetBefore: " + pointer);
-		Debug.Log ("GetAfter: " + pointer);
-		return projectiles [pointer--];
-		//Länge: 5 Pointer: 4 -> getProjectile() -> Länge: 5 Pointer: 3 -> getProjectile() -> Pointer: 2
-		// storeProjectile */
 	}
 
 
@@ -97,23 +74,8 @@ public class ProjectilePoolingSystem : MonoBehaviour {
 			tempS.enabled = false;
 			Rigidbody2D prorigid = (Rigidbody2D)projectile.GetComponent (typeof(Rigidbody2D));
 			prorigid.velocity = new Vector2 (0, 0);
-			pointer++;
-		};
-
-		/*procoll = (BoxCollider2D) projectile.GetComponent(typeof(BoxCollider2D));
-		procoll.enabled = false;
-
-		prorender = (SpriteRenderer) projectile.GetComponent(typeof(SpriteRenderer));
-		prorender.enabled = false;
-
-		prorigid = (Rigidbody2D) projectile.GetComponent(typeof(Rigidbody2D));
-		prorigid.velocity = new Vector2(0, 0);
-
-		Debug.Log ("StoreBfore: " + pointer);
-		pointer++;
-		Debug.Log ("StoreAfter: " + pointer);
-
-		projectiles [pointer] = projectile; */
+			projectiles[++pointer] = projectile;
+		}
 	}
 
 }

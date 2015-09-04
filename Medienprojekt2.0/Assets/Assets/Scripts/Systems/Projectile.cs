@@ -33,13 +33,12 @@ public class Projectile : MonoBehaviour {
 			HealthSystem HS = (HealthSystem)GameObject.FindWithTag ("Player").GetComponent (typeof(HealthSystem));
 			HS.lowerHealth(this.getDamage());
 			PPS.storeProjectile(prObject);
-			Debug.Log ("hitPlayer");
 			inAir = false;
 		}else
 			//Gibt das Projektil zurück in den Pool wenn eine Wand getroffen wurde
-		if (collid.IsTouchingLayers(LayerMask.NameToLayer("Walls")) || collid.IsTouchingLayers(LayerMask.NameToLayer("Grounds"))){
-			Debug.Log ("SHOT BOX!");
+		if (collid.IsTouchingLayers(LayerMask.NameToLayer("Walls"))){
 			ProjectilePoolingSystem PPS = (ProjectilePoolingSystem) owner.GetComponent(typeof(ProjectilePoolingSystem));
+			Debug.Log ("WALL OR GROUND");
 			PPS.storeProjectile(prObject);
 			inAir = false;
 			
@@ -52,7 +51,7 @@ public class Projectile : MonoBehaviour {
 			inAir = false;
 		}else
 
-		if (Mathf.Abs(startX - collid.transform.position.x) >= range && owner != null && inAir) {
+		if (Mathf.Abs(startX - collid.transform.position.x) >= range && inAir) {
 			ProjectilePoolingSystem PPS = (ProjectilePoolingSystem) owner.GetComponent(typeof(ProjectilePoolingSystem));
 			PPS.storeProjectile(prObject);
 			inAir = false;

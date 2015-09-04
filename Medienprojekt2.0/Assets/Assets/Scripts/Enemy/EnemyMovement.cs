@@ -4,8 +4,7 @@ using System.Collections;
 //Beschreibt alle Aktionen die Gegner ausführen können
 
 public class EnemyMovement : MonoBehaviour {
-
-
+	
 	Rigidbody2D rigplayer;
 	Rigidbody2D rigenemy;
 	float speed = 1.0f;

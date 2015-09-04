@@ -34,6 +34,7 @@ public class ProjectilePoolingSystem : MonoBehaviour {
 			bullet.AddComponent<Projectile>();
 			SpriteRenderer s = bullet.GetComponent<SpriteRenderer>();
 			s.enabled = false;
+			s.sortingLayerName = "Projectiles";
 			Sprite proj = Resources.Load<Sprite>("07_effectsAndProjectiles") as Sprite;
 			s.sprite = proj;
 			projectiles[i] = bullet;

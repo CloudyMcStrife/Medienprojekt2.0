@@ -19,79 +19,15 @@ Loading C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.
 Platform assembly: C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.0\Medienprojekt2.0\Medienprojekt2.0\test_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.0\Medienprojekt2.0\Medienprojekt2.0\test_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
 Platform assembly: C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.0\Medienprojekt2.0\Medienprojekt2.0\test_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.354 seconds
+- Completed reload, in  0.147 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.0\Medienprojekt2.0\Medienprojekt2.0\test_Data\Managed\System.dll (this message is harmless)
-Level 'SceneJoscha' (-1) couldn't be loaded because it has not been added to the build settings.
-To add a level to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 290)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.866709 ms
 
-Level 'SceneJoscha' (-1) couldn't be loaded because it has not been added to the build settings.
-To add a level to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 290)
-
-Level 'SceneJoscha' (-1) couldn't be loaded because it has not been added to the build settings.
-To add a level to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 290)
-
-Level 'SceneJoscha' (-1) couldn't be loaded because it has not been added to the build settings.
-To add a level to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 290)
-
-Level 'SceneJoscha' (-1) couldn't be loaded because it has not been added to the build settings.
-To add a level to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 290)
-
-Level 'SceneJoscha' (-1) couldn't be loaded because it has not been added to the build settings.
-To add a level to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 290)
-
-Level 'SceneJoscha' (-1) couldn't be loaded because it has not been added to the build settings.
-To add a level to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 290)
-
-Level 'SceneJoscha' (-1) couldn't be loaded because it has not been added to the build settings.
-To add a level to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 290)
-
-Level 'SceneJoscha' (-1) couldn't be loaded because it has not been added to the build settings.
-To add a level to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 290)
-
-Level 'SceneJoscha' (-1) couldn't be loaded because it has not been added to the build settings.
-To add a level to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 290)
-
-Level 'SceneJoscha' (-1) couldn't be loaded because it has not been added to the build settings.
-To add a level to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 290)
-
-Level 'SceneJoscha' (-1) couldn't be loaded because it has not been added to the build settings.
-To add a level to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 290)
-
-Level 'SceneJoscha' (-1) couldn't be loaded because it has not been added to the build settings.
-To add a level to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 290)
-
-Level 'SceneJoscha' (-1) couldn't be loaded because it has not been added to the build settings.
-To add a level to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 290)
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 296.
+Total: 0.264277 ms (FindLiveObjects: 0.034210 ms CreateObjectMapping: 0.013684 ms MarkObjects: 0.209112 ms  DeleteObjects: 0.005986 ms)
 

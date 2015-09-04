@@ -26,7 +26,7 @@ public class Projectile : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		//Verringert HP und gibt das Projektil zurück in den Pool wenn der Spieler getroffen wurde
 		if (collid.IsTouching ((BoxCollider2D)GameObject.FindWithTag ("Player").GetComponent (typeof(BoxCollider2D)))) {
 			ProjectilePoolingSystem PPS = (ProjectilePoolingSystem) owner.GetComponent(typeof(ProjectilePoolingSystem));
@@ -37,10 +37,10 @@ public class Projectile : MonoBehaviour {
 			inAir = false;
 		}else
 			//Gibt das Projektil zurück in den Pool wenn eine Wand getroffen wurde
-		if (collid.IsTouching((BoxCollider2D)GameObject.FindWithTag("Wall").GetComponent(typeof(BoxCollider2D)))){
+		if (collid.IsTouchingLayers(LayerMask.NameToLayer("Walls")) || collid.IsTouchingLayers(LayerMask.NameToLayer("Grounds"))){
+			Debug.Log ("SHOT BOX!");
 			ProjectilePoolingSystem PPS = (ProjectilePoolingSystem) owner.GetComponent(typeof(ProjectilePoolingSystem));
 			PPS.storeProjectile(prObject);
-			Debug.Log ("hitWall");
 			inAir = false;
 			
 		}else
@@ -64,7 +64,6 @@ public class Projectile : MonoBehaviour {
 		this.owner = owner;
 		this.range = range;
 		Physics2D.IgnoreCollision ((Collider2D)owner.GetComponent(typeof(Collider2D)), collid);
-		Physics2D.IgnoreLayerCollision (LayerMask.NameToLayer ("Projectiles"), LayerMask.NameToLayer ("Projectiles"));
 		AttributeComponent ac = (AttributeComponent)owner.GetComponent (typeof(AttributeComponent));
 		setDamage (ac.getDamage ());
 

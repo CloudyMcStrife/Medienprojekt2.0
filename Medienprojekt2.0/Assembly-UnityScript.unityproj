@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Necromancer GUI\GUITestScript.js" />
      <None Include="Assets\Necromancer GUI\Kingthings.txt" />
+     <None Include="Assets\Assets\New Assets\Pushtest.txt" />
      <None Include="Assets\Necromancer GUI\Readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

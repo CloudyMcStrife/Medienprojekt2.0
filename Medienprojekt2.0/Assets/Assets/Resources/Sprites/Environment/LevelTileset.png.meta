@@ -1,11 +1,12 @@
 fileFormatVersion: 2
 guid: 2159a7a193bf1bd4792cb58e991a665b
-timeCreated: 1441200321
+timeCreated: 1441218702
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: LevelTileset_0
     21300002: LevelTileset_1
+    21300004: LevelTileset_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -45,7 +46,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -54,22 +55,22 @@ TextureImporter:
     - name: LevelTileset_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 233
+        x: 9
+        y: 26
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: LevelTileset_1
       rect:
         serializedVersion: 2
-        x: 73
-        y: 234
+        x: 88
+        y: 26
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

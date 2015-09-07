@@ -4,8 +4,7 @@ using System.Collections;
 //Beschreibt alle Aktionen die Gegner ausführen können
 
 public class EnemyMovement : MonoBehaviour {
-
-
+	
 	Rigidbody2D rigplayer;
 	Rigidbody2D rigenemy;
 	float speed = 1.0f;
@@ -13,6 +12,7 @@ public class EnemyMovement : MonoBehaviour {
 
 	//AI Settings
 	public float noticeDistance;
+	//Attack Range
 	public float minimumDistancex;
 	public float minimumDistancey;
 	public bool inAttackRangex;
@@ -63,7 +63,7 @@ public class EnemyMovement : MonoBehaviour {
 		distancey = rigplayer.position.y - rigenemy.position.y;
 		//prüft ob EnemyEntity links oder rechts in minimumDistance (=Angriffsreichweite) ist;
 		inAttackRangex = (distancex <= minimumDistancex && distancex > 0) || (distancex >= -minimumDistancex && distancex < 0);
-		//inAttackRangey = (distancey <= minimumDistancey && distancey > 0) || (distancey >= -minimumDistancey && distancey < 0);
+		inAttackRangey = (distancey <= minimumDistancey && distancey > 0) || (distancey >= -minimumDistancey && distancey < 0);
 		inNoticeRadius = (distancex <= noticeDistance && distancex > 0) || (distancex >= -noticeDistance && distancex < 0);
 
 
@@ -85,7 +85,7 @@ public class EnemyMovement : MonoBehaviour {
 				if (projectile != null) {
 					currentProjectile = (Projectile)projectile.GetComponent (typeof(Projectile));
 					attackCooldown [0] = 0;
-					currentProjectile.shoot (rigenemy.gameObject, 3.0f);
+					currentProjectile.shoot (rigenemy.gameObject, minimumDistancex);
 				}
 			}
 		}

@@ -26,21 +26,20 @@ public class Projectile : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		//Verringert HP und gibt das Projektil zurück in den Pool wenn der Spieler getroffen wurde
 		if (collid.IsTouching ((BoxCollider2D)GameObject.FindWithTag ("Player").GetComponent (typeof(BoxCollider2D)))) {
 			ProjectilePoolingSystem PPS = (ProjectilePoolingSystem) owner.GetComponent(typeof(ProjectilePoolingSystem));
 			HealthSystem HS = (HealthSystem)GameObject.FindWithTag ("Player").GetComponent (typeof(HealthSystem));
 			HS.lowerHealth(this.getDamage());
 			PPS.storeProjectile(prObject);
-			Debug.Log ("hitPlayer");
 			inAir = false;
 		}else
 			//Gibt das Projektil zurück in den Pool wenn eine Wand getroffen wurde
-		if (collid.IsTouching((BoxCollider2D)GameObject.FindWithTag("Wall").GetComponent(typeof(BoxCollider2D)))){
+		if (collid.IsTouchingLayers(LayerMask.NameToLayer("Walls"))){
 			ProjectilePoolingSystem PPS = (ProjectilePoolingSystem) owner.GetComponent(typeof(ProjectilePoolingSystem));
+			Debug.Log ("WALL OR GROUND");
 			PPS.storeProjectile(prObject);
-			Debug.Log ("hitWall");
 			inAir = false;
 			
 		}else
@@ -52,7 +51,7 @@ public class Projectile : MonoBehaviour {
 			inAir = false;
 		}else
 
-		if (Mathf.Abs(startX - collid.transform.position.x) >= range && owner != null && inAir) {
+		if (Mathf.Abs(startX - collid.transform.position.x) >= range && inAir) {
 			ProjectilePoolingSystem PPS = (ProjectilePoolingSystem) owner.GetComponent(typeof(ProjectilePoolingSystem));
 			PPS.storeProjectile(prObject);
 			inAir = false;
@@ -64,7 +63,6 @@ public class Projectile : MonoBehaviour {
 		this.owner = owner;
 		this.range = range;
 		Physics2D.IgnoreCollision ((Collider2D)owner.GetComponent(typeof(Collider2D)), collid);
-		Physics2D.IgnoreLayerCollision (LayerMask.NameToLayer ("Projectiles"), LayerMask.NameToLayer ("Projectiles"));
 		AttributeComponent ac = (AttributeComponent)owner.GetComponent (typeof(AttributeComponent));
 		setDamage (ac.getDamage ());
 

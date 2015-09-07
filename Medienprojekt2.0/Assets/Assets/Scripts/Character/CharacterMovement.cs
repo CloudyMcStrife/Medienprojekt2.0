@@ -13,6 +13,8 @@ public class CharacterMovement : MonoBehaviour {
 	Projectile currentProjectile;
 	ProjectilePoolingSystem PPS;
 	bool facingRight = false;
+	GameObject pauseMenu;
+	GameObject quitDialogue;
 
 
 	public float[] rangeAttackCooldown = {1.0f, 1.0f};
@@ -33,7 +35,15 @@ public class CharacterMovement : MonoBehaviour {
 		rigplayer = (Rigidbody2D) GetComponent(typeof(Rigidbody2D));
 		collplayer = (BoxCollider2D)GetComponent (typeof(BoxCollider2D));
 		trans = (Transform)GetComponent (typeof(Transform));
+
 		PPS = (ProjectilePoolingSystem)GetComponent (typeof(ProjectilePoolingSystem));
+
+		pauseMenu = GameObject.Find ("StartMenu");
+		quitDialogue = GameObject.Find ("QuitDialogue");
+
+		pauseMenu.SetActive (false);
+		quitDialogue.SetActive (false);
+
 	}
 
 	
@@ -69,6 +79,11 @@ public class CharacterMovement : MonoBehaviour {
 				if(grounded)
 					rigplayer.velocity = new Vector2 (0, rigplayer.velocity.y);
 			}
+		}
+
+		if (Input.GetKey (KeyCode.Escape)) {
+			Debug.Log ("Escape!!!");
+			pauseMenu.SetActive(true);
 		}
 		//Funktion für Springen
 		if(Input.GetKey("w"))

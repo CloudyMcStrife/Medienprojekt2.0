@@ -66,6 +66,7 @@ public class CharacterMovement : MonoBehaviour {
 						trans.localScale = new Vector3 (-1, 1, 1);
 					}
 			} else {
+				if(grounded)
 					rigplayer.velocity = new Vector2 (0, rigplayer.velocity.y);
 			}
 		}

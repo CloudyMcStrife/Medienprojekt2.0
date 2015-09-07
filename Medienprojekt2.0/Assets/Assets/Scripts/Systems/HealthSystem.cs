@@ -1,22 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class HealthSystem : MonoBehaviour {
 	//ac = AttributeComponent von Player, bc = BoxCollider von Player, pbc = BoxCollider von Projectile
 	AttributeComponent ac;
 	BoxCollider2D bc;
 	BoxCollider2D pbc;
+	GameObject healthbar;
 
 	// Use this for initialization
 	void Start () {
-		ac = (AttributeComponent)GameObject.FindWithTag ("Player").GetComponent(typeof(AttributeComponent));
-		bc = (BoxCollider2D)GameObject.FindWithTag ("Player").GetComponent(typeof(BoxCollider2D));
-		pbc = (BoxCollider2D)GameObject.FindWithTag ("Projectile").GetComponent (typeof(BoxCollider2D));
+
 	}
 
 	// Update is called once per frame
 	void Update () {
-
+			
 	}
 
 	//Verringert HP des Spielers/Gegners und gibt Todesanzeige. MIN HP = 0

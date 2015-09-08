@@ -60,6 +60,7 @@
      <Compile Include="Assets\Assets\Scripts\Systems\ProjectilePoolingSystem.cs" />
      <Compile Include="Assets\Assets\Scripts\UI\HealthBar.cs" />
      <Compile Include="Assets\Assets\Scripts\UI\MenuScript.cs" />
+     <Compile Include="Assets\Assets\Scripts\UI\PauseMenuScript.cs" />
      <None Include="Assets\Necromancer GUI\Kingthings.txt" />
      <None Include="Assets\Assets\New Assets\Pushtest.txt" />
      <None Include="Assets\Necromancer GUI\Readme.txt" />

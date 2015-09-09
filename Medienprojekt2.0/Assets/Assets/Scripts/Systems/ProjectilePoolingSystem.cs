@@ -20,13 +20,14 @@ public class ProjectilePoolingSystem : MonoBehaviour {
 		projectiles = new GameObject[projectileAmount];
 		for (int i = 0; i < projectileAmount; ++i) {
 			GameObject bullet = new GameObject();
+			bullet.transform.parent = this.gameObject.transform;
 			bullet.name = "Projectile";
 			bullet.tag = "Projectile";
 			bullet.layer = LayerMask.NameToLayer("Projectiles");
 			bullet.AddComponent<BoxCollider2D>();
 			BoxCollider2D collider =(BoxCollider2D) bullet.GetComponent(typeof(BoxCollider2D));
 			collider.enabled = false;
-			collider.size = new Vector2(0.65f,0.2f);
+			collider.size = new Vector2(0.64f,0.14f);
 			bullet.AddComponent<SpriteRenderer>();
 			Rigidbody2D rigid = bullet.AddComponent<Rigidbody2D>();
 			rigid.gravityScale = 0;

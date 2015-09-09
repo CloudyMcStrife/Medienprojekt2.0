@@ -52,8 +52,10 @@
      <Compile Include="Assets\Assets\Scripts\Enemy\EnemyMovement.cs" />
      <Compile Include="Assets\Assets\Scripts\ProblemeZuLösen\Problemliste.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\EbeneNavigationSystem.cs" />
+     <Compile Include="Assets\Assets\Scripts\Systems\HealthEffectZone.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\HealthSystem.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\LevelManager.cs" />
+     <Compile Include="Assets\Assets\Scripts\Systems\MeleeSystem.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\NavigationSystem.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Projectile.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\ProjectilePoolingSystem.cs" />

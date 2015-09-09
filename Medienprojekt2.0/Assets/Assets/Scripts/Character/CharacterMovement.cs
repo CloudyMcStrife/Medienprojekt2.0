@@ -70,6 +70,7 @@ public class CharacterMovement : MonoBehaviour {
 					rigplayer.velocity = new Vector2 (0, rigplayer.velocity.y);
 			}
 		}
+
 		//Funktion für Springen
 		if(Input.GetKey("w"))
 		{

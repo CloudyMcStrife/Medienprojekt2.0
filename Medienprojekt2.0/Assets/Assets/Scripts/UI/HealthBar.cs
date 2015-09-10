@@ -29,6 +29,6 @@ public class HealthBar : MonoBehaviour {
 		AttributeComponent ac = this.GetComponent<AttributeComponent> ();
 
 		float health = ac.getHealth ();
-		barFill = health * 8 / 10;
+		barFill =  health + 8 / 10;
 	}
 }

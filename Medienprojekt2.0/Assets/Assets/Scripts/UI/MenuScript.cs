@@ -7,6 +7,9 @@ public class MenuScript : MonoBehaviour {
 	public Canvas quitDialogue;
 	public Button playText;
 	public Button exitText;
+	bool playing;
+	GameObject quit;
+	GameObject pauseMenu;
 
 	// Use this for initialization
 	void Start () {
@@ -33,7 +36,7 @@ public class MenuScript : MonoBehaviour {
 
 	public void PlayPress()
 	{
-		Application.LoadLevel (1);
+			Application.LoadLevel (1);
 	}
 
 	public void ShutdownGame()

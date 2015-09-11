@@ -47,7 +47,6 @@ public class Projectile : MonoBehaviour {
 		if(collid.IsTouching ((BoxCollider2D)GameObject.FindWithTag ("Enemy").GetComponent (typeof(BoxCollider2D)))){
 			ProjectilePoolingSystem PPS = (ProjectilePoolingSystem) owner.GetComponent(typeof(ProjectilePoolingSystem));
 			PPS.storeProjectile(prObject);
-			Debug.Log ("hitEnemy");
 			inAir = false;
 		}else
 

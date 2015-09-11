@@ -44,17 +44,18 @@ public class ProjectilePoolingSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		/*
 		GameObject parent = this.gameObject;
 		if (pointer < 0 || pointer >= projectileAmount) {
 			Debug.Log(parent.name);
 		}
+		*/
 	}
 
 
 	//Dient zum übergeben des obersten Projektils
 	public GameObject getProjectile()
 	{
-		Debug.Log (this.gameObject.name + " -> Pointer:" + pointer);
 		if (pointer >= 0) {
 			BoxCollider2D temp = (BoxCollider2D)projectiles [pointer].GetComponent (typeof(BoxCollider2D));
 			SpriteRenderer tempS = (SpriteRenderer)projectiles [pointer].GetComponent (typeof(SpriteRenderer));

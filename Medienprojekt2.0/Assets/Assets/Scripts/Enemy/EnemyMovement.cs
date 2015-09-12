@@ -63,7 +63,6 @@ public class EnemyMovement : MonoBehaviour {
 
 
 	void Update () {
-		Vector3 forward = rigenemy.transform.forward * 10;
 		if (attackCooldown [0] < attackCooldown [1]) {
 			attackCooldown [0] += Time.deltaTime;
 		}
@@ -72,21 +71,20 @@ public class EnemyMovement : MonoBehaviour {
 		
 		//prüft ob EnemyEntity links oder rechts in minimumDistance (=Angriffsreichweite) ist;
 		inAttackRangex = (distancex <= minimumDistancex && distancex > 0) || (distancex >= -minimumDistancex && distancex < 0);
-		//inAttackRangey = (distancey <= minimumDistancey && distancey > 0) || (distancey >= -minimumDistancey && distancey < 0);
+		inAttackRangey = (distancey <= minimumDistancey && distancey > 0) || (distancey >= -minimumDistancey && distancey < 0);
 
 
 		//Begin Chasing
 		if (!inAttackRangex && vision.isPlayerVisible()) {
-			if (distancex > 0)
+			if (isFacingRight())
 				rigenemy.velocity = new Vector2 (speed, 0);
-			if (distancex < 0)
+			else
 				rigenemy.velocity = new Vector2 (-speed, 0);
 		}
 
 
 		//Should be able to attack now, if cooldowns are up
-		//if (inAttackRangex && inAttackRangey) {
-		if (inAttackRangex && vision.isPlayerVisible()) {
+		if ( (inAttackRangex && inAttackRangey) && vision.isPlayerVisible()) {
 			rigenemy.velocity = new Vector2 (0, rigenemy.velocity.y);
 			if (attackCooldown [0] >= attackCooldown [1]) {
 				GameObject projectile = PPS.getProjectile ();
@@ -100,8 +98,7 @@ public class EnemyMovement : MonoBehaviour {
 
 
 		//Patrolling behaviour if not attacking or chasing
-		//if(!(inAttackRangex && inAttackRangey) && !inNoticeRadius) {
-		if(!inAttackRangex && !vision.isPlayerVisible()) {
+		if( !vision.isPlayerVisible() ) {
 			if(hittingWall || onAnEdge)
 				walkingRight = !walkingRight;
 			if(walkingRight)

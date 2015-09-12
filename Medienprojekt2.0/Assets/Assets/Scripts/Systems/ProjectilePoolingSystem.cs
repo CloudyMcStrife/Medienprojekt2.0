@@ -41,17 +41,6 @@ public class ProjectilePoolingSystem : MonoBehaviour {
 			projectiles[i] = bullet;
 		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		/*
-		GameObject parent = this.gameObject;
-		if (pointer < 0 || pointer >= projectileAmount) {
-			Debug.Log(parent.name);
-		}
-		*/
-	}
-
 
 	//Dient zum übergeben des obersten Projektils
 	public GameObject getProjectile()

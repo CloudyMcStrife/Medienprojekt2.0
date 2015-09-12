@@ -91,7 +91,7 @@ public class EnemyMovement : MonoBehaviour {
 				if (projectile != null) {
 					currentProjectile = (Projectile)projectile.GetComponent (typeof(Projectile));
 					attackCooldown [0] = 0;
-					currentProjectile.shoot (rigenemy.gameObject, minimumDistancex,walkingRight);
+					currentProjectile.shoot(minimumDistancex,walkingRight);
 				}
 			}
 		}

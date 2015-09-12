@@ -1,9 +1,14 @@
 fileFormatVersion: 2
 guid: be86be78fe64b054aab7af69b766806a
-timeCreated: 1441321130
+timeCreated: 1441632061
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: 11880751_1181857475174841_1323994224_n_0
+    21300002: 11880751_1181857475174841_1323994224_n_1
+    21300004: 11880751_1181857475174841_1323994224_n_2
+    21300006: 11880751_1181857475174841_1323994224_n_3
+    21300008: 11880751_1181857475174841_1323994224_n_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +35,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +53,57 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: 11880751_1181857475174841_1323994224_n_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 800
+        height: 354
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 11880751_1181857475174841_1323994224_n_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 800
+        height: 400
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 11880751_1181857475174841_1323994224_n_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 800
+        height: 450
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 11880751_1181857475174841_1323994224_n_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 401
+        width: 800
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 11880751_1181857475174841_1323994224_n_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 800
+        height: 402
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

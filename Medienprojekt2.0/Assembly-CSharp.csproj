@@ -50,6 +50,7 @@
      <Compile Include="Assets\Assets\Scripts\Character\FollowCamera.cs" />
      <Compile Include="Assets\Assets\Scripts\Components\AttributeComponent.cs" />
      <Compile Include="Assets\Assets\Scripts\Enemy\EnemyMovement.cs" />
+     <Compile Include="Assets\Assets\Scripts\LiftMovement.cs" />
      <Compile Include="Assets\Assets\Scripts\ProblemeZuLösen\Problemliste.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\EbeneNavigationSystem.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\HealthEffectZone.cs" />

@@ -32,7 +32,7 @@ public class EbeneNavigationSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	if (playercoll.IsTouching (telecoll) && Input.GetKey ("t")) {
+	if (playercoll.IsTouching (telecoll) && Input.GetKey ("e")) {
 				StartCoroutine(FadeIn());
 			}
 	}

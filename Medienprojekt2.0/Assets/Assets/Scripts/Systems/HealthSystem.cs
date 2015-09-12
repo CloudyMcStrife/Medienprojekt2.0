@@ -12,7 +12,6 @@ public class HealthSystem : MonoBehaviour {
 		ac = (AttributeComponent)GameObject.FindWithTag ("Player").GetComponent(typeof(AttributeComponent));
 		bc = (BoxCollider2D)GameObject.FindWithTag ("Player").GetComponent(typeof(BoxCollider2D));
 		pbc = (BoxCollider2D)GameObject.FindWithTag ("Projectile").GetComponent (typeof(BoxCollider2D));
-		Debug.Log (ac);
 	}
 
 	// Update is called once per frame

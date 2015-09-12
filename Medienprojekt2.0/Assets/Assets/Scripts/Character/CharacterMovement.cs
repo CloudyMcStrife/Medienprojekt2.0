@@ -100,7 +100,7 @@ public class CharacterMovement : MonoBehaviour {
 				if (proj != null) {
 					currentProjectile = proj.GetComponent<Projectile> ();
 					rangeAttackCooldown [0] = 0;
-					currentProjectile.shoot (rigplayer.gameObject, 2.0f);
+					currentProjectile.shoot (rigplayer.gameObject, 2.0f,facingRight);
 				}
 			}
 		}

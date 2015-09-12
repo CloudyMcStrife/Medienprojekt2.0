@@ -23,11 +23,14 @@ public class HealthEffectZone : MonoBehaviour {
 		if(effectCooldown[0] >= effectCooldown[1])
 		{
 			HealthSystem hs = (HealthSystem) other.gameObject.GetComponent(typeof(HealthSystem));
-			if(amount >= 0)
-				hs.raiseHealth(amount);
-			else
-				hs.lowerHealth(amount);
-			effectCooldown[0] = 0;
+			if(hs != null)
+			{
+				if(amount >= 0)
+					hs.raiseHealth(amount);
+				else
+					hs.lowerHealth(-amount);
+				effectCooldown[0] = 0;
+			}
 		}
 	}
 }

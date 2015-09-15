@@ -7,11 +7,11 @@ public class ProjectilePoolingSystem : MonoBehaviour {
 
 	
 	GameObject[] projectiles;
-	public int pointer;
 	public int projectileAmount = 4;
-	//BoxCollider2D procoll = new BoxCollider2D();
-	//SpriteRenderer prorender = new SpriteRenderer();
-	//Rigidbody2D prorigid = new Rigidbody2D();
+	int pointer;
+
+	public LayerMask projectileMask;
+	public LayerMask obstacleMask;
 
 	// Use this for initialization
 	void Awake() {
@@ -20,10 +20,9 @@ public class ProjectilePoolingSystem : MonoBehaviour {
 		projectiles = new GameObject[projectileAmount];
 		for (int i = 0; i < projectileAmount; ++i) {
 			GameObject bullet = new GameObject();
-			bullet.transform.parent = this.gameObject.transform;
 			bullet.name = "Projectile";
 			bullet.tag = "Projectile";
-			bullet.layer = LayerMask.NameToLayer("Projectiles");
+			bullet.layer = projectileMask;
 			bullet.AddComponent<BoxCollider2D>();
 			BoxCollider2D collider =(BoxCollider2D) bullet.GetComponent(typeof(BoxCollider2D));
 			collider.enabled = false;
@@ -32,7 +31,8 @@ public class ProjectilePoolingSystem : MonoBehaviour {
 			Rigidbody2D rigid = bullet.AddComponent<Rigidbody2D>();
 			rigid.gravityScale = 0;
 			rigid.fixedAngle = true;
-			bullet.AddComponent<Projectile>();
+			Projectile projectile= bullet.AddComponent<Projectile>();
+			projectile.setOwner(this.gameObject);
 			SpriteRenderer s = bullet.GetComponent<SpriteRenderer>();
 			s.enabled = false;
 			s.sortingLayerName = "Projectiles";
@@ -41,20 +41,10 @@ public class ProjectilePoolingSystem : MonoBehaviour {
 			projectiles[i] = bullet;
 		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		GameObject parent = this.gameObject;
-		if (pointer < 0 || pointer >= projectileAmount) {
-			Debug.Log(parent.name);
-		}
-	}
-
 
 	//Dient zum übergeben des obersten Projektils
 	public GameObject getProjectile()
 	{
-		Debug.Log (this.gameObject.name + " -> Pointer:" + pointer);
 		if (pointer >= 0) {
 			BoxCollider2D temp = (BoxCollider2D)projectiles [pointer].GetComponent (typeof(BoxCollider2D));
 			SpriteRenderer tempS = (SpriteRenderer)projectiles [pointer].GetComponent (typeof(SpriteRenderer));

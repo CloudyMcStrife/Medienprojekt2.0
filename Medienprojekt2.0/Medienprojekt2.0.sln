@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{064AF246-261D-F2BA-8E4C-C52EB94D4B14}") = "Medienprojekt2.0", "Assembly-CSharp.csproj", "{DDE3BEF5-B2F0-2E8D-C4AD-CE36F9E9D330}"
 EndProject
-Project("{064AF246-261D-F2BA-8E4C-C52EB94D4B14}") = "Medienprojekt2.0", "Assembly-CSharp-Editor.csproj", "{5822B4C7-F43B-C62A-4EEF-D3E496769216}"
-EndProject
 Project("{064AF246-261D-F2BA-8E4C-C52EB94D4B14}") = "Medienprojekt2.0", "Assembly-UnityScript.unityproj", "{64F14812-7B68-2FAA-DD9F-FC4466AA8053}"
 EndProject
 Global
@@ -17,10 +15,6 @@ Global
 		{DDE3BEF5-B2F0-2E8D-C4AD-CE36F9E9D330}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDE3BEF5-B2F0-2E8D-C4AD-CE36F9E9D330}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDE3BEF5-B2F0-2E8D-C4AD-CE36F9E9D330}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5822B4C7-F43B-C62A-4EEF-D3E496769216}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5822B4C7-F43B-C62A-4EEF-D3E496769216}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5822B4C7-F43B-C62A-4EEF-D3E496769216}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5822B4C7-F43B-C62A-4EEF-D3E496769216}.Release|Any CPU.Build.0 = Release|Any CPU
 		{64F14812-7B68-2FAA-DD9F-FC4466AA8053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{64F14812-7B68-2FAA-DD9F-FC4466AA8053}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64F14812-7B68-2FAA-DD9F-FC4466AA8053}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -29,7 +23,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																												GlobalSection(MonoDevelopProperties) = preSolution
+																																																																						GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

@@ -9,6 +9,7 @@ public class EnemyVision : MonoBehaviour {
 	public Transform visionCheck;
 	public float noticeDistance;
 	public bool playerVisible;
+	public float fovAngle;
 
 	EnemyMovement movement;
 
@@ -20,12 +21,31 @@ public class EnemyVision : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
-		Vector3 forward = movement.isFacingRight() ? new Vector3 (1, 0, 0) : new Vector3 (-1, 0, 0);
-		RaycastHit2D hit = Physics2D.Raycast(visionCheck.position,forward,noticeDistance);
-		playerVisible = false;
-		if (hit.collider != null) {
-			playerVisible = hit.collider.gameObject == rigplayer.gameObject;
+		Vector2 centerPlayer = new Vector2 (rigplayer.position.x, rigplayer.position.y + 0.5f);
+		float currentAngle = -1;
+
+		//No field of View component
+		if (fovAngle != -1) {
+			Vector2 forward = visionCheck.position;
+			Vector2 direction;
+			if (movement.isFacingRight ()) {
+				forward += new Vector2 (1, 0);
+				direction = rigplayer.position - (Vector2)visionCheck.position;
+			} else {
+				forward += new Vector2 (-1, 0);
+				direction = (Vector2)visionCheck.position - rigplayer.position;
+			}
+			currentAngle = Vector2.Angle (forward, direction);
 		}
+		RaycastHit2D hit = Physics2D.Raycast (visionCheck.position, centerPlayer - (Vector2)visionCheck.position, noticeDistance);
+		if (currentAngle <= fovAngle) {
+			if(hit.collider != null)
+				playerVisible = hit.collider.gameObject == rigplayer.gameObject;
+			else
+				playerVisible = false;
+		}
+		else
+			playerVisible = false;
 	}
 
 	public bool isPlayerVisible(){

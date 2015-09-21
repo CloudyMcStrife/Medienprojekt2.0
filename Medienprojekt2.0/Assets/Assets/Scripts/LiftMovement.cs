@@ -17,7 +17,7 @@ public class LiftMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (liftcoll.IsTouching (playercoll)) {
-			playerig.AddForce(new Vector2(0.0f, 7.0f), ForceMode2D.Impulse);
+			playerig.AddForce(new Vector2(0.0f, 4.0f), ForceMode2D.Impulse);
 		}
 	}
 }

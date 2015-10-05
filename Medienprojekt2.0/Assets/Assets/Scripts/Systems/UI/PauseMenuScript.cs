@@ -41,6 +41,7 @@ public class PauseMenuScript : MonoBehaviour {
 	public void openMainMenu()
 	{
 		Application.LoadLevel (0);
+        Time.timeScale = 1;
 	}
 
 	public void Quit()

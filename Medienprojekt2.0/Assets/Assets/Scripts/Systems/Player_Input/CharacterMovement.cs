@@ -63,11 +63,11 @@ public class CharacterMovement : MonoBehaviour {
 				rigplayer.velocity = new Vector2 (movePlayerVector * speed, rigplayer.velocity.y);
 				if (movePlayerVector < 0 && facingRight) {
 					facingRight = false;
-					trans.localScale = new Vector3 (1, 1, 1);
+					trans.localScale = new Vector3 (-Mathf.Abs(trans.localScale.x), trans.localScale.y, trans.localScale.z);
 				}
 				if (movePlayerVector > 0 && !facingRight) {
 					facingRight = true;
-					trans.localScale = new Vector3 (-1, 1, 1);
+					trans.localScale = new Vector3 (Mathf.Abs(trans.localScale.x), trans.localScale.y, trans.localScale.z);
 				}
 			} else {
 				if (grounded)

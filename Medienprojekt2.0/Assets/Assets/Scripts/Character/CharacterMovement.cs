@@ -13,6 +13,7 @@ public class CharacterMovement : MonoBehaviour {
 	Projectile currentProjectile;
 	ProjectilePoolingSystem PPS;
 	bool facingRight = false;
+	Animator anim;
 
 
 	public float[] rangeAttackCooldown = {1.0f, 1.0f};
@@ -37,6 +38,7 @@ public class CharacterMovement : MonoBehaviour {
 		trans = (Transform)GetComponent (typeof(Transform));
 		PPS = (ProjectilePoolingSystem)GetComponent (typeof(ProjectilePoolingSystem));
 		meleeSys = (MeleeSystem)GetComponent (typeof(MeleeSystem));
+		anim = (Animator)GetComponent (typeof(Animator));
 	}
 
 	
@@ -49,6 +51,7 @@ public class CharacterMovement : MonoBehaviour {
 	void Update () 
 	{
 		float movePlayerVector = Input.GetAxis ("Horizontal");
+		anim.SetFloat ("Speed", Mathf.Abs (movePlayerVector));
 		//cooldowns
 		if (rollCooldown [0] < rollCooldown [1])
 			rollCooldown [0] += Time.deltaTime;

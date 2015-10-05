@@ -103,7 +103,7 @@ public class CharacterMovement : MonoBehaviour {
 				if (proj != null) {
 					currentProjectile = proj.GetComponent<Projectile> ();
 					rangeAttackCooldown [0] = 0;
-					currentProjectile.shoot (2.0f,facingRight);
+					currentProjectile.shoot (2.0f,facingRight,Projectile.Shooting_Type.NORMAL);
 				}
 			}
 		}

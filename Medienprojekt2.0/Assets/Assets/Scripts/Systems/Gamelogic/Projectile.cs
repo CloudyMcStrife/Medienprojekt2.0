@@ -5,8 +5,14 @@ using System.Collections;
 
 public class Projectile : MonoBehaviour {
 
-	//Allgemeine Kugel Eigenschaften
-	GameObject prObject; //GameObject des Projektils
+    public enum Shooting_Type
+    {
+        NORMAL,
+        SPECIAL
+    }
+
+    //Allgemeine Kugel Eigenschaften
+    GameObject prObject; //GameObject des Projektils
 	Rigidbody2D rigid;
 	BoxCollider2D collid;
 	ProjectilePoolingSystem PPS;
@@ -39,13 +45,24 @@ public class Projectile : MonoBehaviour {
 		}
 	}
 
-	public void shoot(float range,bool facingRight)
+	public void shoot(float range,bool facingRight, Shooting_Type type)
 	{
 		this.range = range;
 		timeLeft = range / projectileSpeed;
 		Physics2D.IgnoreCollision ((Collider2D)owner.GetComponent(typeof(Collider2D)), collid);
 		AttributeComponent ac = (AttributeComponent)owner.GetComponent (typeof(AttributeComponent));
-		setDamage (ac.getDamage ());
+        SpriteRenderer sr = this.GetComponent<SpriteRenderer>();
+        
+        if(type == Shooting_Type.NORMAL)
+        {
+            damage = ac.getDamage();
+        }
+        else
+        {
+            damage = ac.getDamage() * 2;
+            sr.sprite = Resources.Load<Sprite>("Sprites/Weapons/02_items") as Sprite;
+        }
+		setDamage (damage);
 
 		inAir = true;
 		rigid.transform.position = new Vector2(owner.transform.position.x,owner.transform.position.y +.5f);

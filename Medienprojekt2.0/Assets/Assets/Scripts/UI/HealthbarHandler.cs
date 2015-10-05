@@ -14,21 +14,16 @@ public class HealthbarHandler : MonoBehaviour {
     public AttributeComponent attComp;
     Image visualHealth;
 
-    float oldXValue;
-    bool healthIsTriggered;
     float timer = 1;
 
 	// Use this for initialization
 	void Start () {
         healthTransform = this.GetComponent<RectTransform>();
-        cachedY = 0;
-        Debug.Log("YOYO " + cachedY);
+        cachedY = healthTransform.localPosition.y ;
         maxXPos = healthTransform.localPosition.x;
         minXPos = healthTransform.localPosition.x - healthTransform.rect.width;
         maxHealth = attComp.getHealth();
         currentHealth = maxHealth;
-        oldXValue = 0;
-        healthIsTriggered = false;
         visualHealth = this.GetComponent<Image>();
         
 	}
@@ -36,19 +31,18 @@ public class HealthbarHandler : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
-        oldXValue = newXPos;
-        currentHealth = attComp.getHealth();
-        newXPos = MapValues(currentHealth, 0, maxHealth, minXPos, maxXPos);
+        
+        
 
-        if (oldXValue != newXPos)
+        if (currentHealth != attComp.getHealth())
         {
-            timer -= Time.deltaTime;
-            healthTransform.localPosition = new Vector3(newXPos + (oldXValue - newXPos)*timer, cachedY);
-            if (timer < 0)
-            {
-                oldXValue = newXPos;
-            }
+            currentHealth = attComp.getHealth();
+            newXPos = MapValues(currentHealth, 0, maxHealth, minXPos, maxXPos);
+            healthTransform.localPosition = new Vector3(newXPos, cachedY);
+            
+
         }
+ 
 
         if(currentHealth > maxHealth/2)
         {

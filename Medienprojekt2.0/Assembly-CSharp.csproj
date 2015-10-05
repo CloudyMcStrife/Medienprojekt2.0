@@ -59,6 +59,7 @@
      <Compile Include="Assets\Assets\Scripts\Systems\Player_Input\CharacterMovement.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Player_Input\FollowCamera.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\UI\AmmoIconHandler.cs" />
+     <Compile Include="Assets\Assets\Scripts\Systems\UI\DeathUI.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\UI\HealthbarHandler.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\UI\MenuScript.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\UI\PauseMenuScript.cs" />

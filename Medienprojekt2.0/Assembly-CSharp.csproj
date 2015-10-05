@@ -45,20 +45,18 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Assets\Scripts\Character\CharacterMovement.cs" />
-     <Compile Include="Assets\Assets\Scripts\Character\FollowCamera.cs" />
      <Compile Include="Assets\Assets\Scripts\Components\AttributeComponent.cs" />
-     <Compile Include="Assets\Assets\Scripts\Enemy\EnemyMovement.cs" />
-     <Compile Include="Assets\Assets\Scripts\Enemy\EnemyVision.cs" />
      <Compile Include="Assets\Assets\Scripts\ProblemeZuLösen\Problemliste.cs" />
+     <Compile Include="Assets\Assets\Scripts\Systems\AI\EnemyMovement.cs" />
+     <Compile Include="Assets\Assets\Scripts\Systems\AI\EnemyVision.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\EbeneNavigationSystem.cs" />
-     <Compile Include="Assets\Assets\Scripts\Systems\HealthEffectZone.cs" />
-     <Compile Include="Assets\Assets\Scripts\Systems\HealthSystem.cs" />
-     <Compile Include="Assets\Assets\Scripts\Systems\LevelManager.cs" />
-     <Compile Include="Assets\Assets\Scripts\Systems\MeleeSystem.cs" />
+     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\HealthEffectZone.cs" />
+     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\HealthSystem.cs" />
+     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\MeleeSystem.cs" />
+     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\Projectile.cs" />
+     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\ProjectilePoolingSystem.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\NavigationSystem.cs" />
-     <Compile Include="Assets\Assets\Scripts\Systems\Projectile.cs" />
-     <Compile Include="Assets\Assets\Scripts\Systems\ProjectilePoolingSystem.cs" />
+     <Compile Include="Assets\Assets\Scripts\Systems\Player_Input\CharacterMovement.cs" />
      <Compile Include="Assets\Assets\Scripts\UI\HealthbarHandler.cs" />
      <Compile Include="Assets\Assets\Scripts\UI\MenuScript.cs" />
      <Compile Include="Assets\Assets\Scripts\UI\PauseMenuScript.cs" />
@@ -72,7 +70,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
+ <HintPath>D:/Programme/Unity 5/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

@@ -1,34 +1,9 @@
 fileFormatVersion: 2
-guid: c9eeeeb8524b09145b883a55a2560043
-timeCreated: 1442840703
+guid: 36c90b4d5b863674ba63e7a46fddca6a
+timeCreated: 1442861549
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: MainChara_Running_1
-    21300002: MainChara_Running_5
-    21300004: MainChara_Running_9
-    21300006: MainChara_Running_13
-    21300008: MainChara_Running_16
-    21300010: MainChara_Running_17
-    21300012: MainChara_Running_18
-    21300014: MainChara_Running_19
-    21300016: MainChara_Running_20
-    21300018: MainChara_Running_21
-    21300020: MainChara_Running_22
-    21300022: MainChara_Running_23
-    21300024: MainChara_Running_24
-    21300026: MainChara_Running_26
-    21300028: MainChara_Running_30
-    21300030: MainChara_Running_34
-    21300032: MainChara_Running_38
-    21300034: MainChara_Running_44
-    21300036: MainChara_Running_54
-    21300038: MainChara_Running_55
-    21300040: MainChara_Running_56
-    21300042: MainChara_Running_64
-    21300044: MainChara_Running_67
-    21300046: MainChara_Running_68
-    21300048: MainChara_Running_70
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -55,14 +30,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: 16
+    aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -73,257 +48,7 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: MainChara_Running_1
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 2274
-        width: 99
-        height: 261
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_5
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 2271
-        width: 97
-        height: 263
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_9
-      rect:
-        serializedVersion: 2
-        x: 250
-        y: 2272
-        width: 99
-        height: 262
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_13
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 1991
-        width: 99
-        height: 261
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_16
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 1992
-        width: 100
-        height: 261
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_17
-      rect:
-        serializedVersion: 2
-        x: 251
-        y: 1993
-        width: 98
-        height: 260
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_18
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 1712
-        width: 101
-        height: 261
-      alignment: 8
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_19
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 1711
-        width: 100
-        height: 261
-      alignment: 8
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_20
-      rect:
-        serializedVersion: 2
-        x: 248
-        y: 1710
-        width: 101
-        height: 260
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_21
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 1427
-        width: 101
-        height: 263
-      alignment: 8
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_22
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 1426
-        width: 100
-        height: 264
-      alignment: 8
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_23
-      rect:
-        serializedVersion: 2
-        x: 248
-        y: 1425
-        width: 101
-        height: 264
-      alignment: 8
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_24
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 1143
-        width: 101
-        height: 264
-      alignment: 8
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_26
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 1143
-        width: 99
-        height: 261
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_30
-      rect:
-        serializedVersion: 2
-        x: 251
-        y: 1144
-        width: 98
-        height: 261
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_34
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 863
-        width: 99
-        height: 260
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_38
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 866
-        width: 99
-        height: 259
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_44
-      rect:
-        serializedVersion: 2
-        x: 248
-        y: 864
-        width: 101
-        height: 259
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_54
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 583
-        width: 99
-        height: 258
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_55
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 584
-        width: 99
-        height: 258
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_56
-      rect:
-        serializedVersion: 2
-        x: 249
-        y: 583
-        width: 100
-        height: 259
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_64
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 298
-        width: 97
-        height: 265
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_67
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 301
-        width: 97
-        height: 260
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_68
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 298
-        width: 99
-        height: 265
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Running_70
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 15
-        width: 99
-        height: 264
-      alignment: 8
-      pivot: {x: 1, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

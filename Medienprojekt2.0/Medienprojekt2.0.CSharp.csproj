@@ -63,18 +63,6 @@
     <Reference Include="UnityEngine.Analytics">
       <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -100,7 +88,7 @@
     <Compile Include="Assets\Assets\Scripts\Systems\NavigationSystem.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Projectile.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\ProjectilePoolingSystem.cs" />
-    <Compile Include="Assets\Assets\Scripts\UI\HealthBar.cs" />
+    <Compile Include="Assets\Assets\Scripts\UI\HealthbarHandler.cs" />
     <Compile Include="Assets\Assets\Scripts\UI\MenuScript.cs" />
     <Compile Include="Assets\Assets\Scripts\UI\PauseMenuScript.cs" />
   </ItemGroup>

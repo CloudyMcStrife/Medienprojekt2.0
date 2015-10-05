@@ -19,675 +19,297 @@ Loading C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.
 Platform assembly: C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.0\Medienprojekt2.0\Medienprojekt2.0\test_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.0\Medienprojekt2.0\Medienprojekt2.0\test_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
 Platform assembly: C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.0\Medienprojekt2.0\Medienprojekt2.0\test_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.165 seconds
+- Completed reload, in  0.124 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.0\Medienprojekt2.0\Medienprojekt2.0\test_Data\Managed\System.dll (this message is harmless)
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 65.487877 ms
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
 
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 352.
-Total: 3.496763 ms (FindLiveObjects: 0.039342 ms CreateObjectMapping: 0.036776 ms MarkObjects: 3.409953 ms  DeleteObjects: 0.009407 ms)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 54.496872 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 368.
+Total: 8.774630 ms (FindLiveObjects: 0.052599 ms CreateObjectMapping: 0.033355 ms MarkObjects: 8.672426 ms  DeleteObjects: 0.014967 ms)
+
+Player (AttributeComponent)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
 Enemy (1) -> Pointer:3
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
 
 Enemy -> Pointer:3
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-Escape!!!
+90
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Escape!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Escape!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Escape!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Escape!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Escape!!!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-Enemy (1) -> Pointer:3
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Enemy -> Pointer:2
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
 
 Enemy (1) -> Pointer:2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Enemy -> Pointer:1
+WALL OR GROUND
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
+WALL OR GROUND
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
+Enemy -> Pointer:3
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
+80
  
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 19.571527 ms
-
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 352.
-Total: 0.279245 ms (FindLiveObjects: 0.021809 ms CreateObjectMapping: 0.019243 ms MarkObjects: 0.231777 ms  DeleteObjects: 0.005986 ms)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
 Enemy (1) -> Pointer:3
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
+Enemy -> Pointer:3
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
+70
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
+Enemy (1) -> Pointer:2
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
+WALL OR GROUND
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
+WALL OR GROUND
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
+Enemy -> Pointer:3
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+60
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+50
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+40
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+30
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+20
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+10
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Player -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Player -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Player -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
 Enemy -> Pointer:3
  
@@ -697,9 +319,583 @@ Enemy (1) -> Pointer:3
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at HealthSystem.lowerHealth (Single damage) [0x00000] in <filename unknown>:0 
-  at Projectile.FixedUpdate () [0x00000] in <filename unknown>:0 
+WALL OR GROUND
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Player -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Player -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Player -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Player -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Player -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Enemy (1) -> Pointer:3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WALL OR GROUND
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 

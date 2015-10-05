@@ -38,7 +38,6 @@ public class CharacterMovement : MonoBehaviour {
 		trans = (Transform)GetComponent (typeof(Transform));
 		PPS = (ProjectilePoolingSystem)GetComponent (typeof(ProjectilePoolingSystem));
 		meleeSys = (MeleeSystem)GetComponent (typeof(MeleeSystem));
-		anim = (Animator)GetComponent (typeof(Animator));
 	}
 
 	
@@ -51,7 +50,6 @@ public class CharacterMovement : MonoBehaviour {
 	void Update () 
 	{
 		float movePlayerVector = Input.GetAxis ("Horizontal");
-		anim.SetFloat ("Speed", Mathf.Abs (movePlayerVector));
 		//cooldowns
 		if (rollCooldown [0] < rollCooldown [1])
 			rollCooldown [0] += Time.deltaTime;

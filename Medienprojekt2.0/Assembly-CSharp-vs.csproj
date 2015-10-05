@@ -60,9 +60,11 @@
      <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\ProjectilePoolingSystem.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Player_Input\CharacterMovement.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Player_Input\FollowCamera.cs" />
+     <Compile Include="Assets\Assets\Scripts\Systems\UI\AmmoIconHandler.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\UI\HealthbarHandler.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\UI\MenuScript.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\UI\PauseMenuScript.cs" />
+     <Compile Include="Assets\Assets\Scripts\Tag Layer list.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\SortingLayerExposed.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TileAnimator.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TiledInitialShaderProperties.cs" />

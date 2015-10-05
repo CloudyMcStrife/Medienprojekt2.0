@@ -70,11 +70,20 @@
   <ItemGroup>
     <Compile Include="Assets\Assets\Scripts\Components\AttributeComponent.cs" />
     <Compile Include="Assets\Assets\Scripts\ProblemeZuLösen\Problemliste.cs" />
-    <Compile Include="Assets\Assets\Scripts\Systems\EbeneNavigationSystem.cs" />
-    <Compile Include="Assets\Assets\Scripts\Systems\NavigationSystem.cs" />
-    <Compile Include="Assets\Assets\Scripts\UI\HealthbarHandler.cs" />
-    <Compile Include="Assets\Assets\Scripts\UI\MenuScript.cs" />
-    <Compile Include="Assets\Assets\Scripts\UI\PauseMenuScript.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\AI\EnemyMovement.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\AI\EnemyVision.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\EbeneNavigationSystem.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\HealthEffectZone.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\HealthSystem.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\MeleeSystem.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\NavigationSystem.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\Projectile.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\ProjectilePoolingSystem.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\Player_Input\CharacterMovement.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\Player_Input\FollowCamera.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\UI\HealthbarHandler.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\UI\MenuScript.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\UI\PauseMenuScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Assets\New Assets\Pushtest.txt" />

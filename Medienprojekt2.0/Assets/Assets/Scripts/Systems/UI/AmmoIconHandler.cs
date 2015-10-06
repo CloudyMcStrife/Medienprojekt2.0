@@ -4,23 +4,41 @@ using UnityEngine.UI;
 
 public class AmmoIconHandler : MonoBehaviour {
 
-    Text txt;
+    public Text txtS;
+    public Text txtB;
+    GameObject AmmoPanelPrimary;
+    GameObject AmmoPanelSecondary;
     public AttributeComponent attComp;
-
+    bool isPrimary = true;
 	// Use this for initialization
 	void Start () {
-        txt = this.GetComponent<Text>();
-        setLabel();
-        
-	}
+        AmmoPanelPrimary = GameObject.Find("AmmoPanelPrimary");
+        AmmoPanelSecondary = GameObject.Find("AmmoPanelSecondary");
+
+        AmmoPanelSecondary.SetActive(false);
+
+        txtS.text = attComp.getAmmo() + " / " + attComp.getAmmoCap();
+        txtB.text = attComp.getAmmo() + " / " + attComp.getAmmoCap();
+
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-	    
-	}
+        setLabel();
+        
+    }
 
     public void setLabel()
     {
-        txt.text = attComp.getAmmo() + " / " + attComp.getAmmoCap();
+        txtS.text = attComp.getAmmo() + " / " + attComp.getAmmoCap();
+        txtB.text = attComp.getAmmo() + " / " + attComp.getAmmoCap();
     }    
+
+    public void changeAmmo()
+    {
+        isPrimary = !isPrimary;
+        AmmoPanelPrimary.SetActive(isPrimary);
+        AmmoPanelSecondary.SetActive(!isPrimary);
+    }
 }

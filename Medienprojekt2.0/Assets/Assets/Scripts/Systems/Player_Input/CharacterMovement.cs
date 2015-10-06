@@ -93,6 +93,13 @@ public class CharacterMovement : MonoBehaviour {
 				}
 			}
 		}
+
+        //Waffe wechseln
+        if(Input.GetKeyDown("c"))
+        {
+            AmmoIconHandler iconHandler = GameObject.Find("HUD").GetComponent<AmmoIconHandler>();
+            iconHandler.changeAmmo();
+        }
 		//Funktion für Schießen
 		if (Input.GetKeyDown ("s")) {
 			if (rangeAttackCooldown [0] >= rangeAttackCooldown [1]) {

@@ -6,8 +6,8 @@ public class AttributeComponent : MonoBehaviour {
     public float health;
 	public float damage;
 	float armor;
-	int ammo;
-    int ammoCap;
+	public int ammo;
+    public int ammoCap;
 	//int range gibt an ob fernkampf und wie weit die range des Spielers/Gegners ist. 0 = nahkampf, > 0 = fernkampf
 	public int range;
 

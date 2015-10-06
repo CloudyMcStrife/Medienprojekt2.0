@@ -11,13 +11,13 @@ public class EnemyVision : MonoBehaviour {
 	public bool playerVisible;
 	public float fovAngle;
 
-	EnemyMovement movement;
+	CharacterMovement actions;
 
 
 	void Awake(){
 		rigplayer  = (Rigidbody2D) GameObject.FindWithTag("Player").GetComponent(typeof(Rigidbody2D));
 		rigenemy  = (Rigidbody2D) GetComponent(typeof(Rigidbody2D));
-		movement = (EnemyMovement)GetComponent (typeof(EnemyMovement));
+        actions = (CharacterMovement)GetComponent(typeof(CharacterMovement));
 	}
 
 	void FixedUpdate(){
@@ -28,7 +28,7 @@ public class EnemyVision : MonoBehaviour {
 		if (fovAngle != -1) {
 			Vector2 forward = visionCheck.position;
 			Vector2 direction;
-			if (movement.isFacingRight ()) {
+			if (actions.facingRight) {
 				forward += new Vector2 (1, 0);
 				direction = rigplayer.position - (Vector2)visionCheck.position;
 			} else {
@@ -46,9 +46,5 @@ public class EnemyVision : MonoBehaviour {
 		}
 		else
 			playerVisible = false;
-	}
-
-	public bool isPlayerVisible(){
-		return playerVisible;
 	}
 }

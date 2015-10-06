@@ -111,7 +111,9 @@ public class CharacterMovement : MonoBehaviour {
             }
         }
     }
-    public void shoot()
+        
+        
+public void shoot()
     {
         if (rangeAttackCooldown[0] >= rangeAttackCooldown[1])
         {
@@ -124,4 +126,11 @@ public class CharacterMovement : MonoBehaviour {
             }
         }
     }
+//Waffe wechseln
+public void switchWeapon()
+    {
+        AmmoIconHandler iconHandler = GameObject.Find("HUD").GetComponent<AmmoIconHandler>();
+        iconHandler.changeAmmo();
+    }
+    
 }

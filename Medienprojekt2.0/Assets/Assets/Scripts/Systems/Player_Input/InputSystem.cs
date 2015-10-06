@@ -37,5 +37,10 @@ public class InputSystem : MonoBehaviour {
         {
             actions.shoot();
         }
+		
+		if(Input.GetKeyDown("c"))
+		{
+			actions.switchWeapon();
+		}
     }
 }

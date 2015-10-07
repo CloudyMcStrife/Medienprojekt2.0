@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: b9205f7bb7049a4499c7e8af991e36a7
-timeCreated: 1444046801
+timeCreated: 1444224538
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -52,7 +52,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 8192
+  maxTextureSize: 4096
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -79,9 +79,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2288
+        y: 0
         width: 218
-        height: 286
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -89,9 +89,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 218
-        y: 2288
+        y: 0
         width: 218
-        height: 286
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -99,229 +99,129 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 436
-        y: 2288
+        y: 0
         width: 218
-        height: 286
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainChara_Jump_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2002
+        x: 654
+        y: 0
         width: 218
-        height: 286
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainChara_Jump_4
       rect:
         serializedVersion: 2
-        x: 218
-        y: 2002
+        x: 872
+        y: 0
         width: 218
-        height: 286
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainChara_Jump_5
       rect:
         serializedVersion: 2
-        x: 436
-        y: 2002
+        x: 1090
+        y: 0
         width: 218
-        height: 286
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainChara_Jump_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1716
+        x: 1308
+        y: 0
         width: 218
-        height: 286
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainChara_Jump_7
       rect:
         serializedVersion: 2
-        x: 218
-        y: 1716
+        x: 1526
+        y: 0
         width: 218
-        height: 286
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainChara_Jump_8
       rect:
         serializedVersion: 2
-        x: 436
-        y: 1716
+        x: 1744
+        y: 0
         width: 218
-        height: 286
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainChara_Jump_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1430
+        x: 1962
+        y: 0
         width: 218
-        height: 286
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainChara_Jump_10
       rect:
         serializedVersion: 2
-        x: 218
-        y: 1430
+        x: 2180
+        y: 0
         width: 218
-        height: 286
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainChara_Jump_11
       rect:
         serializedVersion: 2
-        x: 436
-        y: 1430
+        x: 2398
+        y: 0
         width: 218
-        height: 286
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainChara_Jump_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1144
+        x: 2616
+        y: 0
         width: 218
-        height: 286
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainChara_Jump_13
       rect:
         serializedVersion: 2
-        x: 218
-        y: 1144
+        x: 2834
+        y: 0
         width: 218
-        height: 286
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MainChara_Jump_14
       rect:
         serializedVersion: 2
-        x: 436
-        y: 1144
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 858
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_16
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 858
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_17
-      rect:
-        serializedVersion: 2
-        x: 436
-        y: 858
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_18
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 572
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_19
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 572
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_20
-      rect:
-        serializedVersion: 2
-        x: 436
-        y: 572
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_21
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 286
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_22
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 286
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_23
-      rect:
-        serializedVersion: 2
-        x: 436
-        y: 286
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_24
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 3052
         y: 0
         width: 218
-        height: 286
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

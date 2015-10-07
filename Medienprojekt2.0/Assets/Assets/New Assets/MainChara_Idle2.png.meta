@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: b9205f7bb7049a4499c7e8af991e36a7
-timeCreated: 1444046801
+guid: 24fa708c5032f224f960e8fec5484d8e
+timeCreated: 1444046596
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: MainChara_Jump_0
-    21300002: MainChara_Jump_1
-    21300004: MainChara_Jump_2
-    21300006: MainChara_Jump_3
-    21300008: MainChara_Jump_4
-    21300010: MainChara_Jump_5
-    21300012: MainChara_Jump_6
-    21300014: MainChara_Jump_7
-    21300016: MainChara_Jump_8
-    21300018: MainChara_Jump_9
-    21300020: MainChara_Jump_10
-    21300022: MainChara_Jump_11
-    21300024: MainChara_Jump_12
-    21300026: MainChara_Jump_13
-    21300028: MainChara_Jump_14
-    21300030: MainChara_Jump_15
-    21300032: MainChara_Jump_16
-    21300034: MainChara_Jump_17
-    21300036: MainChara_Jump_18
-    21300038: MainChara_Jump_19
-    21300040: MainChara_Jump_20
-    21300042: MainChara_Jump_21
-    21300044: MainChara_Jump_22
-    21300046: MainChara_Jump_23
-    21300048: MainChara_Jump_24
+    21300000: MainChara_Idle2_0
+    21300002: MainChara_Idle2_1
+    21300004: MainChara_Idle2_2
+    21300006: MainChara_Idle2_3
+    21300008: MainChara_Idle2_4
+    21300010: MainChara_Idle2_5
+    21300012: MainChara_Idle2_6
+    21300014: MainChara_Idle2_7
+    21300016: MainChara_Idle2_8
+    21300018: MainChara_Idle2_9
+    21300020: MainChara_Idle2_10
+    21300022: MainChara_Idle2_11
+    21300024: MainChara_Idle2_12
+    21300026: MainChara_Idle2_13
+    21300028: MainChara_Idle2_14
+    21300030: MainChara_Idle2_15
+    21300032: MainChara_Idle2_16
+    21300034: MainChara_Idle2_17
+    21300036: MainChara_Idle2_18
+    21300038: MainChara_Idle2_19
+    21300040: MainChara_Idle2_20
+    21300042: MainChara_Idle2_21
+    21300044: MainChara_Idle2_22
+    21300046: MainChara_Idle2_23
+    21300048: MainChara_Idle2_24
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -75,253 +75,253 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: MainChara_Jump_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2288
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_1
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 2288
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_2
-      rect:
-        serializedVersion: 2
-        x: 436
-        y: 2288
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2002
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_4
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 2002
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_5
-      rect:
-        serializedVersion: 2
-        x: 436
-        y: 2002
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1716
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_7
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 1716
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_8
-      rect:
-        serializedVersion: 2
-        x: 436
-        y: 1716
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1430
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_10
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 1430
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_11
-      rect:
-        serializedVersion: 2
-        x: 436
-        y: 1430
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1144
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_13
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 1144
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_14
-      rect:
-        serializedVersion: 2
-        x: 436
-        y: 1144
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 858
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_16
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 858
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_17
-      rect:
-        serializedVersion: 2
-        x: 436
-        y: 858
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_18
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 572
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_19
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 572
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_20
-      rect:
-        serializedVersion: 2
-        x: 436
-        y: 572
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_21
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 286
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_22
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 286
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_23
-      rect:
-        serializedVersion: 2
-        x: 436
-        y: 286
-        width: 218
-        height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_Jump_24
+    - name: MainChara_Idle2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 218
-        height: 286
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_3
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_4
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_5
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_6
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_7
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_8
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_9
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_10
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_11
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_12
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_13
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_14
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_15
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_16
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_17
+      rect:
+        serializedVersion: 2
+        x: 2397
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_18
+      rect:
+        serializedVersion: 2
+        x: 2538
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_19
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_20
+      rect:
+        serializedVersion: 2
+        x: 2820
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_21
+      rect:
+        serializedVersion: 2
+        x: 2961
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_22
+      rect:
+        serializedVersion: 2
+        x: 3102
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_23
+      rect:
+        serializedVersion: 2
+        x: 3243
+        y: 0
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle2_24
+      rect:
+        serializedVersion: 2
+        x: 3384
+        y: 0
+        width: 141
+        height: 301
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

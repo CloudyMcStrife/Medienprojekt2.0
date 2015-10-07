@@ -46,8 +46,15 @@ public class BasicAI : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate()
     {
-        distancex = rigplayer.position.x - rigenemy.position.x;
-        distancey = rigplayer.position.y - rigenemy.position.y;
+        if (rigplayer != null)
+        {
+            distancex = rigplayer.position.x - rigenemy.position.x;
+            distancey = rigplayer.position.y - rigenemy.position.y;
+        }
+        else
+        {
+            distancex = distancey = 0;
+        }
         hittingWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, wallMask);
         onAnEdge = !Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundMask);
     }

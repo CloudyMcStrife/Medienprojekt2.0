@@ -35,9 +35,11 @@ public class Projectile : MonoBehaviour {
 	void Start () {
 		collid = (BoxCollider2D)GetComponent (typeof(BoxCollider2D));
 		rigid = (Rigidbody2D)GetComponent (typeof(Rigidbody2D));
+
 		prObject = this.gameObject;
 
         s_type = Shooting_Type.NORMAL;
+
         normal_shot = Resources.Load<Sprite>("Sprites/Projectile/Normal_Shot") as Sprite;
         special_shot = Resources.Load<Sprite>("Sprites/Projectile/Special_Shot") as Sprite;
 	}

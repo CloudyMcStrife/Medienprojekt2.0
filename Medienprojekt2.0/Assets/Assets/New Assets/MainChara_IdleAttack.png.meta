@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 0d617b51a533a8c4784a5bcd3a59e5e0
-timeCreated: 1444218349
+timeCreated: 1444223859
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -19,6 +19,10 @@ TextureImporter:
     21300024: MainChara_IdleAttack_12
     21300026: MainChara_IdleAttack_13
     21300028: MainChara_IdleAttack_14
+    21300030: MainChara_IdleAttack_15
+    21300032: MainChara_IdleAttack_16
+    21300034: MainChara_IdleAttack_17
+    21300036: MainChara_IdleAttack_18
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -42,7 +46,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 4096
   textureSettings:
     filterMode: -1
     aniso: 16

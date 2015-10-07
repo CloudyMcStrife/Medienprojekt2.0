@@ -12,6 +12,7 @@ public class CharacterMovement : MonoBehaviour {
 	Rigidbody2D rigweapon;
 	Projectile currentProjectile;
 	ProjectilePoolingSystem PPS;
+    Animator anim;
 
 
 	public bool facingRight = true;
@@ -39,6 +40,7 @@ public class CharacterMovement : MonoBehaviour {
 		trans = (Transform)GetComponent (typeof(Transform));
 		PPS = (ProjectilePoolingSystem)GetComponent (typeof(ProjectilePoolingSystem));
 		meleeSys = (MeleeSystem)GetComponent (typeof(MeleeSystem));
+        anim = (Animator)GetComponent(typeof(Animator));
         scaling = transform.localScale.x;
 	}
 
@@ -48,6 +50,7 @@ public class CharacterMovement : MonoBehaviour {
 	void FixedUpdate()
 	{
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundCheckRadius, groundMask);
+        anim.SetBool("Grounded", grounded);
 	}
 	void Update () 
 	{
@@ -64,9 +67,10 @@ public class CharacterMovement : MonoBehaviour {
     public void move(float movePlayerVector)
     {
         float xScale = scaling;
+        float newSpeed = movePlayerVector * speed;
         if (!rolling)
         {
-            rigplayer.velocity = new Vector2(movePlayerVector * speed, rigplayer.velocity.y);
+            rigplayer.velocity = new Vector2(newSpeed, rigplayer.velocity.y);
             if (movePlayerVector < 0 && facingRight)
             {
                 facingRight = false;
@@ -80,12 +84,7 @@ public class CharacterMovement : MonoBehaviour {
                 trans.localScale = new Vector3(xScale, trans.localScale.y, trans.localScale.z);
             }
         }
-    }
-
-    public void stopMovement()
-    {
-        if(grounded)
-            rigplayer.velocity = new Vector2(0, rigplayer.velocity.y);
+        anim.SetFloat("Speedx",Mathf.Abs(newSpeed));
     }
 
     public void jump()
@@ -94,6 +93,7 @@ public class CharacterMovement : MonoBehaviour {
         {
             rigplayer.velocity = new Vector2(rigplayer.velocity.x, jumpheight);
             grounded = false;
+            anim.SetBool("Grounded", grounded);
         }
     }
 

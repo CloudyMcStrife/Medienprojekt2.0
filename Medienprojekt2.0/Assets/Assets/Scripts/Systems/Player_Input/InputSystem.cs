@@ -13,14 +13,8 @@ public class InputSystem : MonoBehaviour {
     void Update()
     {
         float movePlayerVector = Input.GetAxis("Horizontal");
-        if (Input.GetKey("a") || Input.GetKey("d"))
-        {
-            actions.move(movePlayerVector);
-        }
-        else
-        {
-            actions.stopMovement();
-        }
+        actions.move(movePlayerVector);
+        
 
         //Funktion für Springen
         if (Input.GetKey("w"))

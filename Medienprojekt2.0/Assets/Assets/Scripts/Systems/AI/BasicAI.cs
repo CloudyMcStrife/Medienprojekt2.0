@@ -77,13 +77,13 @@ public class BasicAI : MonoBehaviour {
                     actions.move(-1.0f);
             }
             else
-                actions.stopMovement();
+                actions.move(0.0f);
         }
 
         //Should be able to attack now, if cooldowns are up
         if ((inAttackRangex && inAttackRangey) && vision.playerVisible)
         {
-            actions.stopMovement();
+            actions.move(0.0f);
             actions.shoot(true);
         }
 
@@ -105,7 +105,7 @@ public class BasicAI : MonoBehaviour {
                 }
             }
             else
-                actions.stopMovement();
+                actions.move(0.0f);
         }
     }
 }

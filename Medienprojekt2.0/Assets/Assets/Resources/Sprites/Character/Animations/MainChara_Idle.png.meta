@@ -1,28 +1,24 @@
 fileFormatVersion: 2
-guid: 0d617b51a533a8c4784a5bcd3a59e5e0
-timeCreated: 1444223859
+guid: 78d6d19d42da4da4bbda10a45893ab98
+timeCreated: 1444229033
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: MainChara_IdleAttack_0
-    21300002: MainChara_IdleAttack_1
-    21300004: MainChara_IdleAttack_2
-    21300006: MainChara_IdleAttack_3
-    21300008: MainChara_IdleAttack_4
-    21300010: MainChara_IdleAttack_5
-    21300012: MainChara_IdleAttack_6
-    21300014: MainChara_IdleAttack_7
-    21300016: MainChara_IdleAttack_8
-    21300018: MainChara_IdleAttack_9
-    21300020: MainChara_IdleAttack_10
-    21300022: MainChara_IdleAttack_11
-    21300024: MainChara_IdleAttack_12
-    21300026: MainChara_IdleAttack_13
-    21300028: MainChara_IdleAttack_14
-    21300030: MainChara_IdleAttack_15
-    21300032: MainChara_IdleAttack_16
-    21300034: MainChara_IdleAttack_17
-    21300036: MainChara_IdleAttack_18
+    21300000: MainChara_Idle_0
+    21300002: MainChara_Idle_1
+    21300004: MainChara_Idle_2
+    21300006: MainChara_Idle_3
+    21300008: MainChara_Idle_4
+    21300010: MainChara_Idle_5
+    21300012: MainChara_Idle_6
+    21300014: MainChara_Idle_7
+    21300016: MainChara_Idle_8
+    21300018: MainChara_Idle_9
+    21300020: MainChara_Idle_10
+    21300022: MainChara_Idle_11
+    21300024: MainChara_Idle_12
+    21300026: MainChara_Idle_13
+    21300028: MainChara_Idle_14
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -45,8 +41,8 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 4096
+  textureFormat: -2
+  maxTextureSize: 8192
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -55,7 +51,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
-  compressionQuality: 50
+  compressionQuality: -1
   allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
@@ -69,153 +65,153 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: MainChara_IdleAttack_0
+    - name: MainChara_Idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 171
-        height: 301
+        width: 301
+        height: 351
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_IdleAttack_1
+    - name: MainChara_Idle_1
       rect:
         serializedVersion: 2
-        x: 171
+        x: 301
         y: 0
-        width: 171
-        height: 301
+        width: 301
+        height: 351
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_IdleAttack_2
+    - name: MainChara_Idle_2
       rect:
         serializedVersion: 2
-        x: 342
+        x: 602
         y: 0
-        width: 171
-        height: 301
+        width: 301
+        height: 351
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_IdleAttack_3
+    - name: MainChara_Idle_3
       rect:
         serializedVersion: 2
-        x: 513
+        x: 903
         y: 0
-        width: 171
-        height: 301
+        width: 301
+        height: 351
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_IdleAttack_4
+    - name: MainChara_Idle_4
       rect:
         serializedVersion: 2
-        x: 684
+        x: 1204
         y: 0
-        width: 171
-        height: 301
+        width: 301
+        height: 351
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_IdleAttack_5
+    - name: MainChara_Idle_5
       rect:
         serializedVersion: 2
-        x: 855
+        x: 1505
         y: 0
-        width: 171
-        height: 301
+        width: 301
+        height: 351
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_IdleAttack_6
+    - name: MainChara_Idle_6
       rect:
         serializedVersion: 2
-        x: 1026
+        x: 1806
         y: 0
-        width: 171
-        height: 301
+        width: 301
+        height: 351
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_IdleAttack_7
+    - name: MainChara_Idle_7
       rect:
         serializedVersion: 2
-        x: 1197
+        x: 2107
         y: 0
-        width: 171
-        height: 301
+        width: 301
+        height: 351
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_IdleAttack_8
+    - name: MainChara_Idle_8
       rect:
         serializedVersion: 2
-        x: 1368
+        x: 2408
         y: 0
-        width: 171
-        height: 301
+        width: 301
+        height: 351
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_IdleAttack_9
+    - name: MainChara_Idle_9
       rect:
         serializedVersion: 2
-        x: 1539
+        x: 2709
         y: 0
-        width: 171
-        height: 301
+        width: 301
+        height: 351
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_IdleAttack_10
+    - name: MainChara_Idle_10
       rect:
         serializedVersion: 2
-        x: 1710
+        x: 3010
         y: 0
-        width: 171
-        height: 301
+        width: 301
+        height: 351
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_IdleAttack_11
+    - name: MainChara_Idle_11
       rect:
         serializedVersion: 2
-        x: 1881
+        x: 3311
         y: 0
-        width: 171
-        height: 301
+        width: 301
+        height: 351
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_IdleAttack_12
+    - name: MainChara_Idle_12
       rect:
         serializedVersion: 2
-        x: 2052
+        x: 3612
         y: 0
-        width: 171
-        height: 301
+        width: 301
+        height: 351
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_IdleAttack_13
+    - name: MainChara_Idle_13
       rect:
         serializedVersion: 2
-        x: 2223
+        x: 3913
         y: 0
-        width: 171
-        height: 301
+        width: 301
+        height: 351
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MainChara_IdleAttack_14
+    - name: MainChara_Idle_14
       rect:
         serializedVersion: 2
-        x: 2394
+        x: 4214
         y: 0
-        width: 171
-        height: 301
+        width: 301
+        height: 351
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

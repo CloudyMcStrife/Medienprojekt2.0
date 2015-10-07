@@ -1,9 +1,34 @@
 fileFormatVersion: 2
 guid: 9b1846f3590c696459fec4d3930f1074
-timeCreated: 1442861552
+timeCreated: 1444123602
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: MainChara_Idle_0
+    21300002: MainChara_Idle_1
+    21300004: MainChara_Idle_2
+    21300006: MainChara_Idle_3
+    21300008: MainChara_Idle_4
+    21300010: MainChara_Idle_5
+    21300012: MainChara_Idle_6
+    21300014: MainChara_Idle_7
+    21300016: MainChara_Idle_8
+    21300018: MainChara_Idle_9
+    21300020: MainChara_Idle_10
+    21300022: MainChara_Idle_11
+    21300024: MainChara_Idle_12
+    21300026: MainChara_Idle_13
+    21300028: MainChara_Idle_14
+    21300030: MainChara_Idle_15
+    21300032: MainChara_Idle_16
+    21300034: MainChara_Idle_17
+    21300036: MainChara_Idle_18
+    21300038: MainChara_Idle_19
+    21300040: MainChara_Idle_20
+    21300042: MainChara_Idle_21
+    21300044: MainChara_Idle_22
+    21300046: MainChara_Idle_23
+    21300048: MainChara_Idle_24
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,13 +55,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
@@ -48,7 +74,257 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: MainChara_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 99
+        height: 265
+      alignment: 9
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_20
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_21
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_22
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_23
+      rect:
+        serializedVersion: 2
+        x: 2277
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_Idle_24
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 0
+        width: 99
+        height: 265
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

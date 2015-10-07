@@ -71,7 +71,6 @@
     <Compile Include="Assets\Assets\Scripts\Components\AttributeComponent.cs" />
     <Compile Include="Assets\Assets\Scripts\ProblemeZuLösen\Problemliste.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\AI\BasicAI.cs" />
-    <Compile Include="Assets\Assets\Scripts\Systems\AI\EnemyMovement.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\AI\EnemyVision.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Animation\PlayerAnimations.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\EbeneNavigationSystem.cs" />

@@ -19,8 +19,6 @@ public class AmmoIconHandler : MonoBehaviour {
 
         txtS.text = attComp.getAmmo() + " / " + attComp.getAmmoCap();
         txtB.text = attComp.getAmmo() + " / " + attComp.getAmmoCap();
-
-
     }
 	
 	// Update is called once per frame

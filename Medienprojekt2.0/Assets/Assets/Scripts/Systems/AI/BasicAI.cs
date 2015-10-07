@@ -77,7 +77,7 @@ public class BasicAI : MonoBehaviour {
         if ((inAttackRangex && inAttackRangey) && vision.playerVisible)
         {
             actions.stopMovement();
-            actions.shoot();
+            actions.shoot(true);
         }
 
 

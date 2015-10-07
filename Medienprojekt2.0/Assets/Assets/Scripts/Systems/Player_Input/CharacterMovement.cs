@@ -14,7 +14,7 @@ public class CharacterMovement : MonoBehaviour {
 	ProjectilePoolingSystem PPS;
 
 
-	public bool facingRight = false;
+	public bool facingRight = true;
     public bool startingRight;
     public float[] rangeAttackCooldown = {1.0f, 1.0f};
 	public float[] rollCooldown = {2.0f,2.0f};
@@ -113,7 +113,7 @@ public class CharacterMovement : MonoBehaviour {
     }
         
         
-public void shoot()
+public void shoot(bool is_normal_shot)
     {
         if (rangeAttackCooldown[0] >= rangeAttackCooldown[1])
         {
@@ -122,7 +122,11 @@ public void shoot()
             {
                 currentProjectile = proj.GetComponent<Projectile>();
                 rangeAttackCooldown[0] = 0;
-                currentProjectile.shoot(2.0f, facingRight, Projectile.Shooting_Type.NORMAL);
+                if (is_normal_shot)
+                    currentProjectile.set_shooting_type(Projectile.Shooting_Type.NORMAL);
+                else
+                    currentProjectile.set_shooting_type(Projectile.Shooting_Type.SPECIAL);
+                currentProjectile.shoot(2.0f, facingRight);
             }
         }
     }

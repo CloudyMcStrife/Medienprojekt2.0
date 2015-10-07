@@ -35,10 +35,15 @@ public class InputSystem : MonoBehaviour {
         //Funktion für Schießen
         if (Input.GetKeyDown("s"))
         {
-            actions.shoot();
+            actions.shoot(true);
         }
-		
-		if(Input.GetKeyDown("c"))
+
+        if (Input.GetKeyDown("p"))
+        {
+            actions.shoot(false);
+        }
+
+        if (Input.GetKeyDown("c"))
 		{
 			actions.switchWeapon();
 		}

@@ -51,17 +51,11 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -76,8 +70,10 @@
   <ItemGroup>
     <Compile Include="Assets\Assets\Scripts\Components\AttributeComponent.cs" />
     <Compile Include="Assets\Assets\Scripts\ProblemeZuLösen\Problemliste.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\AI\BasicAI.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\AI\EnemyMovement.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\AI\EnemyVision.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\Animation\PlayerAnimations.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\EbeneNavigationSystem.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\HealthEffectZone.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\HealthSystem.cs" />
@@ -87,7 +83,9 @@
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\ProjectilePoolingSystem.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Player_Input\CharacterMovement.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Player_Input\FollowCamera.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\Player_Input\InputSystem.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\UI\AmmoIconHandler.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\UI\DeathUI.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\UI\HealthbarHandler.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\UI\MenuScript.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\UI\PauseMenuScript.cs" />

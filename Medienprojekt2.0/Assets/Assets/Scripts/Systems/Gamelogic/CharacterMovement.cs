@@ -50,7 +50,8 @@ public class CharacterMovement : MonoBehaviour {
 	void FixedUpdate()
 	{
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundCheckRadius, groundMask);
-        anim.SetBool("Grounded", grounded);
+        if (anim != null)
+            anim.SetBool("Grounded", grounded);
 	}
 	void Update () 
 	{
@@ -83,8 +84,9 @@ public class CharacterMovement : MonoBehaviour {
                 xScale *= startingRight ? 1 : -1;
                 trans.localScale = new Vector3(xScale, trans.localScale.y, trans.localScale.z);
             }
-        }
-        anim.SetFloat("Speedx",Mathf.Abs(newSpeed));
+        } 
+        if (anim != null)
+            anim.SetFloat("Speedx",Mathf.Abs(newSpeed));
     }
 
     public void jump()
@@ -93,7 +95,8 @@ public class CharacterMovement : MonoBehaviour {
         {
             rigplayer.velocity = new Vector2(rigplayer.velocity.x, jumpheight);
             grounded = false;
-            anim.SetBool("Grounded", grounded);
+            if (anim != null)
+                anim.SetBool("Grounded", grounded);
         }
     }
 
@@ -112,11 +115,12 @@ public class CharacterMovement : MonoBehaviour {
         }
     }
         
-        
-public void shoot(bool is_normal_shot)
+    public void shoot(bool is_normal_shot)
     {
         if (rangeAttackCooldown[0] >= rangeAttackCooldown[1])
         {
+            if(anim!=null)
+                anim.SetTrigger("Shot");
             GameObject proj = PPS.getProjectile();
             if (proj != null)
             {

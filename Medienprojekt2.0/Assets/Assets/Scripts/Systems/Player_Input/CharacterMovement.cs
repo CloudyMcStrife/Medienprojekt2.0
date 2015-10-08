@@ -12,6 +12,7 @@ public class CharacterMovement : MonoBehaviour {
 	Rigidbody2D rigweapon;
 	Projectile currentProjectile;
 	ProjectilePoolingSystem PPS;
+    AttributeComponent attComp;
 
 
 	public bool facingRight = false;
@@ -40,6 +41,7 @@ public class CharacterMovement : MonoBehaviour {
 		PPS = (ProjectilePoolingSystem)GetComponent (typeof(ProjectilePoolingSystem));
 		meleeSys = (MeleeSystem)GetComponent (typeof(MeleeSystem));
         scaling = transform.localScale.x;
+        attComp = (AttributeComponent)GetComponent(typeof(AttributeComponent));
 	}
 
 	
@@ -130,7 +132,8 @@ public void shoot()
 public void switchWeapon()
     {
         AmmoIconHandler iconHandler = GameObject.Find("HUD").GetComponent<AmmoIconHandler>();
-        iconHandler.changeAmmo();
+        //currentProjectile.
+        
     }
     
 }

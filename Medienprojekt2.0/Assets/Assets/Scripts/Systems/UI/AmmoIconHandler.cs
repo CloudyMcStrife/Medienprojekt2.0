@@ -18,7 +18,6 @@ public class AmmoIconHandler : MonoBehaviour {
         AmmoPanelSecondary.SetActive(false);
 
         txtS.text = attComp.getAmmo() + " / " + attComp.getAmmoCap();
-        txtB.text = attComp.getAmmo() + " / " + attComp.getAmmoCap();
 
 
     }
@@ -31,8 +30,14 @@ public class AmmoIconHandler : MonoBehaviour {
 
     public void setLabel()
     {
-        txtS.text = attComp.getAmmo() + " / " + attComp.getAmmoCap();
-        txtB.text = attComp.getAmmo() + " / " + attComp.getAmmoCap();
+        if (isPrimary)
+        {
+            txtS.text = attComp.getAmmo() + " / " + attComp.getAmmoCap();
+        }
+        else
+        {
+            txtB.text = attComp.getAmmo() + " / " + attComp.getAmmoCap();
+        }
     }    
 
     public void changeAmmo()
@@ -40,5 +45,5 @@ public class AmmoIconHandler : MonoBehaviour {
         isPrimary = !isPrimary;
         AmmoPanelPrimary.SetActive(isPrimary);
         AmmoPanelSecondary.SetActive(!isPrimary);
-    }
+    } 
 }

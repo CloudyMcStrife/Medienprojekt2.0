@@ -59,6 +59,7 @@ public class Projectile : MonoBehaviour {
         }
         else
         {
+            ac.setCooldown1Active(true);
             damage = ac.getDamage() * 2;
             sr.sprite = Resources.Load<Sprite>("Sprites/Weapons/02_items") as Sprite;
         }

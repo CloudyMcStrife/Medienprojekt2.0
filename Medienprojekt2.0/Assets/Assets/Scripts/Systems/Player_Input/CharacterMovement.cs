@@ -136,7 +136,7 @@ public void shoot(bool is_normal_shot)
 public void switchWeapon()
     {
         AmmoIconHandler iconHandler = GameObject.Find("HUD").GetComponent<AmmoIconHandler>();
-        //currentProjectile.
+        iconHandler.changeAmmo();
         
     }
     

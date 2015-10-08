@@ -5,7 +5,8 @@ public class EbeneNavigationSystem : MonoBehaviour {
 
 	BoxCollider2D playercoll;
 	BoxCollider2D telecoll;
-	Transform player;
+    GameObject player;
+	Transform playerTransform;
 	Transform target;
 	Transform camera;
 	//Setup a default blank texture for fading if none is supplied
@@ -13,10 +14,15 @@ public class EbeneNavigationSystem : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		playercoll = (BoxCollider2D)GameObject.FindGameObjectWithTag ("Player").GetComponent (typeof(BoxCollider2D));
-		player = (Transform)GameObject.FindGameObjectWithTag ("Player").GetComponent (typeof(Transform));
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            playercoll = player.GetComponent<BoxCollider2D>();
+            playerTransform = player.transform;
+        }
+
 		telecoll = (BoxCollider2D)this.gameObject.GetComponent (typeof(BoxCollider2D));
-		target = (Transform)GameObject.FindGameObjectWithTag (this.gameObject.name).GetComponent(typeof(Transform));
+		target = (Transform)this.gameObject.GetComponent(typeof(Transform));
 		camera = (Transform)GameObject.FindGameObjectWithTag ("MainCamera").GetComponent(typeof(Transform));
 		//Setup a default blank texture for fading if none is supplied
 		fadeMaterial = new Material("Shader \"Plane/No zTest\" {" +
@@ -32,9 +38,9 @@ public class EbeneNavigationSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	if (playercoll.IsTouching (telecoll) && Input.GetKey ("t")) {
-				StartCoroutine(FadeIn());
-			}
+	    if (player != null && (playercoll.IsTouching (telecoll) && Input.GetKey ("t"))) {
+			StartCoroutine(FadeIn());
+		}
 	}
 
 	private IEnumerator FadeIn()
@@ -50,7 +56,8 @@ public class EbeneNavigationSystem : MonoBehaviour {
 				Color.black,
 				t);
 		}
-		player.position = target.position;
+        if(player != null)
+		    playerTransform.position = target.position;
 		camera.position = new Vector3 (target.position.x, target.position.y, camera.position.z);
 		while (t > 0.0f) {
 			yield return new WaitForEndOfFrame ();

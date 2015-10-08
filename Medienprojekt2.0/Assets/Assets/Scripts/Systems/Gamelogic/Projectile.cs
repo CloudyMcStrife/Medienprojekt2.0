@@ -17,6 +17,11 @@ public class Projectile : MonoBehaviour {
 	BoxCollider2D collid;
 	ProjectilePoolingSystem PPS;
 
+    Shooting_Type s_type;
+
+    Sprite normal_shot;
+    Sprite special_shot;
+
 	//Schussspezifische Eigenschaften
 	GameObject owner;
 	float projectileSpeed = 10.0f;
@@ -30,7 +35,13 @@ public class Projectile : MonoBehaviour {
 	void Start () {
 		collid = (BoxCollider2D)GetComponent (typeof(BoxCollider2D));
 		rigid = (Rigidbody2D)GetComponent (typeof(Rigidbody2D));
+
 		prObject = this.gameObject;
+
+        s_type = Shooting_Type.NORMAL;
+
+        normal_shot = Resources.Load<Sprite>("Sprites/Projectile/Normal_Shot") as Sprite;
+        special_shot = Resources.Load<Sprite>("Sprites/Projectile/Special_Shot") as Sprite;
 	}
 	
 	// Update is called once per frame
@@ -45,7 +56,7 @@ public class Projectile : MonoBehaviour {
 		}
 	}
 
-	public void shoot(float range,bool facingRight, Shooting_Type type)
+	public void shoot(float range,bool facingRight)
 	{
 		this.range = range;
 		timeLeft = range / projectileSpeed;
@@ -53,15 +64,18 @@ public class Projectile : MonoBehaviour {
 		AttributeComponent ac = (AttributeComponent)owner.GetComponent (typeof(AttributeComponent));
         SpriteRenderer sr = this.GetComponent<SpriteRenderer>();
         
-        if(type == Shooting_Type.NORMAL)
+        if(s_type == Shooting_Type.NORMAL)
         {
+            projectileSpeed = 10.0f;
             damage = ac.getDamage();
+            sr.sprite = normal_shot;
         }
         else
         {
             ac.setCooldown1Active(true);
             damage = ac.getDamage() * 2;
-            sr.sprite = Resources.Load<Sprite>("Sprites/Weapons/02_items") as Sprite;
+            projectileSpeed = 6.0f;
+            sr.sprite = special_shot;
         }
 		setDamage (damage);
 
@@ -101,4 +115,14 @@ public class Projectile : MonoBehaviour {
 		this.owner = owner;
 		PPS = (ProjectilePoolingSystem) owner.GetComponent(typeof(ProjectilePoolingSystem));
 	}
+
+    public Shooting_Type get_shooting_type()
+    {
+        return s_type;
+    }
+
+    public void set_shooting_type(Shooting_Type type)
+    {
+        s_type = type;
+    }
 }

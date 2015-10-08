@@ -18,6 +18,8 @@ public class FollowCamera : MonoBehaviour {
 	public Vector2 minXAndY;
 	// Reference to the player's transform.
 	public Transform player;
+    public float xOffset;
+    public float yOffset;
 	void Awake()
 	{
 		// Setting up the reference.
@@ -33,7 +35,7 @@ public class FollowCamera : MonoBehaviour {
 	// Returns true if the distance between the camera and the
 	// player in the x axis is greater than the x margin.
 		return Mathf.Abs
-			(transform.position.x - player.position.x) > xMargin;
+			(transform.position.x - player.position.x+xOffset) > xMargin;
 	}
 
 	bool CheckYMargin()
@@ -41,22 +43,22 @@ public class FollowCamera : MonoBehaviour {
 		// Returns true if the distance between the camera and the
 		// player in the y axis is greater than the y margin.
 		return Mathf.Abs
-			(transform.position.y - player.position.y) > yMargin;
+			(transform.position.y - player.position.y+yOffset) > yMargin;
 	}
 
 	void FixedUpdate()
 	{
 		// By default the target x and y coordinates of the camera
 		// are it's current x and y coordinates.
-		float targetX = transform.position.x;
-		float targetY = transform.position.y;
+		float targetX = transform.position.x+xOffset;
+		float targetY = transform.position.y+yOffset;
 		// If the player has moved beyond the x margin...
 		if (CheckXMargin ()) {
 			// the target x coordinate should be a Lerp between
 			// the camera's current x position and the player's
 			// current x position.
 			targetX = Mathf.Lerp (transform.position.x,
-		                     player.position.x, xSmooth *
+		                     player.position.x+xOffset, xSmooth *
 				Time.fixedDeltaTime);
 		}
 
@@ -67,7 +69,7 @@ public class FollowCamera : MonoBehaviour {
 			// the camera's current y position and the player's
 			// current y position.
 			targetY = Mathf.Lerp (transform.position.y,
-	                     player.position.y, ySmooth *
+	                     player.position.y+yOffset, ySmooth *
 				Time.fixedDeltaTime);
 		}
 		// The target x and y coordinates should not be larger

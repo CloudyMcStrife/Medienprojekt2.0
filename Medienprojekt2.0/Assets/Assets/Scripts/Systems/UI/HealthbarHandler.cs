@@ -34,14 +34,14 @@ public class HealthbarHandler : MonoBehaviour {
         
         
 
-        //if (currentHealth != attComp.getHealth())
-       // {
-         //   currentHealth = attComp.getHealth();
-           // newXPos = MapValues(currentHealth, 0, maxHealth, minXPos, maxXPos);
-            //healthTransform.localPosition = new Vector3(newXPos, cachedY);
+           if (currentHealth != attComp.getHealth())
+        {
+            currentHealth = attComp.getHealth();
+            newXPos = MapValues(currentHealth, 0, maxHealth, minXPos, maxXPos);
+            healthTransform.localPosition = new Vector3(newXPos, cachedY);
             
 
-        //}
+        }
  
 
         if(currentHealth > maxHealth/2)

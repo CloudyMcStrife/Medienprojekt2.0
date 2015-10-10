@@ -17,7 +17,7 @@ public class FollowCamera : MonoBehaviour {
 	// The minimum x and y coordinates the camera can have.
 	public Vector2 minXAndY;
 	// Reference to the player's transform.
-	public Transform player;
+	Transform player;
     public float xOffset;
     public float yOffset;
 	void Awake()

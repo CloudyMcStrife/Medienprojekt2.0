@@ -126,8 +126,12 @@ public void shoot(bool is_normal_shot)
                 rangeAttackCooldown[0] = 0;
                 if (is_normal_shot)
                     currentProjectile.set_shooting_type(Projectile.Shooting_Type.NORMAL);
-                else
+                else if(!is_normal_shot && attComp.getAmmo() > 0)
+                {
                     currentProjectile.set_shooting_type(Projectile.Shooting_Type.SPECIAL);
+                    attComp.decrementAmmo();
+                    
+                }
                 currentProjectile.shoot(2.0f, facingRight);
             }
         }

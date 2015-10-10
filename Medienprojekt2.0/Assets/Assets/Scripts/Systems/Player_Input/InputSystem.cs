@@ -4,6 +4,7 @@ using System.Collections;
 public class InputSystem : MonoBehaviour {
 
     CharacterMovement actions;
+    bool primaryShot = true;
 	// Use this for initialization
 	void Start () {
         actions = (CharacterMovement)gameObject.GetComponent(typeof(CharacterMovement));
@@ -35,7 +36,7 @@ public class InputSystem : MonoBehaviour {
         //Funktion für Schießen
         if (Input.GetKeyDown("s"))
         {
-            actions.shoot(true);
+            actions.shoot(primaryShot);
         }
 
         if (Input.GetKeyDown("p"))
@@ -46,6 +47,7 @@ public class InputSystem : MonoBehaviour {
         if (Input.GetKeyDown("c"))
 		{
 			actions.switchWeapon();
+            primaryShot = !primaryShot;
 		}
     }
 }

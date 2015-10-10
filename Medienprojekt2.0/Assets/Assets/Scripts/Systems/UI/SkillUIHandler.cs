@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class SkillUIHandler : MonoBehaviour {
 
-    public AttributeComponent attComp;
+    AttributeComponent attComp;
     Text cooldown1Txt;
     Image skill1Icon;
     float cooldown1;
@@ -12,6 +12,7 @@ public class SkillUIHandler : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        attComp = GameObject.Find("Player").GetComponent<AttributeComponent>();
         cooldown1Txt = this.GetComponentInChildren<Text>();
         skill1Icon = this.GetComponentInChildren<Image>();
         cooldown1 = attComp.getCooldown1();

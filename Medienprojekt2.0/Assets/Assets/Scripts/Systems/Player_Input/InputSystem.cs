@@ -29,12 +29,12 @@ public class InputSystem : MonoBehaviour {
         //Funktion für Schießen
         if (Input.GetKeyDown("s"))
         {
-            actions.shoot(true);
+            StartCoroutine(actions.shoot(true));
         }
 
         if (Input.GetKeyDown("p"))
         {
-            actions.shoot(false);
+            StartCoroutine(actions.shoot(true));
         }
 
         if (Input.GetKeyDown("c"))

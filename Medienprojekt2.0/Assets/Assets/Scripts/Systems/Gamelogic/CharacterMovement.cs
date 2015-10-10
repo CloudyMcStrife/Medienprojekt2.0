@@ -18,7 +18,9 @@ public class CharacterMovement : MonoBehaviour {
 	public bool facingRight = true;
     public bool startingRight;
     public float[] rangeAttackCooldown = {1.0f, 1.0f};
+    bool shotAnimationReady;
 	public float[] rollCooldown = {2.0f,2.0f};
+
 	public float rollDuration;
 	public bool rolling;
     public float speed = 4.0f;
@@ -42,6 +44,7 @@ public class CharacterMovement : MonoBehaviour {
 		meleeSys = (MeleeSystem)GetComponent (typeof(MeleeSystem));
         anim = (Animator)GetComponent(typeof(Animator));
         scaling = transform.localScale.x;
+        shotAnimationReady = false;
 	}
 
 	
@@ -114,14 +117,20 @@ public class CharacterMovement : MonoBehaviour {
             }
         }
     }
+
         
-    public void shoot(bool is_normal_shot)
+    public IEnumerator shoot(bool is_normal_shot)
     {
         if (rangeAttackCooldown[0] >= rangeAttackCooldown[1])
         {
             if(anim!=null)
                 anim.SetTrigger("Shot");
+            while (!shotAnimationReady)
+            {
+                yield return null;
+            }
             GameObject proj = PPS.getProjectile();
+            shotAnimationReady = false;
             if (proj != null)
             {
                 currentProjectile = proj.GetComponent<Projectile>();
@@ -134,6 +143,14 @@ public class CharacterMovement : MonoBehaviour {
             }
         }
     }
+
+    //Methode auf die der Keyframe zugreift, um den Schuss zu ermöglichen
+    public void setShotAnimationReady()
+    {
+        shotAnimationReady = true;
+    }
+
+
 //Waffe wechseln
 public void switchWeapon()
     {

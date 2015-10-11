@@ -6,13 +6,13 @@ using System.Collections;
 public class CharacterMovement : MonoBehaviour {
 
 	Rigidbody2D rigplayer;
-	BoxCollider2D collplayer;
 	Transform trans;
 	GameObject weapon;
 	Rigidbody2D rigweapon;
 	Projectile currentProjectile;
 	ProjectilePoolingSystem PPS;
     Animator anim;
+    AttributeComponent attributes;
 
 
 	public bool facingRight = true;
@@ -31,18 +31,15 @@ public class CharacterMovement : MonoBehaviour {
 	public Transform groundCheck;
 	public float groundCheckRadius;
     float scaling;
-
-	MeleeSystem meleeSys;
 	
 	// Use this for initialization
 	void Awake () {
         facingRight = startingRight;
 		rigplayer = (Rigidbody2D) GetComponent(typeof(Rigidbody2D));
-		collplayer = (BoxCollider2D)GetComponent (typeof(BoxCollider2D));
 		trans = (Transform)GetComponent (typeof(Transform));
 		PPS = (ProjectilePoolingSystem)GetComponent (typeof(ProjectilePoolingSystem));
-		meleeSys = (MeleeSystem)GetComponent (typeof(MeleeSystem));
         anim = (Animator)GetComponent(typeof(Animator));
+        attributes = (AttributeComponent)GetComponent(typeof(AttributeComponent));
         scaling = transform.localScale.x;
         shotAnimationReady = false;
 	}
@@ -152,10 +149,20 @@ public class CharacterMovement : MonoBehaviour {
 
 
 //Waffe wechseln
-public void switchWeapon()
+    public void switchWeapon()
     {
         AmmoIconHandler iconHandler = GameObject.Find("HUD").GetComponent<AmmoIconHandler>();
         iconHandler.changeAmmo();
     }
-    
+
+    //Blocken
+    public void block()
+    {
+
+    }
+
+    public void unblock()
+    {
+
+    }
 }

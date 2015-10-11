@@ -4,6 +4,7 @@ using System.Collections;
 public class AttributeComponent : MonoBehaviour {
 
     public float health;
+    public float stamina;
 	public float damage;
 	float armor;
 	public int ammo;
@@ -14,6 +15,7 @@ public class AttributeComponent : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         health = 100;
+        stamina = 100;
 	}
 	
 	// Update is called once per frame

@@ -11,26 +11,25 @@ public class CharacterMovement : MonoBehaviour {
 	Rigidbody2D rigweapon;
 	Projectile currentProjectile;
 	ProjectilePoolingSystem PPS;
-    Animator anim;
-    AttributeComponent attributes;
-
+    	Animator anim;
+ 	AttributeComponent attributes;
 
 	public bool facingRight = true;
-    public bool startingRight;
-    public float[] rangeAttackCooldown = {1.0f, 1.0f};
-    bool shotAnimationReady;
+    	public bool startingRight;
+	public float[] rangeAttackCooldown = {1.0f, 1.0f};
+	bool shotAnimationReady;
 	public float[] rollCooldown = {2.0f,2.0f};
 
 	public float rollDuration;
 	public bool rolling;
-    public float speed = 4.0f;
-    public bool grounded;
+   	public float speed = 4.0f;
+	public bool grounded;
 
 	public float jumpheight;
-    public LayerMask groundMask;
+	public LayerMask groundMask;
 	public Transform groundCheck;
 	public float groundCheckRadius;
-    float scaling;
+	float scaling;
 	
 	// Use this for initialization
 	void Awake () {
@@ -134,8 +133,12 @@ public class CharacterMovement : MonoBehaviour {
                 rangeAttackCooldown[0] = 0;
                 if (is_normal_shot)
                     currentProjectile.set_shooting_type(Projectile.Shooting_Type.NORMAL);
-                else
+                else if(!is_normal_shot && attributes.getAmmo() > 0)
+                {
                     currentProjectile.set_shooting_type(Projectile.Shooting_Type.SPECIAL);
+                    attributes.decrementAmmo();
+                    
+                }
                 currentProjectile.shoot(2.0f, facingRight);
             }
         }
@@ -153,6 +156,7 @@ public class CharacterMovement : MonoBehaviour {
     {
         AmmoIconHandler iconHandler = GameObject.Find("HUD").GetComponent<AmmoIconHandler>();
         iconHandler.changeAmmo();
+        
     }
 
     //Blocken

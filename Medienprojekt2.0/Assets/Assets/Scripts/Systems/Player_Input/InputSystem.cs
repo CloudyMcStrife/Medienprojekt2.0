@@ -5,6 +5,8 @@ public class InputSystem : MonoBehaviour {
 
     CharacterMovement actions;
     MeleeSystem meleesys;
+    bool primaryShot = true;
+    MeleeSystem meleesys;
 	// Use this for initialization
 	void Start () {
         actions = (CharacterMovement)gameObject.GetComponent(typeof(CharacterMovement));
@@ -30,12 +32,12 @@ public class InputSystem : MonoBehaviour {
         //Funktion für Schießen
         if (Input.GetKeyDown("s"))
         {
-            StartCoroutine(actions.shoot(true));
+            StartCoroutine(actions.shoot(primaryShot));
         }
 
         if (Input.GetKeyDown("p"))
         {
-            StartCoroutine(actions.shoot(true));
+            StartCoroutine(actions.shoot(primaryShot));
         }
 
         if (Input.GetKeyDown("b"))
@@ -52,6 +54,7 @@ public class InputSystem : MonoBehaviour {
         if (Input.GetKeyDown("c"))
 		{
 			actions.switchWeapon();
+            primaryShot = !primaryShot;
 		}
 
 

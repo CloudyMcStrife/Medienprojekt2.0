@@ -72,6 +72,7 @@ public class Projectile : MonoBehaviour {
         }
         else
         {
+            ac.setCooldown1Active(true);
             damage = ac.getDamage() * 2;
             projectileSpeed = 6.0f;
             sr.sprite = special_shot;

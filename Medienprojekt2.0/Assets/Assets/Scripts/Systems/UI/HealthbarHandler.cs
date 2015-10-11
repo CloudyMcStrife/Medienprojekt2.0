@@ -11,13 +11,14 @@ public class HealthbarHandler : MonoBehaviour {
     float currentHealth;
     float maxHealth;
     float newXPos;
-    public AttributeComponent attComp;
+    AttributeComponent attComp;
     Image visualHealth;
 
     float timer = 1;
 
 	// Use this for initialization
 	void Start () {
+        attComp = GameObject.Find("Player").GetComponent<AttributeComponent>();
         healthTransform = this.GetComponent<RectTransform>();
         cachedY = healthTransform.localPosition.y ;
         maxXPos = healthTransform.localPosition.x;
@@ -34,14 +35,14 @@ public class HealthbarHandler : MonoBehaviour {
         
         
 
-        //if (currentHealth != attComp.getHealth())
-       // {
-         //   currentHealth = attComp.getHealth();
-           // newXPos = MapValues(currentHealth, 0, maxHealth, minXPos, maxXPos);
-            //healthTransform.localPosition = new Vector3(newXPos, cachedY);
+           if (currentHealth != attComp.getHealth())
+        {
+            currentHealth = attComp.getHealth();
+            newXPos = MapValues(currentHealth, 0, maxHealth, minXPos, maxXPos);
+            healthTransform.localPosition = new Vector3(newXPos, cachedY);
             
 
-        //}
+        }
  
 
         if(currentHealth > maxHealth/2)

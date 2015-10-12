@@ -14,7 +14,7 @@ public class SkillUIHandler : MonoBehaviour {
 	void Start () {
         attComp = GameObject.Find("Player").GetComponent<AttributeComponent>();
         cooldown1Txt = this.GetComponentInChildren<Text>();
-        skill1Icon = this.GetComponentInChildren<Image>();
+        skill1Icon = GameObject.Find("SkillshotIcon").GetComponent<Image>();
         cooldown1 = attComp.getCooldown1();
 	}
 	
@@ -22,15 +22,16 @@ public class SkillUIHandler : MonoBehaviour {
 	void Update () {
         if(attComp.getCooldown1Active())
         {
-            skill1Icon.color = new Color32(0, 0, 0,(byte) 0.5);
+            skill1Icon.color = new Color32(0, 0, 0,(byte)190);
             cooldown1Txt.text = cooldown1.ToString();
             cooldown1 -= Time.deltaTime;
         }
-        if(cooldown1 == 0)
+        if(cooldown1 <= 0)
         {
             attComp.setCooldown1Active(false);
             cooldown1 = attComp.getCooldown1();
-            skill1Icon.color = new Color32(0, 0, 0, (byte)1.0);
+            skill1Icon.color = new Color32(0, 0, 0, (byte)255);
+            cooldown1Txt.text = "";
         }
         
 	}

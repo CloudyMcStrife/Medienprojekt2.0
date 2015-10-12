@@ -4,6 +4,7 @@ using System.Collections;
 public class AttributeComponent : MonoBehaviour {
 
     public float health;
+    float maxHealth;
     public float stamina;
 	public float damage;
 	float armor;
@@ -20,7 +21,8 @@ public class AttributeComponent : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        health = 100;
+        maxHealth = 100f;
+        health = maxHealth;
         stamina = 100;
 	}
 	
@@ -33,6 +35,11 @@ public class AttributeComponent : MonoBehaviour {
 	{
 		return damage;
 	}
+
+    public float getMaxHealth()
+    {
+        return maxHealth;
+    }
 	
 	public void setHealth(float health)
 	{

@@ -46,10 +46,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Assets\Scripts\Components\AttributeComponent.cs" />
+     <Compile Include="Assets\Assets\Scripts\Components\HealthPotionComponent.cs" />
      <Compile Include="Assets\Assets\Scripts\ProblemeZuLösen\Problemliste.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\AI\BasicAI.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\AI\EnemyVision.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Animation\PlayerAnimations.cs" />
+     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\CharacterMovement.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\EbeneNavigationSystem.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\HealthEffectZone.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\HealthSystem.cs" />
@@ -57,7 +59,6 @@
      <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\NavigationSystem.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\Projectile.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\ProjectilePoolingSystem.cs" />
-     <Compile Include="Assets\Assets\Scripts\Systems\Player_Input\CharacterMovement.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Player_Input\FollowCamera.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Player_Input\InputSystem.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\UI\AmmoIconHandler.cs" />

@@ -6,7 +6,7 @@ public class InputSystem : MonoBehaviour {
     CharacterMovement actions;
     MeleeSystem meleesys;
     bool primaryShot = true;
-    MeleeSystem meleesys;
+
 	// Use this for initialization
 	void Start () {
         actions = (CharacterMovement)gameObject.GetComponent(typeof(CharacterMovement));

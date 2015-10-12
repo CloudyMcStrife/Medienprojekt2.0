@@ -15,7 +15,6 @@ public class CharacterMovement : MonoBehaviour {
 	bool facingRight = false;
 	Animator anim;
 
-
 	public float[] rangeAttackCooldown = {1.0f, 1.0f};
 	public float[] rollCooldown = {2.0f,2.0f};
 	public float rollDuration;
@@ -105,6 +104,11 @@ public class CharacterMovement : MonoBehaviour {
 				}
 			}
 		}
+		if (Input.GetKey ("j")) {
+			meleeSys.playerMeleeAttack(facingRight);
+		}
+
+
 
 		//Blocken
 		if (Input.GetKeyDown ("f")) {

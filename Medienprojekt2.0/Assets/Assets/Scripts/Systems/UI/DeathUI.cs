@@ -4,10 +4,12 @@ using System.Collections;
 public class DeathUI : MonoBehaviour {
 
     public GameObject deathUI;
-    public AttributeComponent attComp;
+    AttributeComponent attComp;
+
 
 	// Use this for initialization
 	void Start () {
+        attComp = GameObject.Find("Player").GetComponent<AttributeComponent>();
         deathUI.SetActive(false);
 	}
 
@@ -21,9 +23,10 @@ public class DeathUI : MonoBehaviour {
     }
     public void retry()
     {
-        Time.timeScale = 1;
-        Application.LoadLevel(Application.loadedLevel);
         
+        Application.LoadLevel(1);
+        Time.timeScale = 1;
+
     }
 
     public void openMainMenu()

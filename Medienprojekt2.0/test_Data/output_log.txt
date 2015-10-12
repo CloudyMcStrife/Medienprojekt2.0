@@ -17,23 +17,23 @@ Loading C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.
 Platform assembly: C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.0\Medienprojekt2.0\Medienprojekt2.0\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.0\Medienprojekt2.0\Medienprojekt2.0\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.0\Medienprojekt2.0\Medienprojekt2.0\test_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.129 seconds
+- Completed reload, in  0.084 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\Daniel\Spieleprog Projects\Medienprojekt SS2015\Medienprojekt2.0\Medienprojekt2.0\Medienprojekt2.0\test_Data\Managed\System.dll (this message is harmless)
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 2ba4 -> priority: 1 
+  Thread -> id: 3ab4 -> priority: 1 
 The referenced script on this Behaviour is missing!
  
 (Filename:  Line: 1649)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 13.907104 ms
+UnloadTime: 96.784401 ms
 
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 499.
-Total: 0.449443 ms (FindLiveObjects: 0.049605 ms CreateObjectMapping: 0.017105 ms MarkObjects: 0.368193 ms  DeleteObjects: 0.012829 ms)
+Total: 0.414377 ms (FindLiveObjects: 0.043618 ms CreateObjectMapping: 0.017960 ms MarkObjects: 0.338258 ms  DeleteObjects: 0.013684 ms)
 
 80
  
@@ -60,8 +60,8 @@ The referenced script on this Behaviour is missing!
 (Filename:  Line: 1649)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.295732 ms
+UnloadTime: 29.318201 ms
 
 Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 502.
-Total: 0.582865 ms (FindLiveObjects: 0.100921 ms CreateObjectMapping: 0.035066 ms MarkObjects: 0.431483 ms  DeleteObjects: 0.011973 ms)
+Total: 0.453720 ms (FindLiveObjects: 0.050460 ms CreateObjectMapping: 0.019243 ms MarkObjects: 0.370759 ms  DeleteObjects: 0.011973 ms)
 

@@ -24,6 +24,8 @@ public class ProjectilePoolingSystem : MonoBehaviour {
 			collider.enabled = false;
 			collider.size = new Vector2(0.64f,0.14f);
 			bullet.AddComponent<SpriteRenderer>();
+			SpriteRenderer sRenderer = (SpriteRenderer) bullet.GetComponent (typeof(SpriteRenderer));
+			sRenderer.sortingOrder = 2;
 			Rigidbody2D rigid = bullet.AddComponent<Rigidbody2D>();
 			rigid.gravityScale = 0;
 			rigid.fixedAngle = true;

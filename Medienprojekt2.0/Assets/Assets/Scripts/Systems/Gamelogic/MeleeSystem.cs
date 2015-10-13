@@ -7,6 +7,8 @@ public class MeleeSystem : MonoBehaviour {
     Animator anim;
     bool blocking;
 
+	public Transform meleeCheck;
+
 	// Use this for initialization
 	void Awake () {
         attributes = (AttributeComponent)GetComponent(typeof(AttributeComponent));
@@ -17,7 +19,6 @@ public class MeleeSystem : MonoBehaviour {
 	void Update () {
         if (attributes.stamina == 0)
             unblock();
-        Debug.Log(blocking);
 	}
 
     public void setBlockReady()
@@ -35,4 +36,33 @@ public class MeleeSystem : MonoBehaviour {
         blocking = false;
         anim.SetBool("Blocking", false);
     }
+
+	public void punch(bool facingRight)
+	{
+		Vector2 direction;
+		
+		if (facingRight)
+			direction = new Vector2 (1, 0);
+		else
+			direction = new Vector2 (-1, 0);
+		
+		RaycastHit2D[] meleeCollider = Physics2D.BoxCastAll (meleeCheck.position, new Vector2(1, 0.5f), 0, direction, 0.1f);
+		
+		if (meleeCollider.Length != 0) {
+			foreach (RaycastHit2D c in meleeCollider) {
+				if (c.collider.gameObject.tag == "Enemy" && this.gameObject.tag == "Player") {
+					AttributeComponent enemyac = (AttributeComponent)c.collider.gameObject.GetComponent (typeof(AttributeComponent));
+					enemyac.setHealth (enemyac.getHealth() - attributes.getDamage());
+					Debug.Log ("Meleehit");
+				}
+				else if(c.collider.gameObject.tag == "Player" && this.gameObject.tag == "Enemy")
+				{
+					AttributeComponent enemyac = (AttributeComponent) this.gameObject.GetComponent(typeof(AttributeComponent));
+					attributes.setHealth (attributes.getHealth() - enemyac.getDamage ());
+					Debug.Log ("EnemyMeleeHit");
+				}
+			}
+		}
+
+	}
 }

@@ -17,6 +17,11 @@ public class InputSystem : MonoBehaviour {
     void Update()
     {
         float movePlayerVector = Input.GetAxis("Horizontal");
+		bool isFacingRight;
+		if (movePlayerVector >= 0)
+			isFacingRight = true;
+		else
+			isFacingRight = false;
         
 
         //Funktion für Springen
@@ -55,6 +60,11 @@ public class InputSystem : MonoBehaviour {
 		{
 			actions.switchWeapon();
             primaryShot = !primaryShot;
+		}
+
+		if (Input.GetKey ("j")) 
+		{
+			meleesys.punch (isFacingRight);
 		}
 
 

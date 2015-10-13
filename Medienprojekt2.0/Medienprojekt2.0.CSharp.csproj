@@ -90,7 +90,7 @@
     <Compile Include="Assets\Assets\Scripts\Systems\UI\PauseMenuScript.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Assets\New Assets\Pushtest.txt" />
+    <None Include="Assets\Assets\Resources\Sprites\Character\Animations\Animation_Bounds.txt" />
     <None Include="Assets\Necromancer GUI\Kingthings.txt" />
     <None Include="Assets\Necromancer GUI\Readme.txt" />
   </ItemGroup>

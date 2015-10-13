@@ -4,23 +4,25 @@ using System.Collections;
 public class InputSystem : MonoBehaviour {
 
     CharacterMovement actions;
+    MeleeSystem meleesys;
+    bool primaryShot = true;
+
 	// Use this for initialization
 	void Start () {
         actions = (CharacterMovement)gameObject.GetComponent(typeof(CharacterMovement));
+        meleesys = (MeleeSystem)gameObject.GetComponent(typeof(MeleeSystem));
 	}
 	
 	// Update is called once per frame
     void Update()
     {
         float movePlayerVector = Input.GetAxis("Horizontal");
-        if (Input.GetKey("a") || Input.GetKey("d"))
-        {
-            actions.move(movePlayerVector);
-        }
-        else
-        {
-            actions.stopMovement();
-        }
+		bool isFacingRight;
+		if (movePlayerVector >= 0)
+			isFacingRight = true;
+		else
+			isFacingRight = false;
+        
 
         //Funktion für Springen
         if (Input.GetKey("w"))
@@ -35,17 +37,38 @@ public class InputSystem : MonoBehaviour {
         //Funktion für Schießen
         if (Input.GetKeyDown("s"))
         {
-            actions.shoot(true);
+            StartCoroutine(actions.shoot(primaryShot));
         }
 
         if (Input.GetKeyDown("p"))
         {
-            actions.shoot(false);
+            StartCoroutine(actions.shoot(primaryShot));
+        }
+
+        if (Input.GetKeyDown("b"))
+        {
+            movePlayerVector = 0.0f;
+            meleesys.block();
+        }
+
+        if (Input.GetKeyUp("b"))
+        {
+            meleesys.unblock();
         }
 
         if (Input.GetKeyDown("c"))
 		{
 			actions.switchWeapon();
+            primaryShot = !primaryShot;
 		}
+
+		if (Input.GetKey ("j")) 
+		{
+			meleesys.punch (isFacingRight);
+		}
+
+
+
+        actions.move(movePlayerVector);
     }
 }

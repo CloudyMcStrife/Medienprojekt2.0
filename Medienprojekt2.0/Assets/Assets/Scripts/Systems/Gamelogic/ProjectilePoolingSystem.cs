@@ -10,9 +10,6 @@ public class ProjectilePoolingSystem : MonoBehaviour {
 	public int projectileAmount = 4;
 	int pointer;
 
-	public LayerMask projectileMask;
-	public LayerMask obstacleMask;
-
 	// Use this for initialization
 	void Awake() {
 		//Erstellen des Projektilpools
@@ -22,12 +19,13 @@ public class ProjectilePoolingSystem : MonoBehaviour {
 			GameObject bullet = new GameObject();
 			bullet.name = "Projectile";
 			bullet.tag = "Projectile";
-			bullet.layer = projectileMask;
 			bullet.AddComponent<BoxCollider2D>();
 			BoxCollider2D collider =(BoxCollider2D) bullet.GetComponent(typeof(BoxCollider2D));
 			collider.enabled = false;
 			collider.size = new Vector2(0.64f,0.14f);
 			bullet.AddComponent<SpriteRenderer>();
+			SpriteRenderer sRenderer = (SpriteRenderer) bullet.GetComponent (typeof(SpriteRenderer));
+			sRenderer.sortingOrder = 2;
 			Rigidbody2D rigid = bullet.AddComponent<Rigidbody2D>();
 			rigid.gravityScale = 0;
 			rigid.fixedAngle = true;

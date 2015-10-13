@@ -8,10 +8,12 @@ public class AmmoIconHandler : MonoBehaviour {
     public Text txtB;
     GameObject AmmoPanelPrimary;
     GameObject AmmoPanelSecondary;
-    public AttributeComponent attComp;
+    AttributeComponent attComp;
     bool isPrimary = true;
+    Projectile projectile;
 	// Use this for initialization
 	void Start () {
+        attComp = GameObject.Find("Player").GetComponent<AttributeComponent>();
         AmmoPanelPrimary = GameObject.Find("AmmoPanelPrimary");
         AmmoPanelSecondary = GameObject.Find("AmmoPanelSecondary");
 

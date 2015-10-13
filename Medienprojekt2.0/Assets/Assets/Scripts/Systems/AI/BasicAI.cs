@@ -84,7 +84,8 @@ public class BasicAI : MonoBehaviour {
         if ((inAttackRangex && inAttackRangey) && vision.playerVisible)
         {
             actions.move(0.0f);
-            actions.shoot(true);
+            StartCoroutine(actions.shoot(true));
+            actions.setShotAnimationReady();
         }
 
 

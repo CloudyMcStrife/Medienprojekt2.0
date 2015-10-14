@@ -3,7 +3,8 @@ using System.Collections;
 
 public class BasicAI : MonoBehaviour {
 
-    CharacterMovement actions;
+    CharacterMovement movement;
+    RangedSystem rangeSys;
 
     Rigidbody2D rigplayer;
     Rigidbody2D rigenemy;
@@ -36,11 +37,12 @@ public class BasicAI : MonoBehaviour {
     // Use this for initialization
     void Awake()
     {
-        actions = (CharacterMovement)gameObject.GetComponent(typeof(CharacterMovement));
+        movement = (CharacterMovement)gameObject.GetComponent(typeof(CharacterMovement));
         walkingRight = false;
         rigplayer = (Rigidbody2D)GameObject.FindWithTag("Player").GetComponent(typeof(Rigidbody2D));
         rigenemy = (Rigidbody2D)GetComponent(typeof(Rigidbody2D));
         vision = (EnemyVision)GetComponent(typeof(EnemyVision));
+        rangeSys = (RangedSystem)GetComponent(typeof(RangedSystem));
     }
 
     // Update is called once per frame
@@ -65,47 +67,47 @@ public class BasicAI : MonoBehaviour {
         //prüft ob EnemyEntity links oder rechts in minimumDistance (=Angriffsreichweite) ist;
         inAttackRangex = (distancex <= minimumDistancex && distancex > 0) || (distancex >= -minimumDistancex && distancex < 0);
         inAttackRangey = (distancey <= minimumDistancey && distancey > 0) || (distancey >= -minimumDistancey && distancey < 0);
-
         //Begin Chasing
         if (!inAttackRangex && vision.playerVisible)
         {
-            if (actions.grounded)
+            if (movement.grounded)
             {
                 if (walkingRight)
-                    actions.move(1.0f);
+                    movement.move(1.0f);
                 else
-                    actions.move(-1.0f);
+                    movement.move(-1.0f);
             }
             else
-                actions.move(0.0f);
+                movement.move(0.0f);
         }
 
         //Should be able to attack now, if cooldowns are up
         if ((inAttackRangex && inAttackRangey) && vision.playerVisible)
         {
-            actions.move(0.0f);
-            actions.shoot(true);
+            movement.move(0.0f);
+            StartCoroutine(rangeSys.shoot(true));
+            rangeSys.setShotAnimationReady();
         }
 
 
         //Patrolling behaviour if not attacking or chasing
         if (!vision.playerVisible)
         {
-            if (actions.grounded)
+            if (movement.grounded)
             {
                 if (hittingWall || onAnEdge)
                     walkingRight = !walkingRight;
                 if (walkingRight)
                 {
-                    actions.move(1.0f);
+                    movement.move(1.0f);
                 }
                 else
                 {
-                    actions.move(-1.0f);
+                    movement.move(-1.0f);
                 }
             }
             else
-                actions.move(0.0f);
+                movement.move(0.0f);
         }
     }
 }

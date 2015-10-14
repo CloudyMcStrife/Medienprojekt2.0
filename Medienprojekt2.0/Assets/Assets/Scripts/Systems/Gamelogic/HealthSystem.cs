@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class HealthSystem : MonoBehaviour {
+    
     //ac = AttributeComponent von Player, bc = BoxCollider von Player, pbc = BoxCollider von Projectile
 	AttributeComponent ac;
 	BoxCollider2D bc;

@@ -1,0 +1,7 @@
+Left: -100
+Top: -150
+Right: 200
+Bottom: 200
+
+Width = 300 Px + 1 Px = 301 Px
+Height = 350 Px + 1 Px = 351 Px

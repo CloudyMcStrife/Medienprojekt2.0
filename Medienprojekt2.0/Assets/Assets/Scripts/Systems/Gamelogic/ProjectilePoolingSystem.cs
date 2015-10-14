@@ -9,6 +9,7 @@ public class ProjectilePoolingSystem : MonoBehaviour {
 	GameObject[] projectiles;
 	public int projectileAmount = 4;
 	int pointer;
+    public Transform WeaponPoint;
 
 	// Use this for initialization
 	void Awake() {

@@ -15,6 +15,8 @@ public class DeathUI : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+
+
         if (attComp.getHealth() <= 0)
         {
             deathUI.SetActive(true);

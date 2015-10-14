@@ -10,9 +10,6 @@ public class HealthSystem : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Animator a = new Animator();
-        Animation b = new Animation();
-        b.
         ac = this.gameObject.GetComponent<AttributeComponent>();
         bc = this.gameObject.GetComponent<BoxCollider2D>();
 		pbc = GameObject.FindWithTag ("Projectile").GetComponent <BoxCollider2D>();

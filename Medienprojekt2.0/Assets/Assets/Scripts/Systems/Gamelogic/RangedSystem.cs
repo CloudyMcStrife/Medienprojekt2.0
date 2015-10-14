@@ -66,7 +66,8 @@ public class RangedSystem : MonoBehaviour {
     public void switchWeapon()
     {
         AmmoIconHandler iconHandler = GameObject.Find("HUD").GetComponent<AmmoIconHandler>();
-        iconHandler.changeAmmo();
+        if(iconHandler!=null)
+            iconHandler.changeAmmo();
 
     }
 }

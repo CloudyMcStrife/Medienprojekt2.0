@@ -3,14 +3,16 @@ using System.Collections;
 
 public class InputSystem : MonoBehaviour {
 
-    CharacterMovement actions;
-    MeleeSystem meleesys;
+    CharacterMovement movement;
+    RangedSystem rangedSys;
+    MeleeSystem meleeSys;
     bool primaryShot = true;
 
 	// Use this for initialization
 	void Start () {
-        actions = (CharacterMovement)gameObject.GetComponent(typeof(CharacterMovement));
-        meleesys = (MeleeSystem)gameObject.GetComponent(typeof(MeleeSystem));
+        movement = (CharacterMovement)gameObject.GetComponent(typeof(CharacterMovement));
+        meleeSys = (MeleeSystem)gameObject.GetComponent(typeof(MeleeSystem));
+        rangedSys = (RangedSystem)GetComponent(typeof(RangedSystem));
 	}
 	
 	// Update is called once per frame
@@ -27,48 +29,43 @@ public class InputSystem : MonoBehaviour {
         //Funktion für Springen
         if (Input.GetKey("w"))
         {
-            actions.jump();
+            StartCoroutine(movement.jump());
         }
         //Funktion für Rollen
         if (Input.GetKey("k"))
         {
-            actions.roll();
+            movement.roll();
         }
         //Funktion für Schießen
         if (Input.GetKeyDown("s"))
         {
-            StartCoroutine(actions.shoot(primaryShot));
-        }
-
-        if (Input.GetKeyDown("p"))
-        {
-            StartCoroutine(actions.shoot(primaryShot));
+            StartCoroutine(rangedSys.shoot(primaryShot));
         }
 
         if (Input.GetKeyDown("b"))
         {
             movePlayerVector = 0.0f;
-            meleesys.block();
+            meleeSys.block();
         }
 
         if (Input.GetKeyUp("b"))
         {
-            meleesys.unblock();
+            meleeSys.unblock();
         }
 
         if (Input.GetKeyDown("c"))
 		{
-			actions.switchWeapon();
+			rangedSys.switchWeapon();
             primaryShot = !primaryShot;
 		}
 
 		if (Input.GetKey ("j")) 
 		{
-			meleesys.punch (isFacingRight);
+			meleeSys.punch (isFacingRight);
 		}
 
 
 
-        actions.move(movePlayerVector);
+        movement.move(movePlayerVector);
     }
 }

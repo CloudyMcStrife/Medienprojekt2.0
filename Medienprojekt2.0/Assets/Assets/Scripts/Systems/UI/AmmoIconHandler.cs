@@ -31,8 +31,10 @@ public class AmmoIconHandler : MonoBehaviour {
 
     public void setLabel()
     {
-        txtS.text = attComp.getAmmo() + " / " + attComp.getAmmoCap();
-        txtB.text = attComp.getAmmo() + " / " + attComp.getAmmoCap();
+        if(txtS!=null)
+            txtS.text = attComp.getAmmo() + " / " + attComp.getAmmoCap();
+        if(txtB!=null)
+            txtB.text = attComp.getAmmo() + " / " + attComp.getAmmoCap();
     }    
 
     public void changeAmmo()

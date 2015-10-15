@@ -80,7 +80,7 @@ public class Projectile : MonoBehaviour {
 		setDamage (damage);
 
 		inAir = true;
-		rigid.transform.position = new Vector2(owner.transform.position.x,owner.transform.position.y +.5f);
+        rigid.transform.position = PPS.WeaponPoint.transform.position;
 
 
 		if (facingRight) 

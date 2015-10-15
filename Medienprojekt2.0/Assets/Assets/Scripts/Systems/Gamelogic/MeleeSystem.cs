@@ -5,7 +5,11 @@ public class MeleeSystem : MonoBehaviour {
 
     AttributeComponent attributes;
     Animator anim;
-    bool blocking;
+    public bool blocking;
+    public bool blockAction;
+
+    public int blockStartCost;
+    public float costPerSecond;
 
 	public Transform meleeCheck;
 
@@ -17,8 +21,12 @@ public class MeleeSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (attributes.stamina == 0)
+        if (attributes.stamina == 0 && blocking)
             unblock();
+        if(blocking)
+        {
+            attributes.reduceStamina(costPerSecond * Time.deltaTime);
+        }
 	}
 
     public void setBlockReady()
@@ -28,12 +36,18 @@ public class MeleeSystem : MonoBehaviour {
 
     public void block()
     {
-        anim.SetBool("Blocking", true);
+        if (attributes.stamina > blockStartCost)
+        {
+            blockAction = true;
+            anim.SetBool("Blocking", true);
+            attributes.reduceStamina(blockStartCost);
+        }
     }
 
     public void unblock()
     {
         blocking = false;
+        blockAction = false;
         anim.SetBool("Blocking", false);
     }
 
@@ -51,14 +65,14 @@ public class MeleeSystem : MonoBehaviour {
 		if (meleeCollider.Length != 0) {
 			foreach (RaycastHit2D c in meleeCollider) {
 				if (c.collider.gameObject.tag == "Enemy" && this.gameObject.tag == "Player") {
-					AttributeComponent enemyac = (AttributeComponent)c.collider.gameObject.GetComponent (typeof(AttributeComponent));
-					enemyac.setHealth (enemyac.getHealth() - attributes.getDamage());
+					HealthSystem enemyHealth = (HealthSystem)c.collider.gameObject.GetComponent (typeof(HealthSystem));
+					enemyHealth.lowerHealth (attributes.getDamage());
 					Debug.Log ("Meleehit");
 				}
 				else if(c.collider.gameObject.tag == "Player" && this.gameObject.tag == "Enemy")
 				{
-					AttributeComponent enemyac = (AttributeComponent) this.gameObject.GetComponent(typeof(AttributeComponent));
-					attributes.setHealth (attributes.getHealth() - enemyac.getDamage ());
+                    HealthSystem playerHealth = (HealthSystem)c.collider.gameObject.GetComponent(typeof(HealthSystem));
+                    playerHealth.lowerHealth(attributes.getDamage());
 					Debug.Log ("EnemyMeleeHit");
 				}
 			}

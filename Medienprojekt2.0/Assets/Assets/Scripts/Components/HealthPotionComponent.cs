@@ -21,8 +21,9 @@ public class HealthPotionComponent : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if(coll.gameObject.name == "Player")
+        if(coll.gameObject..name == "Player")
         {
+            Debug.Log("Hello");
             HealthSystem hs = player.GetComponent<HealthSystem>();
             AttributeComponent attComp = player.GetComponent<AttributeComponent>();
             if(attComp.getHealth() + healValue <= attComp.getMaxHealth())

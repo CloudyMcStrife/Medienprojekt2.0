@@ -9,7 +9,7 @@ public class EnemyVision : MonoBehaviour {
 	public Transform visionCheck;
 	public float noticeDistance;
 	public bool playerVisible;
-	public float fovAngle;
+	public float fovAngle = 180;
 
 	CharacterMovement actions;
 
@@ -21,15 +21,12 @@ public class EnemyVision : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
-
         if (rigplayer != null)
         {
             Vector2 centerPlayer = new Vector2(rigplayer.position.x, rigplayer.position.y + 0.5f);
             float currentAngle = -1;
 
             //No field of View component
-            if (fovAngle != -1)
-            {
                 Vector2 forward = visionCheck.position;
                 Vector2 direction;
                 if (actions.facingRight)
@@ -43,7 +40,6 @@ public class EnemyVision : MonoBehaviour {
                     direction = (Vector2)visionCheck.position - rigplayer.position;
                 }
                 currentAngle = Vector2.Angle(forward, direction);
-            }
             RaycastHit2D hit = Physics2D.Raycast(visionCheck.position, centerPlayer - (Vector2)visionCheck.position, noticeDistance);
             if (currentAngle <= fovAngle)
             {

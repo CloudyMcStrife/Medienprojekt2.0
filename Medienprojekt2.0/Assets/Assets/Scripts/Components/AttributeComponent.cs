@@ -5,7 +5,9 @@ public class AttributeComponent : MonoBehaviour {
 
     public float health;
     float maxHealth;
-    public float stamina;
+    public float maxStamina = 100f;
+    public float stamina = 100f;
+    public float staminaPerSecond = 0f;
 	public float damage;
 	float armor;
     //current ammo
@@ -19,16 +21,22 @@ public class AttributeComponent : MonoBehaviour {
     bool cooldown1Active = false;
     bool skill1cooldown = false;
 
+    MeleeSystem meleeSys;
+
 	// Use this for initialization
 	void Start () {
         maxHealth = 100f;
         health = maxHealth;
-        stamina = 100;
+        meleeSys = (MeleeSystem)GetComponent(typeof(MeleeSystem));
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+        if (staminaPerSecond > 0.0f && stamina < maxStamina && !meleeSys.blockAction)
+        {
+            stamina = Mathf.Clamp(stamina+staminaPerSecond * Time.deltaTime,0,maxStamina);
+            Debug.Log(stamina);
+        }
 	}
 	
 	public float getDamage()
@@ -89,5 +97,19 @@ public class AttributeComponent : MonoBehaviour {
     public float getCooldown1()
     {
         return cooldown1;
+    }
+
+
+    //Returns difference between possible Stamina Damage and really done stamina dmg
+    //eg. all damage can be absorbed into stamina = returns 0
+    //10 Stamina left but 20  damage returns 10
+    public float reduceStamina(float amount)
+    {
+        float potentialDamage = stamina - amount;
+        stamina = Mathf.Clamp(stamina - amount, 0, maxStamina);
+        if (potentialDamage < 0)
+            return -1 * potentialDamage;
+        else
+            return 0;
     }
 }

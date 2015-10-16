@@ -4,43 +4,35 @@ using System.Collections;
 //Beinhaltet alle Aktionen die der Spieler ausführen kann, dieses Script ist auch nur teil vom Spieler.
 
 public class CharacterMovement : MonoBehaviour {
-
 	Rigidbody2D rigplayer;
 	Transform trans;
-	GameObject weapon;
-	Rigidbody2D rigweapon;
-	Projectile currentProjectile;
-	ProjectilePoolingSystem PPS;
-    	Animator anim;
- 	AttributeComponent attributes;
+    Animator anim;
 
-	public bool facingRight = true;
-    	public bool startingRight;
-	public float[] rangeAttackCooldown = {1.0f, 1.0f};
-	bool shotAnimationReady;
-	public float[] rollCooldown = {2.0f,2.0f};
+    public float speed = 4.0f;
+    float scaling;
+    public bool facingRight = true;
+    public bool startingRight;
 
+    public float[] rollCooldown = { 2.0f, 2.0f };
 	public float rollDuration;
 	public bool rolling;
-   	public float speed = 4.0f;
-	public bool grounded;
 
+    public bool grounded;
 	public float jumpheight;
+    public bool jumpReady;
+
 	public LayerMask groundMask;
 	public Transform groundCheck;
 	public float groundCheckRadius;
-	float scaling;
-	
 	// Use this for initialization
 	void Awake () {
         facingRight = startingRight;
 		rigplayer = (Rigidbody2D) GetComponent(typeof(Rigidbody2D));
 		trans = (Transform)GetComponent (typeof(Transform));
-		PPS = (ProjectilePoolingSystem)GetComponent (typeof(ProjectilePoolingSystem));
         anim = (Animator)GetComponent(typeof(Animator));
-        attributes = (AttributeComponent)GetComponent(typeof(AttributeComponent));
+        
         scaling = transform.localScale.x;
-        shotAnimationReady = false;
+        jumpReady = false;
 	}
 
 	
@@ -49,19 +41,15 @@ public class CharacterMovement : MonoBehaviour {
 	void FixedUpdate()
 	{
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundCheckRadius, groundMask);
-        if (anim != null)
-            anim.SetBool("Grounded", grounded);
+        if(anim!=null)
+            anim.SetFloat("Speedy", rigplayer.velocity.y);
 	}
 	void Update () 
 	{
 		//cooldowns
 		if (rollCooldown [0] < rollCooldown [1])
 			rollCooldown [0] += Time.deltaTime;
-		rolling = rollCooldown [0] < rollDuration;
-		if (rangeAttackCooldown [0] < rangeAttackCooldown [1])
-			rangeAttackCooldown [0] += Time.deltaTime;
-
-		
+		rolling = rollCooldown [0] < rollDuration;		
 	}
 
     public void move(float movePlayerVector)
@@ -88,16 +76,26 @@ public class CharacterMovement : MonoBehaviour {
             anim.SetFloat("Speedx",Mathf.Abs(newSpeed));
     }
 
-    public void jump()
+    public IEnumerator jump()
     {
         if (grounded)
         {
+            /*if (anim != null)
+            {
+                anim.SetTrigger("Jump");
+                while (!jumpReady)
+                    yield return null;
+            }*/
+            if (jumpReady)
+                yield return null;  
+
             rigplayer.velocity = new Vector2(rigplayer.velocity.x, jumpheight);
-            grounded = false;
-            if (anim != null)
-                anim.SetBool("Grounded", grounded);
+            jumpReady = grounded = false;
         }
     }
+
+    public void setJumpReady()
+    { jumpReady = true; }
 
     public void roll()
     {
@@ -112,61 +110,5 @@ public class CharacterMovement : MonoBehaviour {
                 rollCooldown[0] = 0;
             }
         }
-    }
-
-        
-    public IEnumerator shoot(bool is_normal_shot)
-    {
-        if (rangeAttackCooldown[0] >= rangeAttackCooldown[1])
-        {
-            if(anim!=null)
-                anim.SetTrigger("Shot");
-            while (!shotAnimationReady)
-            {
-                yield return null;
-            }
-            GameObject proj = PPS.getProjectile();
-            shotAnimationReady = false;
-            if (proj != null)
-            {
-                currentProjectile = proj.GetComponent<Projectile>();
-                rangeAttackCooldown[0] = 0;
-                if (is_normal_shot)
-                    currentProjectile.set_shooting_type(Projectile.Shooting_Type.NORMAL);
-                else if(!is_normal_shot && attributes.getAmmo() > 0)
-                {
-                    currentProjectile.set_shooting_type(Projectile.Shooting_Type.SPECIAL);
-                    attributes.decrementAmmo();
-                    
-                }
-                currentProjectile.shoot(2.0f, facingRight);
-            }
-        }
-    }
-
-    //Methode auf die der Keyframe zugreift, um den Schuss zu ermöglichen
-    public void setShotAnimationReady()
-    {
-        shotAnimationReady = true;
-    }
-
-
-//Waffe wechseln
-    public void switchWeapon()
-    {
-        AmmoIconHandler iconHandler = GameObject.Find("HUD").GetComponent<AmmoIconHandler>();
-        iconHandler.changeAmmo();
-        
-    }
-
-    //Blocken
-    public void block()
-    {
-
-    }
-
-    public void unblock()
-    {
-
     }
 }

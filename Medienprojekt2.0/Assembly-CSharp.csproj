@@ -68,6 +68,7 @@
      <Compile Include="Assets\Assets\Scripts\Systems\UI\MenuScript.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\UI\PauseMenuScript.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\UI\SkillUIHandler.cs" />
+     <Compile Include="Assets\Assets\Scripts\Systems\UI\StaminabarHandler.cs" />
      <Compile Include="Assets\Assets\Scripts\Tag Layer list.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\SortingLayerExposed.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TileAnimator.cs" />

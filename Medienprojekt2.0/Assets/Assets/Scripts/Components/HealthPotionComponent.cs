@@ -4,14 +4,10 @@ using System.Collections;
 public class HealthPotionComponent : MonoBehaviour {
 
     float healValue = 25f;
-    BoxCollider2D collPotion;
-    SpriteRenderer sprite;
-    GameObject player;
+    
 	// Use this for initialization
 	void Start () {
-        player = GameObject.Find("Player");
-        collPotion = (BoxCollider2D)GetComponent(typeof(BoxCollider2D));
-        sprite = (SpriteRenderer)GetComponent(typeof(SpriteRenderer));
+
 	}
 	
 	// Update is called once per frame
@@ -21,9 +17,9 @@ public class HealthPotionComponent : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if(coll.gameObject.Equals(player))
+        GameObject player = GameObject.Find("Player");
+        if (coll.gameObject.Equals(player))
         {
-            Debug.Log("Player collision");
             HealthSystem hs = player.GetComponent<HealthSystem>();
             AttributeComponent attComp = player.GetComponent<AttributeComponent>();
 

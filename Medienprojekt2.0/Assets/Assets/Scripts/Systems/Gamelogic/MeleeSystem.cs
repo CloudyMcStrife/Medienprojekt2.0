@@ -54,6 +54,7 @@ public class MeleeSystem : MonoBehaviour {
 	public void punch(bool facingRight)
 	{
 		Vector2 direction;
+        anim.SetTrigger("MeleeAttack");
 		
 		if (facingRight)
 			direction = new Vector2 (1, 0);

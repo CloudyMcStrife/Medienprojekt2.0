@@ -72,6 +72,7 @@
      <Compile Include="Assets\Assets\Scripts\Systems\UI\SkillUIHandler.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\UI\StaminabarHandler.cs" />
      <Compile Include="Assets\Assets\Scripts\Tag Layer list.cs" />
+     <Compile Include="Assets\FT_FreeSample\Script\Button.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\SortingLayerExposed.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TileAnimator.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TiledInitialShaderProperties.cs" />

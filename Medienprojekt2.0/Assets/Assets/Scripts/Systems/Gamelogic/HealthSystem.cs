@@ -8,12 +8,14 @@ public class HealthSystem : MonoBehaviour {
     MeleeSystem meleeSys;
 	BoxCollider2D bc;
 	BoxCollider2D pbc;
+    Animator anim;
 
 	// Use this for initialization
 	void Start () {
         ac = this.gameObject.GetComponent<AttributeComponent>();
         bc = this.gameObject.GetComponent<BoxCollider2D>();
 		pbc = GameObject.FindWithTag ("Projectile").GetComponent <BoxCollider2D>();
+        anim = (Animator)GetComponent(typeof(Animator));
         meleeSys = (MeleeSystem)GetComponent(typeof(MeleeSystem));
 	}
 
@@ -22,14 +24,21 @@ public class HealthSystem : MonoBehaviour {
 
 	}
 
-	//Verringert HP des Spielers/Gegners und gibt Todesanzeige. MIN HP = 0
-	public void lowerHealth(float damage)
-	{
+    //Verringert HP des Spielers/Gegners und gibt Todesanzeige. MIN HP = 0
+    public void lowerHealth(float damage)
+    {
         if (meleeSys != null && meleeSys.blocking)
         {
             damage = ac.reduceStamina(damage);
         }
-        ac.setHealth(ac.getHealth() - damage);
+        if (damage > 0)
+        {
+            ac.setHealth(ac.getHealth() - damage);
+            if (anim != null)
+                anim.SetTrigger("MeleeInterrupt");
+        }
+
+
         if (ac.getHealth() < 0)
         {
             ac.setHealth(0);

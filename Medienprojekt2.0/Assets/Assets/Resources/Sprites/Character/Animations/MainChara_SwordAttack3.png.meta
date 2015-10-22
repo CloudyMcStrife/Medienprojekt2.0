@@ -1,9 +1,34 @@
 fileFormatVersion: 2
 guid: b3c7fd13d06aec742af0c09120f17b22
-timeCreated: 1444833991
+timeCreated: 1445533509
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: MainChara_SwordAttack3_0
+    21300002: MainChara_SwordAttack3_1
+    21300004: MainChara_SwordAttack3_2
+    21300006: MainChara_SwordAttack3_3
+    21300008: MainChara_SwordAttack3_4
+    21300010: MainChara_SwordAttack3_5
+    21300012: MainChara_SwordAttack3_6
+    21300014: MainChara_SwordAttack3_7
+    21300016: MainChara_SwordAttack3_8
+    21300018: MainChara_SwordAttack3_9
+    21300020: MainChara_SwordAttack3_10
+    21300022: MainChara_SwordAttack3_11
+    21300024: MainChara_SwordAttack3_12
+    21300026: MainChara_SwordAttack3_13
+    21300028: MainChara_SwordAttack3_14
+    21300030: MainChara_SwordAttack3_15
+    21300032: MainChara_SwordAttack3_16
+    21300034: MainChara_SwordAttack3_17
+    21300036: MainChara_SwordAttack3_18
+    21300038: MainChara_SwordAttack3_19
+    21300040: MainChara_SwordAttack3_20
+    21300042: MainChara_SwordAttack3_21
+    21300044: MainChara_SwordAttack3_22
+    21300046: MainChara_SwordAttack3_23
+    21300048: MainChara_SwordAttack3_24
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,11 +51,11 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
+  textureFormat: -2
+  maxTextureSize: 8192
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +63,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +74,257 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: MainChara_SwordAttack3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_1
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_2
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_3
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_4
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_5
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_6
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_7
+      rect:
+        serializedVersion: 2
+        x: 2107
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_8
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_9
+      rect:
+        serializedVersion: 2
+        x: 2709
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_10
+      rect:
+        serializedVersion: 2
+        x: 3010
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_11
+      rect:
+        serializedVersion: 2
+        x: 3311
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_12
+      rect:
+        serializedVersion: 2
+        x: 3612
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_13
+      rect:
+        serializedVersion: 2
+        x: 3913
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_14
+      rect:
+        serializedVersion: 2
+        x: 4214
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_15
+      rect:
+        serializedVersion: 2
+        x: 4515
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_16
+      rect:
+        serializedVersion: 2
+        x: 4816
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_17
+      rect:
+        serializedVersion: 2
+        x: 5117
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_18
+      rect:
+        serializedVersion: 2
+        x: 5418
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_19
+      rect:
+        serializedVersion: 2
+        x: 5719
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_20
+      rect:
+        serializedVersion: 2
+        x: 6020
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_21
+      rect:
+        serializedVersion: 2
+        x: 6321
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_22
+      rect:
+        serializedVersion: 2
+        x: 6622
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_23
+      rect:
+        serializedVersion: 2
+        x: 6923
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MainChara_SwordAttack3_24
+      rect:
+        serializedVersion: 2
+        x: 7224
+        y: 0
+        width: 301
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

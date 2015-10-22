@@ -19,7 +19,7 @@ public class HealthSystem : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
+        
 	}
 
 	//Verringert HP des Spielers/Gegners und gibt Todesanzeige. MIN HP = 0
@@ -30,10 +30,13 @@ public class HealthSystem : MonoBehaviour {
             damage = ac.reduceStamina(damage);
         }
         ac.setHealth(ac.getHealth() - damage);
-        if (ac.getHealth() < 0)
+        if (ac.getHealth() <= 0)
         {
-            ac.setHealth(0);
+            //ac.setHealth(0);
+            isDying();
         }
+
+        
 		Debug.Log (ac.getHealth ());
 	}
 
@@ -44,6 +47,14 @@ public class HealthSystem : MonoBehaviour {
 		if (ac.getHealth () > 100)
 			ac.setHealth (100);
 	}
+
+    public void isDying()
+    {
+        if(this.tag == "Enemy")
+        {
+            Destroy(this.gameObject);
+        }
+    }
 
 
 }

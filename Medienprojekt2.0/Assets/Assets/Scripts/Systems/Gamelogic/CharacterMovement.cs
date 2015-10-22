@@ -71,9 +71,9 @@ public class CharacterMovement : MonoBehaviour {
                 xScale *= startingRight ? 1 : -1;
                 trans.localScale = new Vector3(xScale, trans.localScale.y, trans.localScale.z);
             }
-        } 
+        }
         if (anim != null)
-            anim.SetFloat("Speedx",Mathf.Abs(newSpeed));
+            anim.SetFloat("Speedx", Mathf.Abs(newSpeed));
     }
 
     public IEnumerator jump()

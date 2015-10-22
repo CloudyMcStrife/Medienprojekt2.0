@@ -8,35 +8,41 @@ public class HealthSystem : MonoBehaviour {
     MeleeSystem meleeSys;
 	BoxCollider2D bc;
 	BoxCollider2D pbc;
+    Animator anim;
 
 	// Use this for initialization
 	void Start () {
         ac = this.gameObject.GetComponent<AttributeComponent>();
         bc = this.gameObject.GetComponent<BoxCollider2D>();
 		pbc = GameObject.FindWithTag ("Projectile").GetComponent <BoxCollider2D>();
+        anim = (Animator)GetComponent(typeof(Animator));
         meleeSys = (MeleeSystem)GetComponent(typeof(MeleeSystem));
 	}
 
 	// Update is called once per frame
 	void Update () {
-        
+
 	}
 
-	//Verringert HP des Spielers/Gegners und gibt Todesanzeige. MIN HP = 0
-	public void lowerHealth(float damage)
-	{
+    //Verringert HP des Spielers/Gegners und gibt Todesanzeige. MIN HP = 0
+    public void lowerHealth(float damage)
+    {
         if (meleeSys != null && meleeSys.blocking)
         {
             damage = ac.reduceStamina(damage);
         }
-        ac.setHealth(ac.getHealth() - damage);
-        if (ac.getHealth() <= 0)
+        if (damage > 0)
         {
-            //ac.setHealth(0);
-            isDying();
+            ac.setHealth(ac.getHealth() - damage);
+            if (anim != null)
+                anim.SetTrigger("MeleeInterrupt");
         }
 
-        
+
+        if (ac.getHealth() < 0)
+        {
+            ac.setHealth(0);
+        }
 		Debug.Log (ac.getHealth ());
 	}
 
@@ -47,14 +53,6 @@ public class HealthSystem : MonoBehaviour {
 		if (ac.getHealth () > 100)
 			ac.setHealth (100);
 	}
-
-    public void isDying()
-    {
-        if(this.tag == "Enemy")
-        {
-            Destroy(this.gameObject);
-        }
-    }
 
 
 }

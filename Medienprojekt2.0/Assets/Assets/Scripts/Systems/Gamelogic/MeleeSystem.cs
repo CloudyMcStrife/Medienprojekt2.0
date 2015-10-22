@@ -12,11 +12,13 @@ public class MeleeSystem : MonoBehaviour {
     public float costPerSecond;
 
 	public Transform meleeCheck;
+    public bool animationDone;
 
 	// Use this for initialization
 	void Awake () {
         attributes = (AttributeComponent)GetComponent(typeof(AttributeComponent));
         anim = (Animator)GetComponent(typeof(Animator));
+        animationDone = true;
 	}
 	
 	// Update is called once per frame
@@ -51,11 +53,23 @@ public class MeleeSystem : MonoBehaviour {
         anim.SetBool("Blocking", false);
     }
 
-	public void punch(bool facingRight)
+    public void setAnimationDone()
+    {
+        animationDone = true;
+        anim.SetBool("AnimationDone",animationDone);
+    }
+
+    public void punch(bool facingRight)
 	{
 		Vector2 direction;
-		
-		if (facingRight)
+        if (anim != null)
+        {
+            animationDone = false;
+            anim.SetTrigger("MeleeAttack");
+            anim.SetBool("AnimationDone", animationDone);
+        }
+
+        if (facingRight)
 			direction = new Vector2 (1, 0);
 		else
 			direction = new Vector2 (-1, 0);
@@ -77,6 +91,5 @@ public class MeleeSystem : MonoBehaviour {
 				}
 			}
 		}
-
 	}
 }

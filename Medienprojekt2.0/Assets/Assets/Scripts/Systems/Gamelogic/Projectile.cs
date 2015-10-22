@@ -95,6 +95,10 @@ public class Projectile : MonoBehaviour {
 		HealthSystem HS = (HealthSystem)coll.gameObject.GetComponent (typeof(HealthSystem));
 		if (HS != null)
 			HS.lowerHealth (getDamage());
+		GameObject hiteffect = Instantiate (GameObject.Find ("HitEffect01"));
+		Transform TS = (Transform) coll.gameObject.GetComponent (typeof(Transform));
+		hiteffect.transform.position = new Vector3 (TS.position.x, TS.position.y + 0.5f, TS.position.z);
+		Destroy (hiteffect, 2);
 		inAir = false;
 	}
 

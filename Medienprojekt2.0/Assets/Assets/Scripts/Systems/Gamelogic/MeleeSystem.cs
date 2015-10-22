@@ -12,11 +12,13 @@ public class MeleeSystem : MonoBehaviour {
     public float costPerSecond;
 
 	public Transform meleeCheck;
+    public bool inAnimation;
 
 	// Use this for initialization
 	void Awake () {
         attributes = (AttributeComponent)GetComponent(typeof(AttributeComponent));
         anim = (Animator)GetComponent(typeof(Animator));
+        inAnimation = false;
 	}
 	
 	// Update is called once per frame
@@ -54,6 +56,7 @@ public class MeleeSystem : MonoBehaviour {
 	public void punch(bool facingRight)
 	{
 		Vector2 direction;
+        inAnimation = true;
         anim.SetTrigger("MeleeAttack");
 		
 		if (facingRight)
@@ -78,6 +81,10 @@ public class MeleeSystem : MonoBehaviour {
 				}
 			}
 		}
-
 	}
+
+    public void setInAnimation(bool value)
+    {
+        inAnimation = value;
+    }
 }

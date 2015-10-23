@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: ca36640296aa0524db65424a21793d91
-timeCreated: 1445367472
+guid: b3c7fd13d06aec742af0c09120f17b22
+timeCreated: 1445533509
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: MC_IdleSwordAttack_0
-    21300002: MC_IdleSwordAttack_1
-    21300004: MC_IdleSwordAttack_2
-    21300006: MC_IdleSwordAttack_3
-    21300008: MC_IdleSwordAttack_4
-    21300010: MC_IdleSwordAttack_5
-    21300012: MC_IdleSwordAttack_6
-    21300014: MC_IdleSwordAttack_7
-    21300016: MC_IdleSwordAttack_8
-    21300018: MC_IdleSwordAttack_9
-    21300020: MC_IdleSwordAttack_10
-    21300022: MC_IdleSwordAttack_11
-    21300024: MC_IdleSwordAttack_12
-    21300026: MC_IdleSwordAttack_13
-    21300028: MC_IdleSwordAttack_14
-    21300030: MC_IdleSwordAttack_15
-    21300032: MC_IdleSwordAttack_16
-    21300034: MC_IdleSwordAttack_17
-    21300036: MC_IdleSwordAttack_18
-    21300038: MC_IdleSwordAttack_19
-    21300040: MC_IdleSwordAttack_20
-    21300042: MC_IdleSwordAttack_21
-    21300044: MC_IdleSwordAttack_22
-    21300046: MC_IdleSwordAttack_23
-    21300048: MC_IdleSwordAttack_24
+    21300000: MainChara_SwordAttack3_0
+    21300002: MainChara_SwordAttack3_1
+    21300004: MainChara_SwordAttack3_2
+    21300006: MainChara_SwordAttack3_3
+    21300008: MainChara_SwordAttack3_4
+    21300010: MainChara_SwordAttack3_5
+    21300012: MainChara_SwordAttack3_6
+    21300014: MainChara_SwordAttack3_7
+    21300016: MainChara_SwordAttack3_8
+    21300018: MainChara_SwordAttack3_9
+    21300020: MainChara_SwordAttack3_10
+    21300022: MainChara_SwordAttack3_11
+    21300024: MainChara_SwordAttack3_12
+    21300026: MainChara_SwordAttack3_13
+    21300028: MainChara_SwordAttack3_14
+    21300030: MainChara_SwordAttack3_15
+    21300032: MainChara_SwordAttack3_16
+    21300034: MainChara_SwordAttack3_17
+    21300036: MainChara_SwordAttack3_18
+    21300038: MainChara_SwordAttack3_19
+    21300040: MainChara_SwordAttack3_20
+    21300042: MainChara_SwordAttack3_21
+    21300044: MainChara_SwordAttack3_22
+    21300046: MainChara_SwordAttack3_23
+    21300048: MainChara_SwordAttack3_24
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -75,7 +75,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: MC_IdleSwordAttack_0
+    - name: MainChara_SwordAttack3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -85,7 +85,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_1
+    - name: MainChara_SwordAttack3_1
       rect:
         serializedVersion: 2
         x: 301
@@ -95,7 +95,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_2
+    - name: MainChara_SwordAttack3_2
       rect:
         serializedVersion: 2
         x: 602
@@ -105,7 +105,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_3
+    - name: MainChara_SwordAttack3_3
       rect:
         serializedVersion: 2
         x: 903
@@ -115,7 +115,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_4
+    - name: MainChara_SwordAttack3_4
       rect:
         serializedVersion: 2
         x: 1204
@@ -125,7 +125,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_5
+    - name: MainChara_SwordAttack3_5
       rect:
         serializedVersion: 2
         x: 1505
@@ -135,7 +135,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_6
+    - name: MainChara_SwordAttack3_6
       rect:
         serializedVersion: 2
         x: 1806
@@ -145,7 +145,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_7
+    - name: MainChara_SwordAttack3_7
       rect:
         serializedVersion: 2
         x: 2107
@@ -155,7 +155,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_8
+    - name: MainChara_SwordAttack3_8
       rect:
         serializedVersion: 2
         x: 2408
@@ -165,7 +165,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_9
+    - name: MainChara_SwordAttack3_9
       rect:
         serializedVersion: 2
         x: 2709
@@ -175,7 +175,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_10
+    - name: MainChara_SwordAttack3_10
       rect:
         serializedVersion: 2
         x: 3010
@@ -185,7 +185,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_11
+    - name: MainChara_SwordAttack3_11
       rect:
         serializedVersion: 2
         x: 3311
@@ -195,7 +195,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_12
+    - name: MainChara_SwordAttack3_12
       rect:
         serializedVersion: 2
         x: 3612
@@ -205,7 +205,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_13
+    - name: MainChara_SwordAttack3_13
       rect:
         serializedVersion: 2
         x: 3913
@@ -215,7 +215,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_14
+    - name: MainChara_SwordAttack3_14
       rect:
         serializedVersion: 2
         x: 4214
@@ -225,7 +225,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_15
+    - name: MainChara_SwordAttack3_15
       rect:
         serializedVersion: 2
         x: 4515
@@ -235,7 +235,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_16
+    - name: MainChara_SwordAttack3_16
       rect:
         serializedVersion: 2
         x: 4816
@@ -245,7 +245,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_17
+    - name: MainChara_SwordAttack3_17
       rect:
         serializedVersion: 2
         x: 5117
@@ -255,7 +255,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_18
+    - name: MainChara_SwordAttack3_18
       rect:
         serializedVersion: 2
         x: 5418
@@ -265,7 +265,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_19
+    - name: MainChara_SwordAttack3_19
       rect:
         serializedVersion: 2
         x: 5719
@@ -275,7 +275,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_20
+    - name: MainChara_SwordAttack3_20
       rect:
         serializedVersion: 2
         x: 6020
@@ -285,7 +285,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_21
+    - name: MainChara_SwordAttack3_21
       rect:
         serializedVersion: 2
         x: 6321
@@ -295,7 +295,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_22
+    - name: MainChara_SwordAttack3_22
       rect:
         serializedVersion: 2
         x: 6622
@@ -305,7 +305,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_23
+    - name: MainChara_SwordAttack3_23
       rect:
         serializedVersion: 2
         x: 6923
@@ -315,7 +315,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MC_IdleSwordAttack_24
+    - name: MainChara_SwordAttack3_24
       rect:
         serializedVersion: 2
         x: 7224

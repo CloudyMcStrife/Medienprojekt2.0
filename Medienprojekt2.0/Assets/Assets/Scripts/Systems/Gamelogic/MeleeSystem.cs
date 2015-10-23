@@ -11,7 +11,7 @@ public class MeleeSystem : MonoBehaviour {
     public int blockStartCost;
     public float costPerSecond;
 
-	public Transform meleeCheck;
+	Transform meleeCheck;
     public bool animationDone;
 
 	// Use this for initialization
@@ -19,6 +19,7 @@ public class MeleeSystem : MonoBehaviour {
         attributes = (AttributeComponent)GetComponent(typeof(AttributeComponent));
         anim = (Animator)GetComponent(typeof(Animator));
         animationDone = true;
+        meleeCheck = this.gameObject.GetComponent<Transform>();
 	}
 	
 	// Update is called once per frame

@@ -23,24 +23,17 @@ public class EnemyVision : MonoBehaviour {
 	void FixedUpdate(){
         if (rigplayer != null)
         {
-            Vector2 centerPlayer = new Vector2(rigplayer.position.x, rigplayer.position.y + 0.5f);
-            float currentAngle = -1;
+            Vector2 playerPos = rigplayer.position;
+            Vector2 visionPos = visionCheck.position;
+            Vector2 viewVector = new Vector2(0, 0);
+            Vector2 difference = playerPos - visionPos;
+            if (actions.facingRight)
+                viewVector += new Vector2(1, 0);
+            else
+                viewVector += new Vector2(-1, 0);
 
-            //No field of View component
-                Vector2 forward = visionCheck.position;
-                Vector2 direction;
-                if (actions.facingRight)
-                {
-                    forward += new Vector2(1, 0);
-                    direction = rigplayer.position - (Vector2)visionCheck.position;
-                }
-                else
-                {
-                    forward += new Vector2(-1, 0);
-                    direction = (Vector2)visionCheck.position - rigplayer.position;
-                }
-                currentAngle = Vector2.Angle(forward, direction);
-            RaycastHit2D hit = Physics2D.Raycast(visionCheck.position, centerPlayer - (Vector2)visionCheck.position, noticeDistance);
+            float currentAngle = Vector2.Angle(viewVector, difference);
+            RaycastHit2D hit = Physics2D.Raycast(visionCheck.position,viewVector, noticeDistance);
             if (currentAngle <= fovAngle)
             {
                 if (hit.collider != null)

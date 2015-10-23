@@ -20,6 +20,7 @@ public class ProjectilePoolingSystem : MonoBehaviour {
 			GameObject bullet = new GameObject();
 			bullet.name = "Projectile";
 			bullet.tag = "Projectile";
+            bullet.layer = LayerMask.NameToLayer("Projectiles");
 			bullet.AddComponent<BoxCollider2D>();
 			BoxCollider2D collider =(BoxCollider2D) bullet.GetComponent(typeof(BoxCollider2D));
 			collider.enabled = false;

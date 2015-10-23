@@ -43,14 +43,18 @@ public class RangedSystem : MonoBehaviour {
                 currentProjectile = proj.GetComponent<Projectile>();
                 rangeAttackCooldown[0] = 0;
                 if (is_normal_shot)
+                {
                     currentProjectile.set_shooting_type(Projectile.Shooting_Type.NORMAL);
+                    currentProjectile.shoot(2.0f, movement.facingRight);
+                }
                 else if (!is_normal_shot && attributes.getAmmo() > 0)
                 {
                     currentProjectile.set_shooting_type(Projectile.Shooting_Type.SPECIAL);
                     attributes.decrementAmmo();
+                    currentProjectile.shoot(2.0f, movement.facingRight);
 
                 }
-                currentProjectile.shoot(2.0f, movement.facingRight);
+                
             }
         }
     }

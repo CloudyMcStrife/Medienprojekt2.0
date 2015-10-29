@@ -31,9 +31,10 @@ public class HealthSystem : MonoBehaviour {
         {
             damage = ac.reduceStamina(damage);
         }
-        if (damage > 0)
+        if (damage >= 0)
         {
             ac.setHealth(ac.getHealth() - damage);
+            Destroy(this.gameObject);
             if (anim != null)
                 anim.SetTrigger("MeleeInterrupt");
         }

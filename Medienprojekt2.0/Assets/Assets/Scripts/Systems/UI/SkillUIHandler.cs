@@ -15,6 +15,7 @@ public class SkillUIHandler : MonoBehaviour {
 	void Start () {
         attComp = GameObject.Find("Player").GetComponent<AttributeComponent>();
         cooldown1Txt = this.GetComponentInChildren<Text>();
+		cooldown1Txt.text = "";
         skill1Icon = GameObject.Find("SkillshotIcon");
         skill1IconTrans = GameObject.Find("SkillshotIconTransp");
         skill1IconTrans.SetActive(false);

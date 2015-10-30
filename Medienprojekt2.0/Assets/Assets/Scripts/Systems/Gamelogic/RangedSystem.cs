@@ -28,34 +28,37 @@ public class RangedSystem : MonoBehaviour {
 
     public IEnumerator shoot(bool is_normal_shot)
     {
-        if (rangeAttackCooldown[0] >= rangeAttackCooldown[1])
-        {
-            if (anim != null)
-                anim.SetTrigger("Shot");
-            while (!shotAnimationReady)
-            {
-                yield return null;
-            }
-            GameObject proj = PPS.getProjectile();
-            shotAnimationReady = false;
-            if (proj != null)
-            {
-                currentProjectile = proj.GetComponent<Projectile>();
-                rangeAttackCooldown[0] = 0;
-                if (is_normal_shot)
-                {
-                    currentProjectile.set_shooting_type(Projectile.Shooting_Type.NORMAL);
-                    currentProjectile.shoot(2.0f, movement.facingRight);
-                }
-                else if (!is_normal_shot && attributes.getAmmo() > 0)
-                {
-                    currentProjectile.set_shooting_type(Projectile.Shooting_Type.SPECIAL);
-                    attributes.decrementAmmo();
-                    currentProjectile.shoot(2.0f, movement.facingRight);
+		if (is_normal_shot || (!is_normal_shot && attributes.getAmmo() > 0))
+		{
+	        if (rangeAttackCooldown[0] >= rangeAttackCooldown[1])
+	        {
+				rangeAttackCooldown[0] = 0;
+				if (anim != null)
+	                anim.SetTrigger("Shot");
+	            while (!shotAnimationReady)
+	            {
+	                yield return null;
+	            }
+	            GameObject proj = PPS.getProjectile();
+	            shotAnimationReady = false;
+	            if (proj != null)
+	            {
+	                currentProjectile = proj.GetComponent<Projectile>();
+	                if (is_normal_shot)
+	                {
+	                    currentProjectile.set_shooting_type(Projectile.Shooting_Type.NORMAL);
+	                    currentProjectile.shoot(2.0f, movement.facingRight);
+	                }
+	                else if (!is_normal_shot && attributes.getAmmo() > 0)
+	                {
+	                    currentProjectile.set_shooting_type(Projectile.Shooting_Type.SPECIAL);
+	                    attributes.decrementAmmo();
+	                    currentProjectile.shoot(2.0f, movement.facingRight);
 
-                }
-                
-            }
+	                }
+	                
+	            }
+			}
         }
     }
 

@@ -34,17 +34,17 @@ public class HealthSystem : MonoBehaviour {
         if (damage >= 0)
         {
             ac.setHealth(ac.getHealth() - damage);
-            Destroy(this.gameObject);
             if (anim != null)
                 anim.SetTrigger("MeleeInterrupt");
         }
-
-
-        if (ac.getHealth() < 0)
+        if (ac.getHealth() <= 0)
         {
+			if(this.gameObject.tag != "Player")
+			{
+				Destroy (this.gameObject);
+			}
             ac.setHealth(0);
         }
-		Debug.Log (ac.getHealth ());
 	}
 
 	//Erhöht HP des Spielers/Gegners. MAX HP = 100

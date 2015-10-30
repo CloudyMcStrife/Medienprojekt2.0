@@ -61,7 +61,6 @@ public class InputSystem : MonoBehaviour {
 
 		if (Input.GetKeyDown ("j")) 
 		{
-            Debug.Log("PENIS");
 			meleeSys.punch (isFacingRight);
 		}
 

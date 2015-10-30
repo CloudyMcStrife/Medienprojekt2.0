@@ -75,7 +75,6 @@ public class PauseMenuScript : MonoBehaviour {
 
 	public void Resume()
 	{
-		Debug.Log ("BLA");
 		paused = false;
 		PauseUI.SetActive (false);
 		Time.timeScale = 1;

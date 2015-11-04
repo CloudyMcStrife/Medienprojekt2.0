@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class InputSystem : MonoBehaviour {
@@ -29,7 +29,8 @@ public class InputSystem : MonoBehaviour {
         //Funktion für Springen
         if (Input.GetKey("w"))
         {
-            StartCoroutine(movement.jump());
+			if (!meleeSys.blocking)
+            	StartCoroutine(movement.jump());
         }
         //Funktion für Rollen
         if (Input.GetKey("k"))
@@ -44,7 +45,6 @@ public class InputSystem : MonoBehaviour {
 
         if (Input.GetKeyDown("b"))
         {
-            movePlayerVector = 0.0f;
             meleeSys.block();
         }
 
@@ -61,11 +61,12 @@ public class InputSystem : MonoBehaviour {
 
 		if (Input.GetKeyDown ("j")) 
 		{
-			meleeSys.punch (isFacingRight);
+			if(!meleeSys.MeleeAttackInQueue)
+				meleeSys.punch();
 		}
 
-
-
+		if (meleeSys.blockAction || meleeSys.blocking)
+			movePlayerVector = 0.0f;
         movement.move(movePlayerVector);
     }
 }

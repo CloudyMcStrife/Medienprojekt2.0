@@ -118,7 +118,8 @@ public class MeleeSystem : MonoBehaviour {
 			foreach (RaycastHit2D c in meleeCollider) {
 				if (c.collider.gameObject.tag == "Enemy" && this.gameObject.tag == "Player") {
 					HealthSystem enemyHealth = (HealthSystem)c.collider.gameObject.GetComponent (typeof(HealthSystem));
-					enemyHealth.lowerHealth (attributes.getDamage());
+                    if(enemyHealth != null)
+					    enemyHealth.lowerHealth (attributes.getDamage());
 					Debug.Log ("Meleehit");
 				}
 				else if(c.collider.gameObject.tag == "Player" && this.gameObject.tag == "Enemy")

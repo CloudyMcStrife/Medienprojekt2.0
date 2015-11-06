@@ -61,11 +61,15 @@ public class InputSystem : MonoBehaviour {
 
 		if (Input.GetKeyDown ("j")) 
 		{
-			if(!meleeSys.MeleeAttackInQueue)
-				meleeSys.punch();
+            if(movement.grounded && meleeSys.anim != null && !meleeSys.anim.GetBool("MeleeAttackInQueue"))
+            {
+                Debug.Log(meleeSys.anim.GetBool("MeleeAttackInQueue"));
+                    movePlayerVector = 0.0f;
+                    meleeSys.punch();
+            }
 		}
 
-		if (meleeSys.blockAction || meleeSys.blocking)
+		if (meleeSys.animationRunning || meleeSys.blocking)
 			movePlayerVector = 0.0f;
         movement.move(movePlayerVector);
     }

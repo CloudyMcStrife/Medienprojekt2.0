@@ -5,25 +5,25 @@ public class MeleeSystem : MonoBehaviour {
 
     AttributeComponent attributes;
 	CharacterMovement movement;
-    Animator anim;
+    Rigidbody2D rigidBody;
+    public Animator anim;
     public bool blocking;
-    public bool blockAction;
+    public bool animationRunning;
 
     public int blockStartCost;
     public float costPerSecond;
 
 	Transform meleeCheck;
-	
-	public bool firstAnim;
-	public bool MeleeAttackInQueue;
+    bool idleStateExecuted;
 
 	// Use this for initialization
 	void Awake () {
         attributes = (AttributeComponent)GetComponent(typeof(AttributeComponent));
 		movement = (CharacterMovement)GetComponent (typeof(CharacterMovement));
+        rigidBody = (Rigidbody2D)GetComponent(typeof(Rigidbody2D));
         anim = (Animator)GetComponent(typeof(Animator));
         meleeCheck = this.gameObject.GetComponent<Transform>();
-		MeleeAttackInQueue = firstAnim = false;
+        idleStateExecuted = false;
 	}
 	
 	// Update is called once per frame
@@ -51,7 +51,7 @@ public class MeleeSystem : MonoBehaviour {
     {
         if (attributes.stamina > blockStartCost)
         {
-            blockAction = true;
+            animationRunning = true;
             anim.SetBool("Blocking", true);
             attributes.reduceStamina(blockStartCost);
         }
@@ -60,8 +60,22 @@ public class MeleeSystem : MonoBehaviour {
     public void unblock()
     {
         anim.SetBool("Blocking", false);
-		blockAction = false;
     }
+
+    public void idleState()
+    {
+        if(!idleStateExecuted)
+        {
+            anim.SetBool("firstAnim", false);
+            anim.SetBool("MeleeAttackInQueue", false);
+            anim.ResetTrigger("HitDone");
+            anim.ResetTrigger("MeleeAttack");
+            animationRunning = false;
+            idleStateExecuted = true;
+        }
+    }
+
+
 
 	//Called am Ende der Animation
     public void setAnimationDone()
@@ -70,11 +84,12 @@ public class MeleeSystem : MonoBehaviour {
 				anim.SetTrigger("MeleeAttack");
 		}
 		else {
-			firstAnim = false;
+			//firstAnim = false;
 			anim.SetBool ("firstAnim", false);
 			anim.SetTrigger("HitDone");
 		}
 		anim.SetBool ("MeleeAttackInQueue", false);
+        //MeleeAttackInQueue = false;
     }
 
 
@@ -83,12 +98,14 @@ public class MeleeSystem : MonoBehaviour {
 	{
 		if (anim.GetBool("firstAnim")) {
 			anim.SetBool ("MeleeAttackInQueue", true);
-			MeleeAttackInQueue = true;
+			//MeleeAttackInQueue = true;
 		}
 		else {
-			firstAnim = true;
+			//firstAnim = true;
 			anim.SetBool ("firstAnim", true);
 			anim.SetTrigger("MeleeAttack");
+            animationRunning = true;
+            idleStateExecuted = false;
 		}
 	}
 
@@ -102,8 +119,8 @@ public class MeleeSystem : MonoBehaviour {
 			direction = new Vector2 (-1, 0);
 		
 		RaycastHit2D[] meleeCollider = Physics2D.BoxCastAll (meleeCheck.position, new Vector2 (.8f, 0.5f), 0, direction);
-		/*
-		 * Debug Lines to draw the hitzone of the melee hit
+		/* 
+         * Debug Lines to draw the hitzone of the melee hit
 		Vector3 debug1 = new Vector3(meleeCheck.position.x, meleeCheck.position.y+0.5f, meleeCheck.position.z);
 		Vector3 debug2 = new Vector3 (meleeCheck.position.x, meleeCheck.position.y - 0.5f, meleeCheck.position.z);
 		Vector3 debug3 = debug1 + (Vector3)direction*.8f;
@@ -113,7 +130,8 @@ public class MeleeSystem : MonoBehaviour {
 		Debug.DrawLine (debug2, debug4,Color.red,5.0f);
 		Debug.DrawLine (debug3, debug4,Color.red,5.0f);
 		Debug.DrawLine (debug1, debug3,Color.red,5.0f);
-		*/
+         */
+		
 		if (meleeCollider.Length != 0) {
 			foreach (RaycastHit2D c in meleeCollider) {
 				if (c.collider.gameObject.tag == "Enemy" && this.gameObject.tag == "Player") {

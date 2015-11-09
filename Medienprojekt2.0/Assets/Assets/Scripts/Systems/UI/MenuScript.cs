@@ -5,8 +5,8 @@ using System.Collections;
 public class MenuScript : MonoBehaviour {
 
 	public Canvas quitDialogue;
-	public Button playText;
-	public Button exitText;
+	Button playText;
+	Button exitText;
 	bool playing;
 	GameObject quit;
 	GameObject pauseMenu;
@@ -14,8 +14,8 @@ public class MenuScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		quitDialogue = quitDialogue.GetComponent<Canvas>();
-		playText = playText.GetComponent<Button>();
-		exitText = exitText.GetComponent<Button>();
+		playText =  playText.GetComponent<Button>();
+		exitText =  exitText.GetComponent<Button>();
 		quitDialogue.enabled = false;
 	}
 

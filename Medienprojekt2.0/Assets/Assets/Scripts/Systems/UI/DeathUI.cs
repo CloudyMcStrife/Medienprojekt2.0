@@ -26,7 +26,7 @@ public class DeathUI : MonoBehaviour {
     public void retry()
     {
         
-        Application.LoadLevel(1);
+        Application.LoadLevel(Application.loadedLevel);
         Time.timeScale = 1;
 
     }

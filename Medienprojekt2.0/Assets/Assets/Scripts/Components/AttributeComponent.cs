@@ -32,7 +32,7 @@ public class AttributeComponent : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (staminaPerSecond > 0.0f && stamina < maxStamina && !meleeSys.blockAction)
+        if (staminaPerSecond > 0.0f && stamina < maxStamina && !meleeSys.animationRunning)
         {
             stamina = Mathf.Clamp(stamina+staminaPerSecond * Time.deltaTime,0,maxStamina);
             Debug.Log(stamina);

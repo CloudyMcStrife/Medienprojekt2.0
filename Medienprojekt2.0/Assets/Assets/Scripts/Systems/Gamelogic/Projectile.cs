@@ -63,6 +63,7 @@ public class Projectile : MonoBehaviour {
 		Physics2D.IgnoreCollision ((Collider2D)owner.GetComponent(typeof(Collider2D)), collid);
 		AttributeComponent ac = (AttributeComponent)owner.GetComponent (typeof(AttributeComponent));
         SpriteRenderer sr = this.GetComponent<SpriteRenderer>();
+		sr.sortingOrder = 2;
         
         if(s_type == Shooting_Type.NORMAL)
         {

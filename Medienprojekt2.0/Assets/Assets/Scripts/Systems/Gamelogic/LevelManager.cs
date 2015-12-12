@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour {
         int playerLayer = LayerMask.NameToLayer("Player");
         Physics2D.IgnoreLayerCollision(enemyLayer, enemyLayer);
         Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer);
+        //TEST
     }
 	
 	// Update is called once per frame

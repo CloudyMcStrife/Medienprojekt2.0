@@ -7,12 +7,15 @@ public class InputSystem : MonoBehaviour {
     RangedSystem rangedSys;
     MeleeSystem meleeSys;
     bool primaryShot = true;
+    GameObject lasershot;
 
 	// Use this for initialization
 	void Start () {
         movement = (CharacterMovement)gameObject.GetComponent(typeof(CharacterMovement));
         meleeSys = (MeleeSystem)gameObject.GetComponent(typeof(MeleeSystem));
         rangedSys = (RangedSystem)GetComponent(typeof(RangedSystem));
+        lasershot = Resources.Load("LasershotPrefab") as GameObject;
+        Debug.Log(lasershot);
 	}
 	
 	// Update is called once per frame
@@ -40,6 +43,7 @@ public class InputSystem : MonoBehaviour {
         //Funktion für Schießen
         if (Input.GetKeyDown("s"))
         {
+            lasershot = (GameObject)Instantiate(lasershot, this.transform.position, this.transform.rotation);
             StartCoroutine(rangedSys.shoot(primaryShot));
         }
 
@@ -61,11 +65,15 @@ public class InputSystem : MonoBehaviour {
 
 		if (Input.GetKeyDown ("j")) 
 		{
-			if(!meleeSys.MeleeAttackInQueue)
-				meleeSys.punch();
+            if(movement.grounded && meleeSys.anim != null && !meleeSys.anim.GetBool("MeleeAttackInQueue"))
+            {
+                Debug.Log(meleeSys.anim.GetBool("MeleeAttackInQueue"));
+                    movePlayerVector = 0.0f;
+                    meleeSys.punch();
+            }
 		}
 
-		if (meleeSys.blockAction || meleeSys.blocking)
+		if (meleeSys.animationRunning || meleeSys.blocking)
 			movePlayerVector = 0.0f;
         movement.move(movePlayerVector);
     }

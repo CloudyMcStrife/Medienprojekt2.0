@@ -45,7 +45,8 @@ public class RangedSystem : MonoBehaviour {
 	            if (proj != null)
 	            {
 	                currentProjectile = proj.GetComponent<Projectile>();
-                    Instantiate(shotSound);
+                    if(shotSound != null)
+                        Instantiate(shotSound);
                     if (is_normal_shot)
 	                {
 	                    currentProjectile.set_shooting_type(Projectile.Shooting_Type.NORMAL);

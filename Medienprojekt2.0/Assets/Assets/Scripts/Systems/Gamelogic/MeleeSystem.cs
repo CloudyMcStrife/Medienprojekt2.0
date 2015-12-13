@@ -13,7 +13,11 @@ public class MeleeSystem : MonoBehaviour {
     public int blockStartCost;
     public float costPerSecond;
 
-	Transform meleeCheck;
+
+    public Transform meleePoint;
+    public float hitrange;
+    int opponentLayer;
+    float hitTime;
     bool idleStateExecuted;
 
 	// Use this for initialization
@@ -22,9 +26,17 @@ public class MeleeSystem : MonoBehaviour {
 		movement = (CharacterMovement)GetComponent (typeof(CharacterMovement));
         rigidBody = (Rigidbody2D)GetComponent(typeof(Rigidbody2D));
         anim = (Animator)GetComponent(typeof(Animator));
-        meleeCheck = this.gameObject.GetComponent<Transform>();
         idleStateExecuted = false;
-	}
+
+        int enemyLayer = LayerMask.NameToLayer("Enemies");
+        int playerLayer = LayerMask.NameToLayer("Player");
+
+        //wenn wir spieler sind, sind gegner gegner, ansonsten is der spieler der gegner
+        if (this.gameObject.layer == enemyLayer)
+            opponentLayer = playerLayer;
+        else
+            opponentLayer = enemyLayer;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -33,8 +45,7 @@ public class MeleeSystem : MonoBehaviour {
         if(blocking)
         {
             attributes.reduceStamina(costPerSecond * Time.deltaTime);
-        }
-
+        }   
 	}
 
     public void setBlockReady()
@@ -109,6 +120,15 @@ public class MeleeSystem : MonoBehaviour {
 		}
 	}
 
+    public void enemyHit(GameObject objectHit)
+    {
+        HealthSystem enemyHealth = (HealthSystem)objectHit.GetComponent(typeof(HealthSystem));
+        if (enemyHealth != null)
+            enemyHealth.lowerHealth(attributes.getDamage());
+        Debug.Log("Meleehit");
+    }
+
+
 	public void applyMeleeDamage()
 	{
 		Vector2 direction;
@@ -117,36 +137,21 @@ public class MeleeSystem : MonoBehaviour {
 			direction = new Vector2 (1, 0);
 		else
 			direction = new Vector2 (-1, 0);
-		
-		RaycastHit2D[] meleeCollider = Physics2D.BoxCastAll (meleeCheck.position, new Vector2 (.8f, 0.5f), 0, direction);
-		/* 
-         * Debug Lines to draw the hitzone of the melee hit
-		Vector3 debug1 = new Vector3(meleeCheck.position.x, meleeCheck.position.y+0.5f, meleeCheck.position.z);
-		Vector3 debug2 = new Vector3 (meleeCheck.position.x, meleeCheck.position.y - 0.5f, meleeCheck.position.z);
-		Vector3 debug3 = debug1 + (Vector3)direction*.8f;
-		Vector3 debug4 = debug2 + (Vector3)direction*.8f;
 
-		Debug.DrawLine (debug1, debug2,Color.red,5.0f);
-		Debug.DrawLine (debug2, debug4,Color.red,5.0f);
-		Debug.DrawLine (debug3, debug4,Color.red,5.0f);
-		Debug.DrawLine (debug1, debug3,Color.red,5.0f);
-         */
-		
-		if (meleeCollider.Length != 0) {
-			foreach (RaycastHit2D c in meleeCollider) {
-				if (c.collider.gameObject.tag == "Enemy" && this.gameObject.tag == "Player") {
-					HealthSystem enemyHealth = (HealthSystem)c.collider.gameObject.GetComponent (typeof(HealthSystem));
-                    if(enemyHealth != null)
-					    enemyHealth.lowerHealth (attributes.getDamage());
-					Debug.Log ("Meleehit");
-				}
-				else if(c.collider.gameObject.tag == "Player" && this.gameObject.tag == "Enemy")
-				{
-					HealthSystem playerHealth = (HealthSystem)c.collider.gameObject.GetComponent(typeof(HealthSystem));
-					playerHealth.lowerHealth(attributes.getDamage());
-					Debug.Log ("EnemyMeleeHit");
-				}
-			}
-		}
-	}
+        RaycastHit2D[] hits = Physics2D.RaycastAll(meleePoint.position, direction, hitrange);
+        Debug.DrawRay(meleePoint.position, direction);
+        Debug.Log(hits.Length);
+        foreach (RaycastHit2D c in hits)
+            {
+            GameObject hittedObject = c.collider.gameObject;
+            Debug.Log(hittedObject.name);
+                if (hittedObject.layer == opponentLayer)
+                {
+                    HealthSystem hittedHealth = (HealthSystem)hittedObject.GetComponent(typeof(HealthSystem));
+                    if (hittedHealth != null)
+                        hittedHealth.lowerHealth(attributes.getDamage());
+                    Debug.Log("Meleehit");
+                }
+            }
+        }
 }

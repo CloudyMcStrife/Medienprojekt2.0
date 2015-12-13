@@ -52,6 +52,7 @@
      <Compile Include="Assets\Assets\Scripts\LiftMovement.cs" />
      <Compile Include="Assets\Assets\Scripts\ProblemeZuLösen\Problemliste.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\AI\BasicAI.cs" />
+     <Compile Include="Assets\Assets\Scripts\Systems\AI\BasicMeleeAI.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\AI\EnemyVision.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\CharacterMovement.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\EbeneNavigationSystem.cs" />
@@ -59,6 +60,7 @@
      <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\HealthSystem.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\LevelManager.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\MeleeSystem.cs" />
+     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\MeleeWeapon.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\NavigationSystem.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\Projectile.cs" />
      <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\ProjectilePoolingSystem.cs" />

@@ -7,6 +7,7 @@ public class RangedSystem : MonoBehaviour {
     AttributeComponent attributes;
     Animator anim;
     CharacterMovement movement;
+    public GameObject shotSound;
 
     public float[] rangeAttackCooldown = { 1.0f, 1.0f };
     bool shotAnimationReady;
@@ -44,7 +45,9 @@ public class RangedSystem : MonoBehaviour {
 	            if (proj != null)
 	            {
 	                currentProjectile = proj.GetComponent<Projectile>();
-	                if (is_normal_shot)
+                    if(shotSound != null)
+                        Instantiate(shotSound);
+                    if (is_normal_shot)
 	                {
 	                    currentProjectile.set_shooting_type(Projectile.Shooting_Type.NORMAL);
 	                    currentProjectile.shoot(2.0f, movement.facingRight);

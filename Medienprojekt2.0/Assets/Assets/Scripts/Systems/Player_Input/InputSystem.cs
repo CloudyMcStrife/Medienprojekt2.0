@@ -7,6 +7,7 @@ public class InputSystem : MonoBehaviour {
     RangedSystem rangedSys;
     MeleeSystem meleeSys;
     bool primaryShot = true;
+    
 
 	// Use this for initialization
 	void Start () {
@@ -63,7 +64,6 @@ public class InputSystem : MonoBehaviour {
 		{
             if(movement.grounded && meleeSys.anim != null && !meleeSys.anim.GetBool("MeleeAttackInQueue"))
             {
-                Debug.Log(meleeSys.anim.GetBool("MeleeAttackInQueue"));
                     movePlayerVector = 0.0f;
                     meleeSys.punch();
             }

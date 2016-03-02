@@ -1,0 +1,628 @@
+fileFormatVersion: 2
+guid: 1389cfa64bd83244c914a260481edd04
+timeCreated: 1452094279
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: open_animation_0
+    21300002: open_animation_1
+    21300004: open_animation_2
+    21300006: open_animation_3
+    21300008: open_animation_4
+    21300010: open_animation_5
+    21300012: open_animation_6
+    21300014: open_animation_7
+    21300016: open_animation_8
+    21300018: open_animation_9
+    21300020: open_animation_10
+    21300022: open_animation_11
+    21300024: open_animation_12
+    21300026: open_animation_13
+    21300028: open_animation_14
+    21300030: open_animation_15
+    21300032: open_animation_16
+    21300034: open_animation_17
+    21300036: open_animation_18
+    21300038: open_animation_19
+    21300040: open_animation_20
+    21300042: open_animation_21
+    21300044: open_animation_22
+    21300046: open_animation_23
+    21300048: open_animation_24
+    21300050: open_animation_25
+    21300052: open_animation_26
+    21300054: open_animation_27
+    21300056: open_animation_28
+    21300058: open_animation_29
+    21300060: open_animation_30
+    21300062: open_animation_31
+    21300064: open_animation_32
+    21300066: open_animation_33
+    21300068: open_animation_34
+    21300070: open_animation_35
+    21300072: open_animation_36
+    21300074: open_animation_37
+    21300076: open_animation_38
+    21300078: open_animation_39
+    21300080: open_animation_40
+    21300082: open_animation_41
+    21300084: open_animation_42
+    21300086: open_animation_43
+    21300088: open_animation_44
+    21300090: open_animation_45
+    21300092: open_animation_46
+    21300094: open_animation_47
+    21300096: open_animation_48
+    21300098: open_animation_49
+    21300100: open_animation_50
+    21300102: open_animation_51
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: open_animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_1
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1400
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1400
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_3
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1400
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_4
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1400
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_5
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1400
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_6
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 1400
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_7
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 1400
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_8
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1400
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_9
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 1400
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1120
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_11
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1120
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_12
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1120
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_13
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1120
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_14
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1120
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_15
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1120
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_16
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 1120
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_17
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 1120
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_18
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1120
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_19
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 1120
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_21
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 840
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_22
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 840
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_23
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 840
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_24
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 840
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_25
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 840
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_26
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 840
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_27
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 840
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_28
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 840
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_29
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 840
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 560
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_31
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 560
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_32
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 560
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_33
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 560
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_34
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 560
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_35
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 560
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_36
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 560
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_37
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 560
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_38
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 560
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_39
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 560
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_41
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 280
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_42
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 280
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_43
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 280
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_44
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 280
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_45
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 280
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_46
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 280
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_47
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 280
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_48
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 280
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_49
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 280
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: open_animation_51
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 0
+        width: 184
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

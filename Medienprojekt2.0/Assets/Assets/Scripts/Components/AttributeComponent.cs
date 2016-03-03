@@ -17,9 +17,16 @@ public class AttributeComponent : MonoBehaviour {
 	//int range gibt an ob fernkampf und wie weit die range des Spielers/Gegners ist. 0 = nahkampf, > 0 = fernkampf
 	public int range;
 
+    //Cooldown für Plasma-Schuss
     static float cooldown1 = 1.0f;
     bool cooldown1Active = false;
     bool skill1cooldown = false;
+
+    static float cooldown2 = 10.0f;
+    static float ttl = 5.0f;
+    float attl = ttl;
+    bool cooldown2Active = false;
+    bool skill2cooldown = false;
 
     MeleeSystem meleeSys;
 
@@ -37,6 +44,11 @@ public class AttributeComponent : MonoBehaviour {
             stamina = Mathf.Clamp(stamina+staminaPerSecond * Time.deltaTime,0,maxStamina);
             Debug.Log(stamina);
         }
+
+        if (attl > 0)
+            attl -= Time.deltaTime;
+        if (attl <= 0)
+            Destroy(GameObject.Find("Player(Clone)"));
 	}
 	
 	public float getDamage()
@@ -99,6 +111,25 @@ public class AttributeComponent : MonoBehaviour {
         return cooldown1;
     }
 
+    public bool getCooldown2Active()
+    {
+        return cooldown2Active;
+    }
+
+    public void setCooldown2Active(bool value)
+    {
+        cooldown2Active = value;  
+    }
+
+    public float getCooldown2()
+    {
+        return cooldown2;
+    }
+
+    public void setTTL()
+    {
+        attl = ttl;
+    }
 
     //Returns difference between possible Stamina Damage and really done stamina dmg
     //eg. all damage can be absorbed into stamina = returns 0

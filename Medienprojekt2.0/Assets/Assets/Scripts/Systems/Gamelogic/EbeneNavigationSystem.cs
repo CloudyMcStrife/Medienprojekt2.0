@@ -50,13 +50,11 @@ public class EbeneNavigationSystem : MonoBehaviour {
 			FadeToBlack ();
 		else if(!fadeToBlack && isFading)
 			FadeToClear ();
-		Debug.Log (fadeToBlack);
 	}
 
 	void OnTriggerStay2D(Collider2D other)
 	{
 		if (other.tag == "Player" && Input.GetKeyDown ("t") && !isFading) {
-			Debug.Log ("ICH WEIß DASS DU FADEN WILLST MACHS ABER TROTZDEM NIT");
 				black = true;
 				isFading = true;
 				fadeToBlack = true;

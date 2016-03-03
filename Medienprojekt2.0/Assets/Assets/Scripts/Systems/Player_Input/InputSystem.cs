@@ -4,6 +4,7 @@ using System.Collections;
 public class InputSystem : MonoBehaviour {
 
     CharacterMovement movement;
+    AttributeComponent attComp;
     RangedSystem rangedSys;
     MeleeSystem meleeSys;
     bool primaryShot = true;
@@ -11,6 +12,7 @@ public class InputSystem : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        attComp = (AttributeComponent)gameObject.GetComponent(typeof(AttributeComponent));
         movement = (CharacterMovement)gameObject.GetComponent(typeof(CharacterMovement));
         meleeSys = (MeleeSystem)gameObject.GetComponent(typeof(MeleeSystem));
         rangedSys = (RangedSystem)GetComponent(typeof(RangedSystem));
@@ -59,6 +61,24 @@ public class InputSystem : MonoBehaviour {
 			rangedSys.switchWeapon();
             primaryShot = !primaryShot;
 		}
+
+        if(Input.GetKeyDown("k"))
+        {
+            if (!attComp.getCooldown2Active())
+            {
+                attComp.setTTL();
+                GameObject.Find("Player").GetComponent<AttributeComponent>().setCooldown2Active(true);
+                GameObject temp = Instantiate(GameObject.Find("Player"));
+                temp.GetComponent<CharacterMovement>().enabled = false;
+                //temp.GetComponent<AttributeComponent>().enabled = false;
+               // temp.GetComponent<InputSystem>().enabled = false;
+                temp.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
+                
+                Physics2D.IgnoreCollision(GameObject.Find("Player").GetComponent<BoxCollider2D>(), temp.GetComponent<BoxCollider2D>());         
+            }
+            
+            
+        }
 
 		if (Input.GetKeyDown ("j")) 
 		{

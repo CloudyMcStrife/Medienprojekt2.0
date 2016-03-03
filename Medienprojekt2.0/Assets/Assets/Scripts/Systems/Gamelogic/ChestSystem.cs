@@ -3,11 +3,10 @@ using System.Collections;
 public class ChestSystem : MonoBehaviour {
 
     Animator anim;
-    InputSystem playerInput;
+    public GameObject[] possibleDrops;
     // Use this for initialization
     void Start () {
         anim = (Animator)this.GetComponent(typeof(Animator));
-        playerInput = (InputSystem) GameObject.Find("Player").GetComponent(typeof(InputSystem));
 	}
 	
 	// Update is called once per frame
@@ -15,9 +14,18 @@ public class ChestSystem : MonoBehaviour {
 	    
 	}
 
-    void OnTriggerEnter2D()
+    void OnTriggerStay2D()
     {
+        if(!anim.GetBool("ChestOpened"))
+        {
+            if(Input.GetKeyDown("e"))
+                anim.SetBool("ChestOpened", true);
+        }
+    }
 
-        anim.SetBool("ChestOpened", true);
+    void ANIM_DropKeyframe()
+    {
+        int randomIndex = (int)(Random.value * possibleDrops.Length);
+        GameObject dropped = (GameObject)Instantiate((GameObject)possibleDrops[randomIndex], this.transform.position, this.transform.localRotation);
     }
 }

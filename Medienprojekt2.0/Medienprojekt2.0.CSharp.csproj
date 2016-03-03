@@ -79,6 +79,7 @@
     <Compile Include="Assets\Assets\Scripts\Systems\AI\BasicMeleeAI.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\AI\EnemyVision.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\CharacterMovement.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\ChestSystem.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\EbeneNavigationSystem.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\HealthEffectZone.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\HealthSystem.cs" />

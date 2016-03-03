@@ -7,6 +7,7 @@ public class InputSystem : MonoBehaviour {
     AttributeComponent attComp;
     RangedSystem rangedSys;
     MeleeSystem meleeSys;
+    Collider2D playerColl;
     bool primaryShot = true;
     
 
@@ -16,6 +17,7 @@ public class InputSystem : MonoBehaviour {
         movement = (CharacterMovement)gameObject.GetComponent(typeof(CharacterMovement));
         meleeSys = (MeleeSystem)gameObject.GetComponent(typeof(MeleeSystem));
         rangedSys = (RangedSystem)GetComponent(typeof(RangedSystem));
+        playerColl = (Collider2D)GetComponent(typeof(Collider2D));
 	}
 	
 	// Update is called once per frame
@@ -88,6 +90,7 @@ public class InputSystem : MonoBehaviour {
                     meleeSys.punch();
             }
 		}
+
 
 		if (meleeSys.animationRunning || meleeSys.blocking)
 			movePlayerVector = 0.0f;

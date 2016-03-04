@@ -29,9 +29,9 @@ public class BasicAI : MonoBehaviour {
     public float wallCheckRadius;
     bool hittingWall;
 
-    public LayerMask groundMask;
-    public Transform groundCheck;
-    public float groundCheckRadius;
+    public LayerMask gapMask;
+    public Transform gapCheck;
+    public float gapCheckRadius;
     bool onAnEdge;
 
     // Use this for initialization
@@ -58,12 +58,21 @@ public class BasicAI : MonoBehaviour {
             distancex = distancey = 0;
         }
         hittingWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, wallMask);
-        onAnEdge = !Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundMask);
+        onAnEdge = !Physics2D.OverlapCircle(gapCheck.position, gapCheckRadius, gapMask);
     }
 
 
     void Update()
     {
+        if (GameObject.Find("Klon"))
+        {
+            rigplayer = (Rigidbody2D)GameObject.Find("Klon").GetComponent(typeof(Rigidbody2D));
+        }
+        else
+        {
+            rigplayer = (Rigidbody2D)GameObject.FindWithTag("Player").GetComponent(typeof(Rigidbody2D));
+        }
+                
         //prüft ob EnemyEntity links oder rechts in minimumDistance (=Angriffsreichweite) ist;
         inAttackRangex = (distancex <= minimumDistancex && distancex > 0) || (distancex >= -minimumDistancex && distancex < 0);
         inAttackRangey = (distancey <= minimumDistancey && distancey > 0) || (distancey >= -minimumDistancey && distancey < 0);

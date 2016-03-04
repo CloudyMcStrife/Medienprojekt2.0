@@ -23,7 +23,7 @@ public class AttributeComponent : MonoBehaviour {
     bool skill1cooldown = false;
 
     static float cooldown2 = 10.0f;
-    static float ttl = 5.0f;
+    static float ttl = 25.0f;
     float attl = ttl;
     bool cooldown2Active = false;
     bool skill2cooldown = false;

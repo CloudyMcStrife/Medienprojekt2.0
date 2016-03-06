@@ -5,6 +5,7 @@ public class BasicMeleeAI : MonoBehaviour {
 
     CharacterMovement movement;
     MeleeSystem meleeSys;
+    Animator anim;
 
     Rigidbody2D rigplayer;
     Rigidbody2D rigenemy;

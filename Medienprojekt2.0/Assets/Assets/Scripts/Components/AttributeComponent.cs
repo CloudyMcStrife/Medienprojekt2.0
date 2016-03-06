@@ -23,7 +23,7 @@ public class AttributeComponent : MonoBehaviour {
     bool skill1cooldown = false;
 
     static float cooldown2 = 10.0f;
-    static float ttl = 25.0f;
+    static float ttl = 5.0f;
     float attl = ttl;
     bool cooldown2Active = false;
     bool skill2cooldown = false;
@@ -48,7 +48,7 @@ public class AttributeComponent : MonoBehaviour {
         if (attl > 0)
             attl -= Time.deltaTime;
         if (attl <= 0)
-            Destroy(GameObject.Find("Player(Clone)"));
+            Destroy(GameObject.Find("Klon"));
 	}
 	
 	public float getDamage()

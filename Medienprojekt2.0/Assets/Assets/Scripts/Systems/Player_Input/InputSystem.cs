@@ -68,14 +68,14 @@ public class InputSystem : MonoBehaviour {
         {
             if (!attComp.getCooldown2Active())
             {
-                attComp.setTTL();
                 GameObject.Find("Player").GetComponent<AttributeComponent>().setCooldown2Active(true);
                 GameObject temp = Instantiate(GameObject.Find("Player"));
                 temp.name = "Klon";
                 temp.GetComponent<CharacterMovement>().enabled = false;
                 temp.GetComponent<InputSystem>().enabled = false;
                 temp.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;  
-                Physics2D.IgnoreCollision(GameObject.Find("Player").GetComponent<BoxCollider2D>(), temp.GetComponent<BoxCollider2D>());         
+                Physics2D.IgnoreCollision(GameObject.Find("Player").GetComponent<BoxCollider2D>(), temp.GetComponent<BoxCollider2D>());
+                attComp.setTTL();
             }
             
             

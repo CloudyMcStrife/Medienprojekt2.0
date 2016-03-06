@@ -94,7 +94,6 @@ public class BasicMeleeAI : MonoBehaviour {
         //Should be able to attack now, if cooldowns are up
         if ((inAttackRangex && inAttackRangey) && vision.playerVisible)
         {
-            Debug.Log("attack");
             movement.move(0.0f);
             meleeSys.punch();
         }

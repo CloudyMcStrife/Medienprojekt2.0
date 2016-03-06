@@ -5,6 +5,7 @@ public class BasicAI : MonoBehaviour {
 
     CharacterMovement movement;
     RangedSystem rangeSys;
+    Animator anim;
 
     Rigidbody2D rigplayer;
     Rigidbody2D rigenemy;
@@ -43,6 +44,7 @@ public class BasicAI : MonoBehaviour {
         rigenemy = (Rigidbody2D)GetComponent(typeof(Rigidbody2D));
         vision = (EnemyVision)GetComponent(typeof(EnemyVision));
         rangeSys = (RangedSystem)GetComponent(typeof(RangedSystem));
+        anim = (Animator)GetComponent(typeof(Animator));
     }
 
     // Update is called once per frame
@@ -76,8 +78,11 @@ public class BasicAI : MonoBehaviour {
         //prüft ob EnemyEntity links oder rechts in minimumDistance (=Angriffsreichweite) ist;
         inAttackRangex = (distancex <= minimumDistancex && distancex > 0) || (distancex >= -minimumDistancex && distancex < 0);
         inAttackRangey = (distancey <= minimumDistancey && distancey > 0) || (distancey >= -minimumDistancey && distancey < 0);
-        //Begin Chasing
-        if (!inAttackRangex && vision.playerVisible)
+
+        if (anim.GetBool("AttackInProgress"))
+            return;
+            //Begin Chasing
+            if (!inAttackRangex && vision.playerVisible)
         {
             if (movement.grounded)
             {
@@ -94,8 +99,8 @@ public class BasicAI : MonoBehaviour {
         if ((inAttackRangex && inAttackRangey) && vision.playerVisible)
         {
             movement.move(0.0f);
+            anim.SetBool("AttackInProgress", true);
             StartCoroutine(rangeSys.shoot(true));
-            rangeSys.setShotAnimationReady();
         }
 
 

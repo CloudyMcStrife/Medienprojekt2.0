@@ -1,0 +1,996 @@
+fileFormatVersion: 2
+guid: 4efc2f0b85218a340a44532312a058c7
+timeCreated: 1457284605
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: EB_Scream_0
+    21300002: EB_Scream_1
+    21300004: EB_Scream_2
+    21300006: EB_Scream_3
+    21300008: EB_Scream_4
+    21300010: EB_Scream_5
+    21300012: EB_Scream_6
+    21300014: EB_Scream_7
+    21300016: EB_Scream_8
+    21300018: EB_Scream_9
+    21300020: EB_Scream_10
+    21300022: EB_Scream_11
+    21300024: EB_Scream_12
+    21300026: EB_Scream_13
+    21300028: EB_Scream_14
+    21300030: EB_Scream_15
+    21300032: EB_Scream_16
+    21300034: EB_Scream_17
+    21300036: EB_Scream_18
+    21300038: EB_Scream_19
+    21300040: EB_Scream_20
+    21300042: EB_Scream_21
+    21300044: EB_Scream_22
+    21300046: EB_Scream_23
+    21300048: EB_Scream_24
+    21300050: EB_Scream_25
+    21300052: EB_Scream_26
+    21300054: EB_Scream_27
+    21300056: EB_Scream_28
+    21300058: EB_Scream_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: EB_Scream_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 488
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 141, y: 89}
+        - {x: 91, y: 52}
+        - {x: 86, y: 47}
+        - {x: 36, y: 30}
+        - {x: 16, y: 19}
+        - {x: -150, y: 89}
+        - {x: -176, y: 89}
+        - {x: -179, y: 80}
+        - {x: -179, y: -7}
+        - {x: -116, y: -86}
+        - {x: -97, y: -96}
+        - {x: -59, y: -122}
+        - {x: 33, y: -122}
+        - {x: 123, y: -93}
+        - {x: 172, y: 13}
+        - {x: 172, y: 86}
+        - {x: 163, y: 89}
+    - name: EB_Scream_1
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 488
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 141, y: 89}
+        - {x: 91, y: 52}
+        - {x: 86, y: 47}
+        - {x: 51, y: 51}
+        - {x: -44, y: 82}
+        - {x: -60, y: 89}
+        - {x: -179, y: 89}
+        - {x: -179, y: -7}
+        - {x: -116, y: -86}
+        - {x: -97, y: -96}
+        - {x: -59, y: -122}
+        - {x: 33, y: -122}
+        - {x: 123, y: -93}
+        - {x: 172, y: 13}
+        - {x: 172, y: 86}
+        - {x: 163, y: 89}
+    - name: EB_Scream_2
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 488
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 140, y: 89}
+        - {x: 90, y: 52}
+        - {x: 41, y: 52}
+        - {x: -157, y: 81}
+        - {x: -168, y: 82}
+        - {x: -179, y: 73}
+        - {x: -179, y: 9}
+        - {x: -116, y: -86}
+        - {x: -97, y: -96}
+        - {x: -59, y: -122}
+        - {x: 33, y: -122}
+        - {x: 123, y: -93}
+        - {x: 172, y: 13}
+        - {x: 172, y: 86}
+        - {x: 163, y: 89}
+    - name: EB_Scream_3
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 488
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: 32}
+        - {x: -26, y: 54}
+        - {x: -157, y: 81}
+        - {x: -168, y: 82}
+        - {x: -179, y: 73}
+        - {x: -179, y: 9}
+        - {x: -116, y: -86}
+        - {x: -97, y: -96}
+        - {x: -59, y: -122}
+        - {x: 33, y: -122}
+        - {x: 123, y: -93}
+        - {x: 172, y: 13}
+        - {x: 172, y: 89}
+        - {x: 107, y: 89}
+        - {x: 66, y: 81}
+    - name: EB_Scream_4
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 488
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 86, y: 47}
+        - {x: -56, y: 65}
+        - {x: -59, y: 29}
+        - {x: -136, y: 89}
+        - {x: -164, y: 89}
+        - {x: -179, y: 74}
+        - {x: -179, y: 9}
+        - {x: -116, y: -86}
+        - {x: -97, y: -96}
+        - {x: -59, y: -122}
+        - {x: 33, y: -122}
+        - {x: 123, y: -93}
+        - {x: 172, y: 13}
+        - {x: 172, y: 89}
+        - {x: 107, y: 89}
+        - {x: 66, y: 81}
+    - name: EB_Scream_5
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 488
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 154, y: 103}
+        - {x: 128, y: 103}
+        - {x: 24, y: 34}
+        - {x: -35, y: 69}
+        - {x: -66, y: 72}
+        - {x: -121, y: 103}
+        - {x: -154, y: 103}
+        - {x: -163, y: 85}
+        - {x: -163, y: 8}
+        - {x: -153, y: -12}
+        - {x: -101, y: -93}
+        - {x: -41, y: -122}
+        - {x: 28, y: -122}
+        - {x: 99, y: -94}
+        - {x: 160, y: 10}
+        - {x: 160, y: 81}
+    - name: EB_Scream_6
+      rect:
+        serializedVersion: 2
+        x: 2544
+        y: 488
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 79, y: 122}
+        - {x: -45, y: 38}
+        - {x: -48, y: 37}
+        - {x: -47, y: 28}
+        - {x: -48, y: 50}
+        - {x: -43, y: 48}
+        - {x: -47, y: 71}
+        - {x: -65, y: 122}
+        - {x: -98, y: 122}
+        - {x: -120, y: 92}
+        - {x: -120, y: -34}
+        - {x: -117, y: -71}
+        - {x: -62, y: -122}
+        - {x: 54, y: -122}
+        - {x: 59, y: -121}
+        - {x: 130, y: -84}
+        - {x: 130, y: 122}
+      - - {x: 42, y: -113}
+        - {x: 45, y: -118}
+        - {x: 48, y: -117}
+        - {x: 48, y: -109}
+        - {x: 47, y: -107}
+        - {x: 45, y: -107}
+        - {x: 42, y: -108}
+    - name: EB_Scream_7
+      rect:
+        serializedVersion: 2
+        x: 2968
+        y: 488
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 93}
+        - {x: -118, y: -59}
+        - {x: -55, y: -122}
+        - {x: 28, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_8
+      rect:
+        serializedVersion: 2
+        x: 3392
+        y: 488
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 93}
+        - {x: -118, y: -59}
+        - {x: -55, y: -122}
+        - {x: 28, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_9
+      rect:
+        serializedVersion: 2
+        x: 3816
+        y: 488
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 93}
+        - {x: -118, y: -59}
+        - {x: -55, y: -122}
+        - {x: 28, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 244
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 93}
+        - {x: -118, y: -59}
+        - {x: -55, y: -122}
+        - {x: 28, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_11
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 244
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 93}
+        - {x: -118, y: -59}
+        - {x: -55, y: -122}
+        - {x: 28, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_12
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 244
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 93}
+        - {x: -118, y: -59}
+        - {x: -55, y: -122}
+        - {x: 28, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_13
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 244
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 93}
+        - {x: -118, y: -59}
+        - {x: -55, y: -122}
+        - {x: 28, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_14
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 244
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 93}
+        - {x: -118, y: -59}
+        - {x: -55, y: -122}
+        - {x: 28, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_15
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 244
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 93}
+        - {x: -118, y: -59}
+        - {x: -55, y: -122}
+        - {x: 28, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_16
+      rect:
+        serializedVersion: 2
+        x: 2544
+        y: 244
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 93}
+        - {x: -118, y: -59}
+        - {x: -55, y: -122}
+        - {x: 28, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_17
+      rect:
+        serializedVersion: 2
+        x: 2968
+        y: 244
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 93}
+        - {x: -118, y: -59}
+        - {x: -55, y: -122}
+        - {x: 28, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_18
+      rect:
+        serializedVersion: 2
+        x: 3392
+        y: 244
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 93}
+        - {x: -118, y: -59}
+        - {x: -55, y: -122}
+        - {x: 28, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_19
+      rect:
+        serializedVersion: 2
+        x: 3816
+        y: 244
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 94}
+        - {x: -118, y: -61}
+        - {x: -70, y: -122}
+        - {x: 38, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 93}
+        - {x: -118, y: -67}
+        - {x: -64, y: -122}
+        - {x: 30, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_21
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 93}
+        - {x: -118, y: -67}
+        - {x: -64, y: -122}
+        - {x: 30, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_22
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 93}
+        - {x: -118, y: -67}
+        - {x: -64, y: -122}
+        - {x: 30, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_23
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 93}
+        - {x: -118, y: -67}
+        - {x: -64, y: -122}
+        - {x: 30, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_24
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: 96}
+        - {x: 118, y: 122}
+        - {x: 82, y: 122}
+        - {x: 29, y: 72}
+        - {x: -35, y: 70}
+        - {x: -61, y: 122}
+        - {x: -94, y: 122}
+        - {x: -118, y: 93}
+        - {x: -118, y: -67}
+        - {x: -64, y: -122}
+        - {x: 30, y: -122}
+        - {x: 105, y: -68}
+        - {x: 125, y: 15}
+        - {x: 128, y: 36}
+      - - {x: 42, y: -114}
+        - {x: 45, y: -119}
+        - {x: 48, y: -118}
+        - {x: 48, y: -110}
+        - {x: 47, y: -108}
+        - {x: 45, y: -108}
+        - {x: 42, y: -109}
+    - name: EB_Scream_25
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 134, y: 45}
+        - {x: 134, y: 84}
+        - {x: 120, y: 117}
+        - {x: 116, y: 122}
+        - {x: 88, y: 122}
+        - {x: 41, y: 81}
+        - {x: -71, y: 122}
+        - {x: -107, y: 122}
+        - {x: -126, y: 107}
+        - {x: -126, y: -64}
+        - {x: -122, y: -93}
+        - {x: -48, y: -122}
+        - {x: 28, y: -122}
+        - {x: 42, y: -116}
+        - {x: 58, y: -98}
+        - {x: 110, y: -73}
+    - name: EB_Scream_26
+      rect:
+        serializedVersion: 2
+        x: 2544
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 134, y: 114}
+        - {x: 115, y: 119}
+        - {x: 100, y: 119}
+        - {x: 59, y: 70}
+        - {x: -21, y: 0}
+        - {x: -11, y: 45}
+        - {x: -60, y: 119}
+        - {x: -119, y: 119}
+        - {x: -130, y: 113}
+        - {x: -137, y: 78}
+        - {x: -137, y: 0}
+        - {x: -135, y: -59}
+        - {x: -59, y: -122}
+        - {x: 28, y: -122}
+        - {x: 108, y: -77}
+        - {x: 142, y: 25}
+        - {x: 142, y: 89}
+    - name: EB_Scream_27
+      rect:
+        serializedVersion: 2
+        x: 2968
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 137, y: 112}
+        - {x: 114, y: 112}
+        - {x: 69, y: 69}
+        - {x: 18, y: 28}
+        - {x: -62, y: 71}
+        - {x: -103, y: 112}
+        - {x: -127, y: 112}
+        - {x: -138, y: 109}
+        - {x: -149, y: 80}
+        - {x: -149, y: 28}
+        - {x: -115, y: -83}
+        - {x: -31, y: -122}
+        - {x: 39, y: -122}
+        - {x: 116, y: -62}
+        - {x: 150, y: 20}
+        - {x: 150, y: 81}
+    - name: EB_Scream_28
+      rect:
+        serializedVersion: 2
+        x: 3392
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 110, y: 106}
+        - {x: -48, y: 44}
+        - {x: -45, y: 15}
+        - {x: -35, y: -7}
+        - {x: -52, y: 11}
+        - {x: -77, y: 57}
+        - {x: -124, y: 106}
+        - {x: -137, y: 106}
+        - {x: -154, y: 97}
+        - {x: -159, y: 78}
+        - {x: -159, y: 15}
+        - {x: -126, y: -75}
+        - {x: -45, y: -122}
+        - {x: 31, y: -122}
+        - {x: 129, y: -105}
+        - {x: 157, y: 5}
+        - {x: 157, y: 106}
+    - name: EB_Scream_29
+      rect:
+        serializedVersion: 2
+        x: 3816
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 156, y: 99}
+        - {x: 126, y: 99}
+        - {x: 17, y: 22}
+        - {x: -31, y: 35}
+        - {x: -38, y: 30}
+        - {x: -41, y: 18}
+        - {x: -73, y: 66}
+        - {x: -140, y: 99}
+        - {x: -168, y: 99}
+        - {x: -168, y: 11}
+        - {x: -111, y: -93}
+        - {x: -43, y: -122}
+        - {x: 53, y: -122}
+        - {x: 105, y: -103}
+        - {x: 163, y: 4}
+        - {x: 163, y: 85}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

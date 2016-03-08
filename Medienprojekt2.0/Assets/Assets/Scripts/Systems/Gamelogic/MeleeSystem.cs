@@ -104,7 +104,7 @@ public class MeleeSystem : MonoBehaviour {
     }
 
 
-	//Called durch Input
+	//Called durch Input oder KI
     public void punch()
 	{
 		if (anim.GetBool("firstAnim")) {
@@ -119,6 +119,16 @@ public class MeleeSystem : MonoBehaviour {
             idleStateExecuted = false;
 		}
 	}
+
+
+    //used 
+    public void onePunch()
+    {
+            anim.SetBool("firstAnim", true);
+            anim.SetTrigger("MeleeAttack");
+            animationRunning = true;
+            idleStateExecuted = false;
+    }
 
     public void enemyHit(GameObject objectHit)
     {

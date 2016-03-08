@@ -1,0 +1,323 @@
+fileFormatVersion: 2
+guid: 35be361fea46f0646ae3a3ad9a929804
+timeCreated: 1457284750
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: EB_LH_Attack_0
+    21300002: EB_LH_Attack_1
+    21300004: EB_LH_Attack_2
+    21300006: EB_LH_Attack_3
+    21300008: EB_LH_Attack_4
+    21300010: EB_LH_Attack_5
+    21300012: EB_LH_Attack_6
+    21300014: EB_LH_Attack_7
+    21300016: EB_LH_Attack_8
+    21300018: EB_LH_Attack_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: EB_LH_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 141, y: 89}
+        - {x: 91, y: 52}
+        - {x: 86, y: 47}
+        - {x: 36, y: 30}
+        - {x: 16, y: 19}
+        - {x: -150, y: 89}
+        - {x: -176, y: 89}
+        - {x: -179, y: 80}
+        - {x: -179, y: -7}
+        - {x: -116, y: -86}
+        - {x: -97, y: -96}
+        - {x: -85, y: -105}
+        - {x: -30, y: -122}
+        - {x: 64, y: -122}
+        - {x: 172, y: -26}
+        - {x: 172, y: 89}
+    - name: EB_LH_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 126, y: 25}
+        - {x: -45, y: 25}
+        - {x: -45, y: -31}
+        - {x: -212, y: -4}
+        - {x: -212, y: -49}
+        - {x: -209, y: -73}
+        - {x: -101, y: -122}
+        - {x: 31, y: -122}
+        - {x: 150, y: -101}
+        - {x: 207, y: -61}
+        - {x: 212, y: -35}
+        - {x: 212, y: -1}
+      - - {x: -33, y: -31}
+        - {x: -30, y: -30}
+        - {x: -30, y: -27}
+        - {x: -33, y: -26}
+        - {x: -35, y: -28}
+    - name: EB_LH_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 64, y: 25}
+        - {x: -84, y: 25}
+        - {x: -119, y: -14}
+        - {x: -212, y: -104}
+        - {x: -212, y: -122}
+        - {x: 212, y: -122}
+        - {x: 212, y: -107}
+        - {x: 136, y: -67}
+      - - {x: 8, y: -9}
+        - {x: 11, y: -8}
+        - {x: 11, y: -5}
+        - {x: 8, y: -4}
+        - {x: 6, y: -6}
+    - name: EB_LH_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 25}
+        - {x: -94, y: -33}
+        - {x: -212, y: -109}
+        - {x: -212, y: -122}
+        - {x: 210, y: -122}
+        - {x: 210, y: -118}
+        - {x: 160, y: -62}
+        - {x: 53, y: -23}
+        - {x: 49, y: 25}
+      - - {x: 6, y: -7}
+        - {x: 9, y: -6}
+        - {x: 9, y: -3}
+        - {x: 6, y: -2}
+        - {x: 4, y: -4}
+    - name: EB_LH_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 212, y: -87}
+        - {x: 211, y: -86}
+        - {x: 183, y: -78}
+        - {x: 162, y: -20}
+        - {x: 89, y: 25}
+        - {x: -142, y: 25}
+        - {x: -212, y: -30}
+        - {x: -212, y: -122}
+        - {x: 188, y: -122}
+        - {x: 211, y: -115}
+        - {x: 212, y: -114}
+    - name: EB_LH_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 149, y: -30}
+        - {x: 42, y: -20}
+        - {x: 46, y: 25}
+        - {x: -47, y: 25}
+        - {x: -69, y: -4}
+        - {x: -212, y: -49}
+        - {x: -212, y: -92}
+        - {x: -195, y: -122}
+        - {x: 181, y: -122}
+        - {x: 212, y: -102}
+        - {x: 212, y: -57}
+        - {x: 196, y: -55}
+    - name: EB_LH_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 2544
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38, y: 25}
+        - {x: -39, y: 24}
+        - {x: -31, y: -11}
+        - {x: -22, y: -34}
+        - {x: -21, y: -36}
+        - {x: -27, y: -33}
+        - {x: -78, y: -11}
+        - {x: -146, y: 8}
+        - {x: -212, y: 8}
+        - {x: -212, y: -78}
+        - {x: -98, y: -122}
+        - {x: 106, y: -122}
+        - {x: 212, y: -50}
+        - {x: 212, y: 14}
+        - {x: 89, y: 25}
+    - name: EB_LH_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 2968
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 73, y: 61}
+        - {x: -26, y: 35}
+        - {x: -39, y: 24}
+        - {x: -31, y: -11}
+        - {x: -22, y: -34}
+        - {x: -20, y: -36}
+        - {x: -24, y: -33}
+        - {x: -111, y: 40}
+        - {x: -169, y: 61}
+        - {x: -193, y: 61}
+        - {x: -202, y: 58}
+        - {x: -202, y: -34}
+        - {x: -75, y: -122}
+        - {x: 95, y: -122}
+        - {x: 118, y: -116}
+        - {x: 197, y: 10}
+        - {x: 197, y: 61}
+    - name: EB_LH_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 3392
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -62, y: 33}
+        - {x: -22, y: -34}
+        - {x: -20, y: -36}
+        - {x: -24, y: -33}
+        - {x: -69, y: 6}
+        - {x: -109, y: 44}
+        - {x: -164, y: 78}
+        - {x: -189, y: 69}
+        - {x: -189, y: -1}
+        - {x: -113, y: -122}
+        - {x: 144, y: -122}
+        - {x: 182, y: -39}
+        - {x: 182, y: 79}
+        - {x: 149, y: 79}
+        - {x: 79, y: 71}
+    - name: EB_LH_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 3816
+        y: 0
+        width: 424
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 86}
+        - {x: -45, y: 70}
+        - {x: -39, y: 24}
+        - {x: -31, y: -11}
+        - {x: -103, y: 47}
+        - {x: -168, y: 82}
+        - {x: -182, y: 71}
+        - {x: -182, y: 21}
+        - {x: -181, y: 12}
+        - {x: -158, y: -32}
+        - {x: -94, y: -104}
+        - {x: -30, y: -122}
+        - {x: 30, y: -122}
+        - {x: 49, y: -118}
+        - {x: 175, y: -42}
+        - {x: 175, y: 86}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

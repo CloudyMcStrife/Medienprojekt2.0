@@ -71,9 +71,7 @@ public class InputSystem : MonoBehaviour {
             if (!attComp.getCooldown2Active())
             {
                 abilitySys.clone();
-            }
-            
-            
+            } 
         }
 
 		if (Input.GetKeyDown ("j")) 
@@ -84,6 +82,7 @@ public class InputSystem : MonoBehaviour {
                     meleeSys.punch();
             }
 		}
+	
 
 
 		if (meleeSys.animationRunning || meleeSys.blocking)

@@ -46,7 +46,7 @@ public class FollowCamera : MonoBehaviour {
 			(transform.position.y - player.position.y+yOffset) > yMargin;
 	}
 
-	void FixedUpdate()
+	void LateUpdate()
 	{
 		// By default the target x and y coordinates of the camera
 		// are it's current x and y coordinates.

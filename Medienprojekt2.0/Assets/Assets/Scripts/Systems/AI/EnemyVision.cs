@@ -45,4 +45,16 @@ public class EnemyVision : MonoBehaviour {
                 playerVisible = false;
         }
 	}
+
+    void Update()
+    {
+        if(GameObject.Find("Klon"))
+        {
+            rigplayer = (Rigidbody2D)GameObject.Find("Klon").GetComponent(typeof(Rigidbody2D));
+        }
+        else
+        {
+            rigplayer = (Rigidbody2D)GameObject.FindWithTag("Player").GetComponent(typeof(Rigidbody2D));
+        }
+    }
 }

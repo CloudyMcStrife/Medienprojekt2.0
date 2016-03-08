@@ -4,16 +4,20 @@ using System.Collections;
 public class InputSystem : MonoBehaviour {
 
     CharacterMovement movement;
+    AttributeComponent attComp;
     RangedSystem rangedSys;
     MeleeSystem meleeSys;
+    Collider2D playerColl;
     bool primaryShot = true;
     
 
 	// Use this for initialization
 	void Start () {
+        attComp = (AttributeComponent)gameObject.GetComponent(typeof(AttributeComponent));
         movement = (CharacterMovement)gameObject.GetComponent(typeof(CharacterMovement));
         meleeSys = (MeleeSystem)gameObject.GetComponent(typeof(MeleeSystem));
         rangedSys = (RangedSystem)GetComponent(typeof(RangedSystem));
+        playerColl = (Collider2D)GetComponent(typeof(Collider2D));
 	}
 	
 	// Update is called once per frame
@@ -60,6 +64,23 @@ public class InputSystem : MonoBehaviour {
             primaryShot = !primaryShot;
 		}
 
+        if(Input.GetKeyDown("k"))
+        {
+            if (!attComp.getCooldown2Active())
+            {
+                GameObject.Find("Player").GetComponent<AttributeComponent>().setCooldown2Active(true);
+                GameObject temp = Instantiate(GameObject.Find("Player"));
+                temp.name = "Klon";
+                temp.GetComponent<CharacterMovement>().enabled = false;
+                temp.GetComponent<InputSystem>().enabled = false;
+                temp.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;  
+                Physics2D.IgnoreCollision(GameObject.Find("Player").GetComponent<BoxCollider2D>(), temp.GetComponent<BoxCollider2D>());
+                attComp.setTTL();
+            }
+            
+            
+        }
+
 		if (Input.GetKeyDown ("j")) 
 		{
             if(movement.grounded && meleeSys.anim != null && !meleeSys.anim.GetBool("MeleeAttackInQueue"))
@@ -68,6 +89,7 @@ public class InputSystem : MonoBehaviour {
                     meleeSys.punch();
             }
 		}
+
 
 		if (meleeSys.animationRunning || meleeSys.blocking)
 			movePlayerVector = 0.0f;

@@ -5,6 +5,7 @@ public class BasicMeleeAI : MonoBehaviour {
 
     CharacterMovement movement;
     MeleeSystem meleeSys;
+    Animator anim;
 
     Rigidbody2D rigplayer;
     Rigidbody2D rigenemy;
@@ -64,6 +65,15 @@ public class BasicMeleeAI : MonoBehaviour {
 
     void Update()
     {
+        if (GameObject.Find("Klon"))
+        {
+            rigplayer = (Rigidbody2D)GameObject.Find("Klon").GetComponent(typeof(Rigidbody2D));
+        }
+        else
+        {
+            rigplayer = (Rigidbody2D)GameObject.FindWithTag("Player").GetComponent(typeof(Rigidbody2D));
+        }
+
         //prüft ob EnemyEntity links oder rechts in minimumDistance (=Angriffsreichweite) ist;
         inAttackRangex = (distancex <= minimumDistancex && distancex > 0) || (distancex >= -minimumDistancex && distancex < 0);
         inAttackRangey = (distancey <= minimumDistancey && distancey > 0) || (distancey >= -minimumDistancey && distancey < 0);
@@ -84,7 +94,6 @@ public class BasicMeleeAI : MonoBehaviour {
         //Should be able to attack now, if cooldowns are up
         if ((inAttackRangex && inAttackRangey) && vision.playerVisible)
         {
-            Debug.Log("attack");
             movement.move(0.0f);
             meleeSys.punch();
         }

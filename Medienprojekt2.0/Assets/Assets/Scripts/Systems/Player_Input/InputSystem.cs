@@ -8,6 +8,7 @@ public class InputSystem : MonoBehaviour {
     RangedSystem rangedSys;
     MeleeSystem meleeSys;
     Collider2D playerColl;
+	
     bool primaryShot = true;
     
 
@@ -76,9 +77,7 @@ public class InputSystem : MonoBehaviour {
                 temp.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;  
                 Physics2D.IgnoreCollision(GameObject.Find("Player").GetComponent<BoxCollider2D>(), temp.GetComponent<BoxCollider2D>());
                 attComp.setTTL();
-            }
-            
-            
+            } 
         }
 
 		if (Input.GetKeyDown ("j")) 
@@ -89,6 +88,7 @@ public class InputSystem : MonoBehaviour {
                     meleeSys.punch();
             }
 		}
+	
 
 
 		if (meleeSys.animationRunning || meleeSys.blocking)

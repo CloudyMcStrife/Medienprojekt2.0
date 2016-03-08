@@ -9,6 +9,7 @@ public class AttributeComponent : MonoBehaviour {
     public float stamina = 100f;
     public float staminaPerSecond = 0f;
 	public float damage;
+    public bool cloneAlive = false;
 	float armor;
     //current ammo
 	public int ammo;
@@ -43,13 +44,19 @@ public class AttributeComponent : MonoBehaviour {
         {
             stamina = Mathf.Clamp(stamina+staminaPerSecond * Time.deltaTime,0,maxStamina);
             Debug.Log(stamina);
-        }
+        }   
+	}
 
+    void FixedUpdate()
+    {
         if (attl > 0)
             attl -= Time.deltaTime;
-        if (attl <= 0)
+        if (attl <= 0 && cloneAlive)
+        {
             Destroy(GameObject.Find("Klon"));
-	}
+            cloneAlive = false; 
+        }
+    }
 	
 	public float getDamage()
 	{
@@ -129,6 +136,7 @@ public class AttributeComponent : MonoBehaviour {
     public void setTTL()
     {
         attl = ttl;
+        cloneAlive = true;
     }
 
     //Returns difference between possible Stamina Damage and really done stamina dmg

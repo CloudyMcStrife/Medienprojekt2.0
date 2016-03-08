@@ -71,6 +71,7 @@ public class MeleeSystem : MonoBehaviour {
     public void unblock()
     {
         anim.SetBool("Blocking", false);
+		animationRunning = false;
     }
 
     public void idleState()

@@ -161,7 +161,6 @@ public class MeleeSystem : MonoBehaviour {
                     HealthSystem hittedHealth = (HealthSystem)hittedObject.GetComponent(typeof(HealthSystem));
                     if (hittedHealth != null)
                         hittedHealth.lowerHealth(attributes.getDamage());
-                    Debug.Log("Meleehit");
                 }
             }
         }

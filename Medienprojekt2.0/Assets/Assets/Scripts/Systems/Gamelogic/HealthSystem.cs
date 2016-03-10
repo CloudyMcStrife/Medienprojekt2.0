@@ -43,6 +43,10 @@ public class HealthSystem : MonoBehaviour {
 			{
 				Destroy (this.gameObject);
 			}
+            if(this.gameObject.name == "Boss")
+            {
+
+            }
             ac.setHealth(0);
         }
 	}

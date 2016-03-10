@@ -4,7 +4,7 @@ using System.Collections;
 public class AlarmSystem : MonoBehaviour {
 
     public Vector3 position;
-    Light l;
+    public Light l;
     Alarm alarm;
     public AudioClip clip;
     AudioSource audioSource;
@@ -12,23 +12,25 @@ public class AlarmSystem : MonoBehaviour {
     public float waitTillNextAudio;
     float waitingTime;
 
-    bool alarmActivated;
+    public bool alarmActivated;
 
 	// Use this for initialization
 	void Start () {
         transform.position = position;
-        l = new Light();
+        l = GetComponent<Light>();
         l.type = LightType.Directional;
         l.color = Color.red;
         alarm = l.gameObject.AddComponent<Alarm>();
         l.enabled = false;
         alarmActivated = false;
         waitingTime = 1.0f;
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = clip;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        l.enabled = alarmActivated;
+        l.enabled = alarmActivated;  
         if (alarmActivated)
         {
             if (!audioSource.isPlaying)
@@ -39,7 +41,6 @@ public class AlarmSystem : MonoBehaviour {
                 }
                 else
                 {
-                    audioSource.clip = clip;
                     audioSource.Play();
                 }
             }

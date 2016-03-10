@@ -102,6 +102,7 @@
     <Compile Include="Assets\Assets\Scripts\Systems\UI\PauseMenuScript.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\UI\SkillUIHandler.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\UI\StaminabarHandler.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\UI\TutorialTips.cs" />
     <Compile Include="Assets\Assets\Scripts\Tag Layer list.cs" />
     <Compile Include="Assets\FT_FreeSample\Script\Button.cs" />
     <Compile Include="Assets\MaterialChanger.cs" />

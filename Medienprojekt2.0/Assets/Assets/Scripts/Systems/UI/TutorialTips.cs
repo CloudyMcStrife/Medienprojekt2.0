@@ -48,7 +48,7 @@ public class TutorialTips : MonoBehaviour {
 
     public void showMoveTip()
     {
-        Rect wichsMich = new Rect(labelPos.x - 75, Camera.main.pixelHeight - labelPos.y - 100, boxSize.x, boxSize.y);
-        GUI.Box(wichsMich, text);
+        Rect temp = new Rect(labelPos.x - 75, Camera.main.pixelHeight - labelPos.y - 100, boxSize.x, boxSize.y);
+        GUI.Box(temp, text);
     }
 }

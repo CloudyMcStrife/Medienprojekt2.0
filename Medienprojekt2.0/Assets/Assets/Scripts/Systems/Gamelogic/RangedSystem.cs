@@ -74,6 +74,12 @@ public class RangedSystem : MonoBehaviour {
         shotAnimationReady = true;
     }
 
+    //Methode für Keyframe, die angibt, wann ein neuer Schuss gequeued werden kann
+    public void nextShotReady()
+    {
+        anim.SetBool("AttackInProgress", false);
+    }
+
 
     //Waffe wechseln
     public void switchWeapon()

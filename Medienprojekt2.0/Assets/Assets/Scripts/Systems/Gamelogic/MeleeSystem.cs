@@ -71,6 +71,7 @@ public class MeleeSystem : MonoBehaviour {
     public void unblock()
     {
         anim.SetBool("Blocking", false);
+		animationRunning = false;
     }
 
     public void idleState()
@@ -104,7 +105,7 @@ public class MeleeSystem : MonoBehaviour {
     }
 
 
-	//Called durch Input
+	//Called durch Input oder KI
     public void punch()
 	{
 		if (anim.GetBool("firstAnim")) {
@@ -119,6 +120,16 @@ public class MeleeSystem : MonoBehaviour {
             idleStateExecuted = false;
 		}
 	}
+
+
+    //used 
+    public void onePunch()
+    {
+            anim.SetBool("firstAnim", true);
+            anim.SetTrigger("MeleeAttack");
+            animationRunning = true;
+            idleStateExecuted = false;
+    }
 
     public void enemyHit(GameObject objectHit)
     {
@@ -150,7 +161,6 @@ public class MeleeSystem : MonoBehaviour {
                     HealthSystem hittedHealth = (HealthSystem)hittedObject.GetComponent(typeof(HealthSystem));
                     if (hittedHealth != null)
                         hittedHealth.lowerHealth(attributes.getDamage());
-                    Debug.Log("Meleehit");
                 }
             }
         }

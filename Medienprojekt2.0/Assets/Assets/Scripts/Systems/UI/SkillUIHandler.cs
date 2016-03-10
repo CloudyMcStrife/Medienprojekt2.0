@@ -48,15 +48,7 @@ public class SkillUIHandler : MonoBehaviour {
             cooldown1Txt.text = System.String.Format("{0:0.0}", cooldown1);      // "123.46"
             cooldown1 -= Time.deltaTime;
         }
-        if(cooldown1 <= 0)
-        {
-            skill1Icon.SetActive(true);
-            skill1IconTrans.enabled = false;
-            attComp.setCooldown1Active(false);
-            cooldown1 = attComp.getCooldown1();
-           // skill1Icon.color = new Color32(0, 0, 0, (byte)255);
-            cooldown1Txt.text = "";
-        }
+        
 
         if (attComp.getCooldown2Active())
         {
@@ -65,16 +57,31 @@ public class SkillUIHandler : MonoBehaviour {
             //skill1Icon.color = new Color32(0, 0, 0,(byte)190);
             cooldown2Txt.text = System.String.Format("{0:0.0}", cooldown2);      // "123.46"
             cooldown2 -= Time.deltaTime;
+            
         }
-        if (cooldown2 <= 0)
+
+    }
+    void FixedUpdate()
+    {
+        if (cooldown2 <= 0.0f)
         {
-            cooldown2 = attComp.getCooldown2();
+
             attComp.setCooldown2Active(false);
             skill2Icon.SetActive(true);
             skill2IconTrans.enabled = false;
             // skill1Icon.color = new Color32(0, 0, 0, (byte)255);
             cooldown2Txt.text = "";
+            cooldown2 = attComp.getCooldown2();
         }
 
+        if (cooldown1 <= 0)
+        {
+            skill1Icon.SetActive(true);
+            skill1IconTrans.enabled = false;
+            attComp.setCooldown1Active(false);
+            cooldown1 = attComp.getCooldown1();
+            // skill1Icon.color = new Color32(0, 0, 0, (byte)255);
+            cooldown1Txt.text = "";
+        }
     }
 }

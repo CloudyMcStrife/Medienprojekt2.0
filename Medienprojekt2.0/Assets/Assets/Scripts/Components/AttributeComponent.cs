@@ -4,11 +4,12 @@ using System.Collections;
 public class AttributeComponent : MonoBehaviour {
 
     public float health;
-    float maxHealth;
+    public float maxHealth;
     public float maxStamina = 100f;
     public float stamina = 100f;
     public float staminaPerSecond = 0f;
 	public float damage;
+    public bool cloneAlive = false;
 	float armor;
     //current ammo
 	public int ammo;
@@ -32,7 +33,6 @@ public class AttributeComponent : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        maxHealth = 100f;
         health = maxHealth;
         meleeSys = (MeleeSystem)GetComponent(typeof(MeleeSystem));
 	}
@@ -43,13 +43,19 @@ public class AttributeComponent : MonoBehaviour {
         {
             stamina = Mathf.Clamp(stamina+staminaPerSecond * Time.deltaTime,0,maxStamina);
             Debug.Log(stamina);
-        }
+        }   
+	}
 
+    void FixedUpdate()
+    {
         if (attl > 0)
             attl -= Time.deltaTime;
-        if (attl <= 0)
-            Destroy(GameObject.Find("Player(Clone)"));
-	}
+        if (attl <= 0 && cloneAlive)
+        {
+            Destroy(GameObject.Find("Klon"));
+            cloneAlive = false; 
+        }
+    }
 	
 	public float getDamage()
 	{
@@ -129,6 +135,7 @@ public class AttributeComponent : MonoBehaviour {
     public void setTTL()
     {
         attl = ttl;
+        cloneAlive = true;
     }
 
     //Returns difference between possible Stamina Damage and really done stamina dmg

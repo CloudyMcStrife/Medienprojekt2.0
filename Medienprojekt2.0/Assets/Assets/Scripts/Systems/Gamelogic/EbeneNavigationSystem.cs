@@ -54,7 +54,7 @@ public class EbeneNavigationSystem : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D other)
 	{
-		if (other.tag == "Player" && Input.GetKeyDown ("t") && !isFading) {
+		if (other.tag == "Player" && Input.GetKeyDown ("e") && !isFading) {
 				black = true;
 				isFading = true;
 				fadeToBlack = true;

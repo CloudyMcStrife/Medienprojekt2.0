@@ -4,7 +4,7 @@ using System.Collections;
 public class AttributeComponent : MonoBehaviour {
 
     public float health;
-    float maxHealth;
+    public float maxHealth;
     public float maxStamina = 100f;
     public float stamina = 100f;
     public float staminaPerSecond = 0f;
@@ -33,7 +33,6 @@ public class AttributeComponent : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        maxHealth = 100f;
         health = maxHealth;
         meleeSys = (MeleeSystem)GetComponent(typeof(MeleeSystem));
 	}

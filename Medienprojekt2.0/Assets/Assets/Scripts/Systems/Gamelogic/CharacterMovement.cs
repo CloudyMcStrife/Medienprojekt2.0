@@ -7,6 +7,7 @@ public class CharacterMovement : MonoBehaviour {
 	Rigidbody2D rigplayer;
 	Transform trans;
     Animator anim;
+    SpriteRenderer renderer;
 
     //Für den Scream
     public bool unableToMove;
@@ -32,16 +33,17 @@ public class CharacterMovement : MonoBehaviour {
 		rigplayer = (Rigidbody2D) GetComponent(typeof(Rigidbody2D));
 		trans = (Transform)GetComponent (typeof(Transform));
         anim = (Animator)GetComponent(typeof(Animator));
-        
+        renderer = GetComponent<SpriteRenderer>();
+
         scaling = transform.localScale.x;
         jumpReady = false;
         unableToMove = false;
-	}
+    }
 
-	
-	// Update is called once per frame
 
-	void FixedUpdate()
+    // Update is called once per frame
+
+    void FixedUpdate()
 	{
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundCheckRadius, groundMask);
         if(anim!=null)
@@ -72,11 +74,15 @@ public class CharacterMovement : MonoBehaviour {
             {
                 facingRight = true;
                 xScale *= startingRight ? 1 : -1;
+                //renderer.flipX = !facingRight;
                 trans.localScale = new Vector3(xScale, trans.localScale.y, trans.localScale.z);
+
             }
         }
         if (anim != null)
             anim.SetFloat("Speedx", Mathf.Abs(newSpeed));
+
+        
     }
 
     public IEnumerator jump()

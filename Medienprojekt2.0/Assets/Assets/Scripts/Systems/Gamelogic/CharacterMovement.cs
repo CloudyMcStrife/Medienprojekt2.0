@@ -9,6 +9,8 @@ public class CharacterMovement : MonoBehaviour {
     Animator anim;
     SpriteRenderer renderer;
 
+    //Für den Scream
+    public bool unableToMove;
     public float speed = 4.0f;
     float scaling;
     public bool facingRight = true;
@@ -35,6 +37,7 @@ public class CharacterMovement : MonoBehaviour {
 
         scaling = transform.localScale.x;
         jumpReady = false;
+        unableToMove = false;
     }
 
 

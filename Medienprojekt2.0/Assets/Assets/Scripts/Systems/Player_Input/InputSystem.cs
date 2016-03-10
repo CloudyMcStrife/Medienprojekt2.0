@@ -85,7 +85,7 @@ public class InputSystem : MonoBehaviour {
 	
 
 
-		if (meleeSys.animationRunning || meleeSys.blocking)
+		if (meleeSys.animationRunning || meleeSys.blocking || movement.unableToMove)
 			movePlayerVector = 0.0f;
         movement.move(movePlayerVector);
     }

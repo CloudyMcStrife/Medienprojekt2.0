@@ -68,6 +68,9 @@
     <Compile Include="Assets\Assets\Scripts\Components\HealthPotionComponent.cs" />
     <Compile Include="Assets\Assets\Scripts\Components\ItemHoverComponent.cs" />
     <Compile Include="Assets\Assets\Scripts\Components\SoundComponent.cs" />
+    <Compile Include="Assets\Assets\Scripts\Events\AreafightEvent.cs" />
+    <Compile Include="Assets\Assets\Scripts\Events\SpawnToad.cs" />
+    <Compile Include="Assets\Assets\Scripts\Events\SpawnTrigger.cs" />
     <Compile Include="Assets\Assets\Scripts\LiftMovement.cs" />
     <Compile Include="Assets\Assets\Scripts\ProblemeZuLösen\Problemliste.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\AI\BasicAI.cs" />
@@ -75,6 +78,7 @@
     <Compile Include="Assets\Assets\Scripts\Systems\AI\BossScript.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\AI\BossSpawner.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\AI\EnemyVision.cs" />
+    <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\AbilitySystem.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\CharacterMovement.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\ChestSystem.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\EbeneNavigationSystem.cs" />

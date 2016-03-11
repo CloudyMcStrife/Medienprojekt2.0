@@ -59,7 +59,7 @@ public class FollowCamera : MonoBehaviour {
 			// current x position.
 			targetX = Mathf.Lerp (transform.position.x,
 		                     player.position.x+xOffset, xSmooth *
-				Time.fixedDeltaTime);
+				Time.deltaTime);
 		}
 
 
@@ -70,7 +70,7 @@ public class FollowCamera : MonoBehaviour {
 			// current y position.
 			targetY = Mathf.Lerp (transform.position.y,
 	                     player.position.y+yOffset, ySmooth *
-				Time.fixedDeltaTime);
+				Time.deltaTime);
 		}
 		// The target x and y coordinates should not be larger
 		// than the maximum or smaller than the minimum.
@@ -79,6 +79,6 @@ public class FollowCamera : MonoBehaviour {
 		// Set the camera's position to the target position with
 		// the same z component.
 		transform.position =
-			new Vector3(targetX, targetY+0.05f, transform.position.z);
+			new Vector3(targetX, targetY, transform.position.z);
 	}
 }

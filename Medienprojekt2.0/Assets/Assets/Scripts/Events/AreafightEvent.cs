@@ -12,6 +12,8 @@ public class AreafightEvent : MonoBehaviour {
 	bool spawned;
 	float timeSpawn = 0.0f;
 
+    AlarmSystem alarmSystem;
+
 	// Use this for initialization
 	void Start () {
 		booster = GameObject.Find ("BoosterEbene6");
@@ -21,12 +23,16 @@ public class AreafightEvent : MonoBehaviour {
 		enemy11.SetActive (false);
 		enemy12.SetActive (false);
 		enemy13.SetActive (false);
-	}
+
+        GameObject alarm = GameObject.Find("Alarm");
+        alarmSystem = alarm.GetComponent<AlarmSystem>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		if (triggered) {
 			timeSpawn += Time.deltaTime;
+            alarmSystem.alarmActivated = true;
 		}
 		if (triggered && enemy11 != null) {
 			enemy11.SetActive (true);
@@ -41,8 +47,9 @@ public class AreafightEvent : MonoBehaviour {
 	
 		if (enemy11 == null && enemy12 == null && enemy13 == null) {
 			booster.SetActive (true);
-		}
-	}
+            alarmSystem.alarmActivated = false;
+        }
+    }
 
 	void OnTriggerEnter2D(Collider2D other)
 	{

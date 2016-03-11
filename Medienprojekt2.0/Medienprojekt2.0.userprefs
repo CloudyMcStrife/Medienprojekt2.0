@@ -1,9 +1,10 @@
-﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Assets\Scripts\Components\AttributeComponent.cs">
+﻿<Properties StartupItem="Medienprojekt2.0.CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Assets\Scripts\Systems\UI\TutorialTips.cs">
     <Files>
+      <File FileName="Assets\Assets\Scripts\Systems\UI\TutorialTips.cs" Line="1" Column="1" />
       <File FileName="Assets\Assets\Scripts\Components\AttributeComponent.cs" Line="30" Column="2" />
-      <File FileName="Assets\Assets\Scripts\Events\AreafightEvent.cs" Line="27" Column="18" />
+      <File FileName="Assets\Assets\Scripts\Events\AreafightEvent.cs" Line="1" Column="1" />
       <File FileName="Assets\Assets\Scripts\Systems\Player_Input\InputSystem.cs" Line="1" Column="1" />
       <File FileName="Assets\Assets\Scripts\Systems\Player_Input\FollowCamera.cs" Line="1" Column="1" />
       <File FileName="Assets\Assets\Scripts\Systems\Gamelogic\EbeneNavigationSystem.cs" Line="1" Column="1" />

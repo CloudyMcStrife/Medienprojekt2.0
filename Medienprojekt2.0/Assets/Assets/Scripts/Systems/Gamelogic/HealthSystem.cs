@@ -45,7 +45,10 @@ public class HealthSystem : MonoBehaviour {
 			}
             if(this.gameObject.name == "Boss")
             {
-
+                SpawnToad td = (SpawnToad)GameObject.Find("Toad").GetComponent(typeof(SpawnToad));
+                CharacterMovement cm = (CharacterMovement)GameObject.Find("Player").GetComponent(typeof(CharacterMovement));
+                td.spawn();
+                cm.unableToMove = false;
             }
             ac.setHealth(0);
         }

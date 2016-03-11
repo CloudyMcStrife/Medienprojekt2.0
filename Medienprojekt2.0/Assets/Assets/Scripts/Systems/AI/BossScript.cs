@@ -4,6 +4,7 @@ using System.Collections;
 public class BossScript : MonoBehaviour
 {
     Animator anim;
+    Collider2D coll;
     bool spawned = false;
     public bool debugRNG;
 
@@ -33,10 +34,14 @@ public class BossScript : MonoBehaviour
     float screamProb;
     bool correctHeight;
     public float [] actionCooldown = {5.0f, 5.0f};
+    bool idleStateExecuted;
+    bool actionRunning;
 
     // Use this for initialization
     void Start()
     {
+        coll = (Collider2D)GetComponent(typeof(Collider2D));
+        coll.enabled = false;
         playerMovement = (CharacterMovement)GameObject.Find("Player").GetComponent(typeof(CharacterMovement));
         playerHealth = (HealthSystem)GameObject.Find("Player").GetComponent(typeof(HealthSystem));
         anim = (Animator)GetComponent(typeof(Animator));
@@ -51,10 +56,14 @@ public class BossScript : MonoBehaviour
             if(target != null)
             {
                 xDistance = target.transform.position.x - transform.position.x;
-                inHitBox = Mathf.Abs(xDistance) <= 2.0f;
 
                 inLeftHitBox = xDistance >= -2.3f && xDistance <= 0.3f;
                 inRightHitBox = xDistance <= 2.3f && xDistance >= -.3f;
+
+
+                inHitBox = inLeftHitBox || inRightHitBox;
+
+                
 
 
                 //Magicnumber, wenn der Spieler drüber ist
@@ -99,12 +108,13 @@ public class BossScript : MonoBehaviour
     void Spawned()
     {
         spawned = true;
+        coll.enabled = true;
     }
 
     void FightingDecisions()
     {
         //Lauf dem Spieler son bisschen hinterher
-        if(!inHitBox)
+        if(!inHitBox && !actionRunning )
         {
             desiredXPosition = target.transform.position.x;
             if(Mathf.Abs(transform.position.x - desiredXPosition) > 1.0f)
@@ -124,7 +134,7 @@ public class BossScript : MonoBehaviour
             //Aktion ready
             if(actionCooldown[0] >= actionCooldown[1])
             {
-                
+                actionRunning = true;
                 actionCooldown[0] = 0.0f;
                 getProbabilities();
 
@@ -139,7 +149,7 @@ public class BossScript : MonoBehaviour
                     Debug.Log("Scream Prob:" + screamProb);
                 }
 
-                if (!(inLeftHitBox || inRightHitBox))
+                if (!inHitBox)
                 {
                     Scream();
                 }
@@ -187,6 +197,7 @@ public class BossScript : MonoBehaviour
         timesSinceLeftHand = 1;
 
         //Real Stuff
+        idleStateExecuted = false;
         anim.SetTrigger("LeftHandAttack");
     }
 
@@ -206,6 +217,7 @@ public class BossScript : MonoBehaviour
         timesSinceRightHand = 1;
 
         //Real Stuff
+        idleStateExecuted = false;
         anim.SetTrigger("RightHandAttack");
     }
     void RightHandDamage()
@@ -225,6 +237,7 @@ public class BossScript : MonoBehaviour
         actionCooldown[0] += 2.0f;
 
         //Real Stuff
+        idleStateExecuted = false;
         anim.SetTrigger("Scream");
     }
 
@@ -258,5 +271,14 @@ public class BossScript : MonoBehaviour
 
         leftHandProb = inLeftHitBox ? (float)timesSinceLeftHand / (float)options : 0.0f;
         rightHandProb = inRightHitBox ? (float)timesSinceRightHand / (float)options : 0.0f;
+    }
+
+    public void idleState()
+    {
+        if(!idleStateExecuted)
+        { 
+            idleStateExecuted = true;
+            actionRunning = false;
+        }
     }
 }

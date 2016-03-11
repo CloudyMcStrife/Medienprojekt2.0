@@ -73,6 +73,7 @@
     <Compile Include="Assets\Assets\Scripts\Events\SpawnToad.cs" />
     <Compile Include="Assets\Assets\Scripts\Events\SpawnTrigger.cs" />
     <Compile Include="Assets\Assets\Scripts\FPS.cs" />
+    <Compile Include="Assets\Assets\Scripts\FloorLightTrigger.cs" />
     <Compile Include="Assets\Assets\Scripts\LiftMovement.cs" />
     <Compile Include="Assets\Assets\Scripts\ProblemeZuLösen\Problemliste.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\AI\BasicAI.cs" />

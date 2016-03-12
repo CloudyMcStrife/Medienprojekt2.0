@@ -2,7 +2,9 @@
 using System.Collections;
 
 public class BasicMeleeAI : MonoBehaviour {
-
+    /* Funktioniert der BasicAI sehr ähnlich, nur für Nahkampfgegner,
+    wird im Spiel jedoch  nicht benutzt, da wir keine Animationen für Nahkampf Gegner haben
+    */
     CharacterMovement movement;
     MeleeSystem meleeSys;
     Animator anim;

@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/* Der Geskriptete Ablauf des Bosskampfes.
+Der Boss spawnt, wenn die Zeit abläuft, die beginnt, nachdem die Spawnzone betreten wurde*/
+
 public class BossScript : MonoBehaviour
 {
     Animator anim;
     Collider2D coll;
     bool spawned = false;
-    public bool debugRNG;
 
     float xDistance;
     
@@ -57,10 +59,13 @@ public class BossScript : MonoBehaviour
             {
                 xDistance = target.transform.position.x - transform.position.x;
 
+                //Checks ob der SPieler sich in Hitboxen befindet
                 inLeftHitBox = xDistance >= -2.3f && xDistance <= 0.3f;
                 inRightHitBox = xDistance <= 2.3f && xDistance >= -.3f;
 
 
+
+                //Kombinierter  Check
                 inHitBox = inLeftHitBox || inRightHitBox;
 
                 
@@ -105,15 +110,29 @@ public class BossScript : MonoBehaviour
         anim.SetTrigger("Spawn");
     }
 
+
+    /*<summary>
+    Methode die aufgerufen wird, wenn die Spawnanimation abgeschlossen ist
+    </summary>
+    */
     void Spawned()
     {
         spawned = true;
         coll.enabled = true;
     }
 
+
+    /*
+    <summary>
+    Die Methode die über die nächste Kampfaktion des Boss' entscheidet.
+    Es gibt 3 Attacken: Schlagen mit der Linken Hand, Schlagen mit der rechten Hand, schreien um den Spieler erstarren zulassen.
+    Am Anfang ist jede Attacke gleich wahrscheinlich. Jedoch merkt sich der Boss welche Attacke wie lange nicht mehr ausgeführt wurde, und erhöht deren Wahrscheinlichkeit entsprechend.
+    Am Anfang somit 1/3 Chance ausgeführt zu werden.  Wird nun der Schrei gewählt, haben die linke und rechte Attacke 50%, der Schrei wird nicht nochmal durchgeführt
+    </summary>
+    */
     void FightingDecisions()
     {
-        //Lauf dem Spieler son bisschen hinterher
+        //Ist der Spieler nicht in Reichweite, verfolge ihn, bis auf eine Entfernung von 1
         if(!inHitBox && !actionRunning )
         {
             desiredXPosition = target.transform.position.x;
@@ -131,28 +150,28 @@ public class BossScript : MonoBehaviour
         else
         {
 
-            //Aktion ready
+            //Wenn der Cooldown abgelaufen ist, führe die nächste Aktion durch.
             if(actionCooldown[0] >= actionCooldown[1])
             {
                 actionRunning = true;
                 actionCooldown[0] = 0.0f;
+                
+                //Methode die die Wahrscheinlichkeiten der einzelnen Aktionen berechnet
                 getProbabilities();
 
                 float rng = Random.value;
-                if (debugRNG)
-                {
-                    Debug.Log("###################################");
-                    Debug.Log("Right: " + inRightHitBox + " Left: " + inLeftHitBox);
-                    Debug.Log("RNG :" + rng);
-                    Debug.Log("Left Prob:" + leftHandProb);
-                    Debug.Log("Right Prob:" + rightHandProb);
-                    Debug.Log("Scream Prob:" + screamProb);
-                }
 
+
+                //Wenn der Spieler nicht erreichbar ist, schreie (hält diesen fest)
                 if (!inHitBox)
                 {
                     Scream();
                 }
+
+
+                /*Wahrscheinlichkeits intervalle für die einzelnen Aktionen.
+                0 <= rng <= 1
+                */
                 else if (inLeftHitBox && inRightHitBox)
                 {
                     if (rng <= screamProb)
@@ -166,6 +185,8 @@ public class BossScript : MonoBehaviour
                         RightHandHit();
                     }
                 }
+
+
                 else if (inLeftHitBox)
                 {
                     if (rng <= screamProb)
@@ -173,6 +194,9 @@ public class BossScript : MonoBehaviour
                     else 
                         LeftHandHit();
                 }
+
+
+
                 else if (inRightHitBox)
                 {
                     if (rng <= screamProb)
@@ -186,12 +210,11 @@ public class BossScript : MonoBehaviour
         }
     }
 
-
+    //Die Zähler für die letzten  Aktionen werden erhöht, der von der ausgeführten Aktion zurückgesetzt.
+    //Dann wird die Aktion durchgeführt
     void LeftHandHit()
     {
         //Variablen für den Code, welche attacke benutzt werden soll
-        if(debugRNG)
-            Debug.Log("Result: Left Hit");
         timesSinceRightHand++;
         timesSinceScream++;
         timesSinceLeftHand = 1;
@@ -201,6 +224,8 @@ public class BossScript : MonoBehaviour
         anim.SetTrigger("LeftHandAttack");
     }
 
+
+    //Methode die im entsprechenden Keyfram aufgerufen wird, um den Schaden auszuführen
     void LeftHandDamage()
     {
         if (inLeftHitBox && correctHeight)
@@ -210,8 +235,6 @@ public class BossScript : MonoBehaviour
     void RightHandHit()
     {
         //Variablen für den Code, welche attacke benutzt werden soll
-        if (debugRNG)
-            Debug.Log("Result: Right");
         timesSinceScream++;
         timesSinceLeftHand++;
         timesSinceRightHand = 1;
@@ -226,11 +249,11 @@ public class BossScript : MonoBehaviour
             playerHealth.lowerHealth(rightDamage);
     }
 
+
+    //Startet die Schreianimation
     void Scream()
     {
         //Variablen für den Code, welche attacke benutzt werden soll
-        if (debugRNG)
-            Debug.Log("Result: Scream");
         timesSinceLeftHand++;
         timesSinceRightHand++;
         timesSinceScream = 0;
@@ -241,12 +264,16 @@ public class BossScript : MonoBehaviour
         anim.SetTrigger("Scream");
     }
 
+    //Wird von der Animation im entspr. Keyframe aufgerufen.
+    //Startet den Schreieffekt
     public void screamReady()
     {
         screamTime[0] = 0.0f;
         StartCoroutine(screamAction());
     }
 
+    //Solane die Screamtime läuft, kann sich der Spieler nicht bewegen
+    //Lässt Spieler erstarren
     public IEnumerator screamAction()
     {
         playerMovement.unableToMove = true;

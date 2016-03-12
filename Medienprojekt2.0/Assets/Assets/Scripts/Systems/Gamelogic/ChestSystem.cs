@@ -23,6 +23,8 @@ public class ChestSystem : MonoBehaviour {
         }
     }
 
+
+    //Wird von der Animation aufgerufen und erschafft zufällig eines der eingestellten Objekte
     void ANIM_DropKeyframe()
     {
         int randomIndex = (int)(Random.value * possibleDrops.Length);

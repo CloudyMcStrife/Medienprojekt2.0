@@ -20,7 +20,7 @@ public class FloorLightTrigger : MonoBehaviour {
 	void Update () {
         if (lightsEnabled)
         {
-            if(timer < 2.0f)
+            if(timer < 1.0f)
             {
                 int deg = (int)(Mathf.Rad2Deg * timer);
                 if ((deg % 2) == 0)

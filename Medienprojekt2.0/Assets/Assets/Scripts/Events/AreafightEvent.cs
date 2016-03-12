@@ -3,11 +3,16 @@ using System.Collections;
 
 public class AreafightEvent : MonoBehaviour {
 
-	GameObject booster;
-	GameObject enemy11;
-	GameObject enemy12;
-	GameObject enemy13;
-	int timer;
+    GameObject booster;
+
+    public GameObject enemyPrefab;
+    public int level;
+
+    GameObject enemy11;
+    GameObject enemy12;
+    GameObject enemy13;
+
+    int timer;
 	bool triggered = false;
 	bool spawned;
 	float timeSpawn = 0.0f;
@@ -17,15 +22,14 @@ public class AreafightEvent : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		booster = GameObject.Find ("BoosterEbene6");
-		enemy11 = GameObject.Find ("enemy1");
-		enemy12 = GameObject.Find ("enemy2");
-		enemy13 = GameObject.Find ("enemy3");
+
+        Vector3 spawnPosition = GameObject.Find("DoorEbene" + level).transform.position;
+		enemy11 = (GameObject)Instantiate(enemyPrefab, spawnPosition, Quaternion.Euler(0,0,0));
+		enemy12 = (GameObject)Instantiate(enemyPrefab, spawnPosition, Quaternion.Euler(0, 0, 0));
+        enemy13 = (GameObject)Instantiate(enemyPrefab, spawnPosition, Quaternion.Euler(0, 0, 0));
 		enemy11.SetActive (false);
 		enemy12.SetActive (false);
 		enemy13.SetActive (false);
-
-        GameObject alarm = GameObject.Find("Alarm");
-        alarmSystem = alarm.GetComponent<AlarmSystem>();
     }
 	
 	// Update is called once per frame
@@ -47,13 +51,21 @@ public class AreafightEvent : MonoBehaviour {
 	
 		if (enemy11 == null && enemy12 == null && enemy13 == null) {
 			booster.SetActive (true);
-            alarmSystem.alarmActivated = false;
+            if(alarmSystem != null)
+                alarmSystem.alarmActivated = false;
         }
     }
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.gameObject.name == "Player")
-			triggered = true;
+        if (other.gameObject.name == "Player")
+        {
+            Debug.Log("Alarm");
+            GameObject alarm = GameObject.Find("Alarm");
+            
+            alarmSystem = alarm.GetComponent<AlarmSystem>();
+            triggered = true;
+            
+        }
 	}
 }

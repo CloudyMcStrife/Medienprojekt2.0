@@ -25,10 +25,19 @@ public class RangedSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //Abklingzeit für den Schuss
         if (rangeAttackCooldown[0] < rangeAttackCooldown[1])
             rangeAttackCooldown[0] += Time.deltaTime;
 	}
 
+
+    /*<summary>
+    Zieht sich ein Projektil aus dem Poolingsystem,
+    gibt ihm je nach Schussmodus (Normal oder Special) die passende Textur,
+    instanziiert einen passendes SOund dazu, und lässt ihn losfliegen.
+    Spezialschüsse kosten extra Munition
+    </summary>
+    */
     public IEnumerator shoot(bool is_normal_shot)
     {
 		if (is_normal_shot || (!is_normal_shot && attributes.getAmmo() > 0))

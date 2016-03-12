@@ -58,6 +58,12 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -78,7 +84,6 @@
     <Compile Include="Assets\Assets\Scripts\LiftMovement.cs" />
     <Compile Include="Assets\Assets\Scripts\ProblemeZuLösen\Problemliste.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\AI\BasicAI.cs" />
-    <Compile Include="Assets\Assets\Scripts\Systems\AI\BasicMeleeAI.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\AI\BossScript.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\AI\BossSpawner.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\AI\EnemyVision.cs" />

@@ -19,6 +19,8 @@ public class AreafightEvent : MonoBehaviour {
 
     AlarmSystem alarmSystem;
 
+    public GameObject lightsToDisable;
+
 	// Use this for initialization
 	void Start () {
 		booster = GameObject.Find ("BoosterEbene6");
@@ -59,21 +61,23 @@ public class AreafightEvent : MonoBehaviour {
                 if (alarmSystem != null)
                     alarmSystem.alarmActivated = false;
 
+                lightsToDisable.SetActive(true);
                 //Hier sollten wir dieses Gameobject abschalten, da es nicht mehr gebraucht wird (Oder einer neuen Etage zuweisen?)
                 this.enabled = false;
             }
         }
     }
 
-	void OnTriggerEnter2D(Collider2D other)
-	{
+    void OnTriggerEnter2D(Collider2D other)
+    {
         if (other.gameObject.name == "Player")
         {
+            lightsToDisable.SetActive(false);
             GameObject alarm = GameObject.Find("Alarm");
-            
+
             alarmSystem = alarm.GetComponent<AlarmSystem>();
             triggered = true;
-            
+
         }
-	}
+    }
 }

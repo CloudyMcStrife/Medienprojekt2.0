@@ -19,6 +19,8 @@ public class AreafightEvent : MonoBehaviour {
 
     AlarmSystem alarmSystem;
 
+    public GameObject lightsToDisable;
+
 	// Use this for initialization
 	void Start () {
 		booster = GameObject.Find ("BoosterEbene6");
@@ -34,38 +36,48 @@ public class AreafightEvent : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (triggered) {
-			timeSpawn += Time.deltaTime;
+        if (triggered)
+        {
+            timeSpawn += Time.deltaTime;
             alarmSystem.alarmActivated = true;
-		}
-		if (triggered && enemy11 != null) {
-			enemy11.SetActive (true);
-			booster.SetActive (false);
-		}
-		if (timeSpawn >= 30 && enemy12 != null) {
-			enemy12.SetActive (true);
-		}
-		if (timeSpawn >= 60 && enemy13 != null) {
-			enemy13.SetActive (true);
-		}
-	
-		if (enemy11 == null && enemy12 == null && enemy13 == null) {
-			booster.SetActive (true);
-            if(alarmSystem != null)
-                alarmSystem.alarmActivated = false;
+
+            if (enemy11 != null)
+            {
+                enemy11.SetActive(true);
+                booster.SetActive(false);
+            }
+            if (timeSpawn >= 30 && enemy12 != null)
+            {
+                enemy12.SetActive(true);
+            }
+            if (timeSpawn >= 60 && enemy13 != null)
+            {
+                enemy13.SetActive(true);
+            }
+
+            if (enemy11 == null && enemy12 == null && enemy13 == null)
+            {
+                booster.SetActive(true);
+                if (alarmSystem != null)
+                    alarmSystem.alarmActivated = false;
+
+                lightsToDisable.SetActive(true);
+                //Hier sollten wir dieses Gameobject abschalten, da es nicht mehr gebraucht wird (Oder einer neuen Etage zuweisen?)
+                this.enabled = false;
+            }
         }
     }
 
-	void OnTriggerEnter2D(Collider2D other)
-	{
+    void OnTriggerEnter2D(Collider2D other)
+    {
         if (other.gameObject.name == "Player")
         {
-            Debug.Log("Alarm");
+            lightsToDisable.SetActive(false);
             GameObject alarm = GameObject.Find("Alarm");
-            
+
             alarmSystem = alarm.GetComponent<AlarmSystem>();
             triggered = true;
-            
+
         }
-	}
+    }
 }

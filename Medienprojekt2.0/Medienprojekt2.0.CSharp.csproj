@@ -74,6 +74,7 @@
     <Compile Include="Assets\Assets\Scripts\Components\AttributeComponent.cs" />
     <Compile Include="Assets\Assets\Scripts\Components\HealthPotionComponent.cs" />
     <Compile Include="Assets\Assets\Scripts\Components\ItemHoverComponent.cs" />
+    <Compile Include="Assets\Assets\Scripts\Components\LightMovementComponent.cs" />
     <Compile Include="Assets\Assets\Scripts\Components\SoundComponent.cs" />
     <Compile Include="Assets\Assets\Scripts\CullingDisabler.cs" />
     <Compile Include="Assets\Assets\Scripts\Events\AreafightEvent.cs" />

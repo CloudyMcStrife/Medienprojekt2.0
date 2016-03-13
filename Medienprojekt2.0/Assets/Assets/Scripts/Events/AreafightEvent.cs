@@ -46,11 +46,11 @@ public class AreafightEvent : MonoBehaviour {
                 enemy11.SetActive(true);
                 booster.SetActive(false);
             }
-            if (timeSpawn >= 30 && enemy12 != null)
+            if (timeSpawn >= 10 && enemy12 != null)
             {
                 enemy12.SetActive(true);
             }
-            if (timeSpawn >= 60 && enemy13 != null)
+            if (timeSpawn >= 20 && enemy13 != null)
             {
                 enemy13.SetActive(true);
             }

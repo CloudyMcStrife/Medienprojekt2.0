@@ -1,1 +1,36 @@
 \chapter{Enemies}
+In unserem Spiel waren zwei sich "ahnliche Gegner angedacht, wovon einer als Fernk"ampfer und der andere als Nahk"ampfer fungierte. Auf Grund mangelnder Animationen hat lediglich der Fernk"ampfer seinen Weg ins Spiel gefunden. Von der Implementierung h"atten sich die beiden Gegnertypen aber kaum unterschieden, da die KI m"oglichst modular und austauschbar gehalten werden sollte. Somit unterscheiden sich die zwei Typen lediglich durch eine andere Reichweite f"ur den Angriff, und eine andere Angriffsfunktion, die aufgerufen wird.\newline
+
+Die Gegner wurde eine simple Entscheidungskaskade in Form von verschiedenen If-Anweisungen gegeben, nach denen die Gegner dann ihr Verhalten ausw"ahlen. Das Verhalten der Gegner ist stark davon abh"angig ob Sichtkontakt zum Spieler besteht, was durch Raycasts zwischen dem Gegner und dem Spieler "uberpr"uft wird.  Hierbei kann auch ein Blickwinkel definiert werden, in welchem der Spieler wahrgenommen wird.
+
+\begin{lstlisting}[breaklines=true]
+[...]
+//Blickrichtung entweder x=1 oder -1
+if (actions.facingRight)
+    viewVector += new Vector2(1, 0);
+else
+    viewVector += new Vector2(-1, 0);
+
+//Winkel zwischen Blickrichtung und Verbindungsvektor
+float currentAngle = Vector2.Angle(viewVector, difference);
+RaycastHit2D hit = Physics2D.Raycast(visionCheck.position,viewVector, noticeDistance);
+
+//Ueberpruefen ob der Winkel maximal dem angegebenen Field of View Winkel ist
+if (currentAngle <= fovAngle)
+{
+    //Raycast der von Augen zum Ziel geschossen wird, wenn das erste getroffene Objekt der Spieler ist, ist die sicht nicht blockiert
+    if (hit.collider != null)
+        playerVisible = hit.collider.gameObject == rigplayer.gameObject;
+	else
+		playerVisible = false;
+}
+else
+	playerVisible = false;
+
+\end{lstlisting}
+
+Allgemein ist 
+
+\begin{lstlisting}[breaklines=true]
+
+\end{lstlisting}

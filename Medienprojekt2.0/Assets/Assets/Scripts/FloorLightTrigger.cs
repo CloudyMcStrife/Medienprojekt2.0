@@ -54,3 +54,37 @@ public class FloorLightTrigger : MonoBehaviour {
             lightsEnabled = false;
     }
 }
+
+//void OnValidate()
+//{
+//    if (transform.childCount > 0)
+//    {
+//        UnityEditor.EditorApplication.delayCall += () =>
+//        {
+//            DestroyImmediate(transform.GetChild(0).gameObject, true);
+//        };
+//    }
+//
+//    float width = GetComponent<BoxCollider2D>().size.x;
+//    float height = GetComponent<BoxCollider2D>().size.y;
+//
+//    Debug.Log(transform.childCount);
+//    floorLights = (GameObject)Instantiate(new GameObject());
+//    floorLights.transform.parent = (transform);
+//
+//    Debug.Log(width + " " + height);
+//
+//    GameObject light = new GameObject("Light", typeof(Light));
+//
+//    for (int i = 0; i < numberOfLights; i++)
+//    {
+//        float x = (i + 0.5f) - ((float)numberOfLights / 2.0f);
+//        GameObject g = (GameObject)Instantiate(light, new Vector3(x - width * 0.5f, -height * 0.5f), new Quaternion());
+//        g.transform.parent = (floorLights.transform);
+//    }
+//    timer = 0.0f;
+//    lightsEnabled = false;
+//
+//    floorLights.name = "FloorLights";
+//    //floorLights.transform.localPosition -= floorLights.transform.position - new Vector3(width * 2, height * 2);
+//}

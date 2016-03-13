@@ -29,6 +29,7 @@ public class Projectile : MonoBehaviour {
 	float range;
 	float timeLeft;
 	bool inAir = false;
+    Light light;
 
 
 	// Use this for initialization
@@ -41,8 +42,10 @@ public class Projectile : MonoBehaviour {
         s_type = Shooting_Type.NORMAL;
 
         normal_shot = Resources.Load<Sprite>("Sprites/Projectile/Normal_Shot") as Sprite;
-        special_shot = Resources.Load<Sprite>("Sprites/Projectile/Special_Shot") as Sprite;
-	}
+        special_shot = Resources.Load<Sprite>("Sprites/Projectile/PlasmaKugel_1") as Sprite;
+        light = this.gameObject.AddComponent<Light>();
+        light.enabled = false;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -64,19 +67,22 @@ public class Projectile : MonoBehaviour {
 		AttributeComponent ac = (AttributeComponent)owner.GetComponent (typeof(AttributeComponent));
         SpriteRenderer sr = this.GetComponent<SpriteRenderer>();
 		sr.sortingOrder = 2;
-        
-        if(s_type == Shooting_Type.NORMAL)
+        light.enabled = true;
+        if (s_type == Shooting_Type.NORMAL)
         {
+            light.color = Color.red;
             projectileSpeed = 10.0f;
             damage = ac.getDamage();
             sr.sprite = normal_shot;
         }
         else
-        {
-            ac.setCooldown1Active(true);
+        {   
+            light.color = Color.green;
+            ac.setCooldown1Active(true);    
             damage = ac.getDamage() * 2;
             projectileSpeed = 6.0f;
             sr.sprite = special_shot;
+            
         }
 		setDamage (damage);
 
@@ -100,6 +106,8 @@ public class Projectile : MonoBehaviour {
 		Transform TS = (Transform) coll.gameObject.GetComponent (typeof(Transform));
 		hiteffect.transform.position = new Vector3 (TS.position.x, TS.position.y + 0.5f, TS.position.z);
 		Destroy (hiteffect, 2);
+        if (light.enabled)
+            light.enabled = false;
 		inAir = false;
 	}
 

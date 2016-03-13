@@ -40,24 +40,31 @@ public class MeleeSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //Check ob wir blocken, aber keine Stamina mehr besitzen
         if (attributes.stamina == 0 && blocking)
             unblock();
+
+        //Kontinuierliche Stamina Kosten beim blocken
         if(blocking)
         {
             attributes.reduceStamina(costPerSecond * Time.deltaTime);
         }   
 	}
 
+    //Wird aufgerufen sobald die animation weit genug fortgeschritten ist, damit der Block effekt eintritt
     public void setBlockReady()
     {
         blocking = true;
     }
 
+    //Gleicher Effekt nur Rückwärts
 	public void setBlockDone()
 	{
 		blocking = false;
 	}
 
+    //Wird aufgerufen wenn angefangen wird zu blocken
+    //es werden die Staminakosten zum Beginnen abgezogen, sofern vorhanden und die Animation gestartet
     public void block()
     {
         if (attributes.stamina > blockStartCost)
@@ -68,12 +75,14 @@ public class MeleeSystem : MonoBehaviour {
         }
     }
 
+    //Wird aufgerufen, wenn die Block-Taste losgelassen wird
     public void unblock()
     {
         anim.SetBool("Blocking", false);
 		animationRunning = false;
     }
 
+    //Reset FUnktion die einmal aufgerufen wird, wenn in den Idle State zurückgekehrt wird, jedoch nicht mehrmals (idleStateExecuted)
     public void idleState()
     {
         if(!idleStateExecuted)
@@ -90,13 +99,14 @@ public class MeleeSystem : MonoBehaviour {
 
 
 	//Called am Ende der Animation
+    //Benötigt zum queuen unserer ComboAttacken, wenn wir einen MeleeAttack gedrückt haben, führen wir  den nächsten Angriff aus
+    //ansonsten hören wir auf zu schlagen, und fallen wieder zurück in den Idlestate
     public void setAnimationDone()
     {
 		if (anim.GetBool("MeleeAttackInQueue")) {
 				anim.SetTrigger("MeleeAttack");
 		}
 		else {
-			//firstAnim = false;
 			anim.SetBool ("firstAnim", false);
 			anim.SetTrigger("HitDone");
 		}
@@ -106,14 +116,14 @@ public class MeleeSystem : MonoBehaviour {
 
 
 	//Called durch Input oder KI
+    //Wenn der erste Hit durchgeführt wurde, fängt er an hits zu queuen
+    //wenn es der erste Hit ist, beginnt er die Animationen
     public void punch()
 	{
 		if (anim.GetBool("firstAnim")) {
 			anim.SetBool ("MeleeAttackInQueue", true);
-			//MeleeAttackInQueue = true;
 		}
 		else {
-			//firstAnim = true;
 			anim.SetBool ("firstAnim", true);
 			anim.SetTrigger("MeleeAttack");
             animationRunning = true;
@@ -121,25 +131,8 @@ public class MeleeSystem : MonoBehaviour {
 		}
 	}
 
-
-    //used 
-    public void onePunch()
-    {
-            anim.SetBool("firstAnim", true);
-            anim.SetTrigger("MeleeAttack");
-            animationRunning = true;
-            idleStateExecuted = false;
-    }
-
-    public void enemyHit(GameObject objectHit)
-    {
-        HealthSystem enemyHealth = (HealthSystem)objectHit.GetComponent(typeof(HealthSystem));
-        if (enemyHealth != null)
-            enemyHealth.lowerHealth(attributes.getDamage());
-        Debug.Log("Meleehit");
-    }
-
-
+    //Funktion die zum Schaden auswirken aufgerufen wird
+    //wird durch den Keyframe der Animation aufgerufen, an dem Zeitpunkt, an dem der Schaden entstehen soll...
 	public void applyMeleeDamage()
 	{
 		Vector2 direction;
@@ -149,13 +142,15 @@ public class MeleeSystem : MonoBehaviour {
 		else
 			direction = new Vector2 (-1, 0);
 
+
+        //Raycast von unserem Melee Waffenpunkt aus, in Blickrichtung in Länge der Schlagrichtung
         RaycastHit2D[] hits = Physics2D.RaycastAll(meleePoint.position, direction, hitrange);
-        Debug.DrawRay(meleePoint.position, direction);
-        Debug.Log(hits.Length);
+        //Debug.DrawRay(meleePoint.position, direction);
+        //Debug.Log(hits.Length);
         foreach (RaycastHit2D c in hits)
             {
-            GameObject hittedObject = c.collider.gameObject;
-            Debug.Log(hittedObject.name);
+                GameObject hittedObject = c.collider.gameObject;
+                Debug.Log(hittedObject.name);
                 if (hittedObject.layer == opponentLayer)
                 {
                     HealthSystem hittedHealth = (HealthSystem)hittedObject.GetComponent(typeof(HealthSystem));

@@ -2,6 +2,9 @@
 using System.Collections;
 
 public class BasicAI : MonoBehaviour {
+    /* Eine grundlegende KI die nach verschiedenen Checks das Gegnerverhalten auswählt.
+    Nach Auswahl eines Verhaltens wird dann die entsprechende Component angesprochen, sodass die AI unabhängig von Bewegung /Angriffen o.Ä. bleibt*/
+
 
     CharacterMovement movement;
     RangedSystem rangeSys;
@@ -9,6 +12,8 @@ public class BasicAI : MonoBehaviour {
 
     Rigidbody2D rigplayer;
     Rigidbody2D rigenemy;
+
+    //Eine Visionkomponent die zum überprüfen des Sichtkontakts da ist
     EnemyVision vision;
 
     //Movement
@@ -24,7 +29,9 @@ public class BasicAI : MonoBehaviour {
     float distancex;
     float distancey;
 
-
+    
+    /*Da die KI den Gegner zum umdrehen bewgen soll, wenn sie gegen eine Wand läuft, oder sich vor einem Abgrund befindet,
+    wird ein Check mit Hilfe eines kleinen Gameobjects durchgeführt, ob sich vor dem Gegner eine Wand befindet, oder der Boden abrupt endet*/
     public LayerMask wallMask;
     public Transform wallCheck;
     public float wallCheckRadius;
@@ -52,6 +59,7 @@ public class BasicAI : MonoBehaviour {
     {
         if (rigplayer != null)
         {
+            //Distanzen zum Spieler finden
             distancex = rigplayer.position.x - rigenemy.position.x;
             distancey = rigplayer.position.y - rigenemy.position.y;
         }
@@ -59,6 +67,8 @@ public class BasicAI : MonoBehaviour {
         {
             distancex = distancey = 0;
         }
+
+        //Checkt ob sich der Gegner vor einer Wand befindet, oder der Boden endet (=Abgrund)
         hittingWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, wallMask);
         onAnEdge = !Physics2D.OverlapCircle(gapCheck.position, gapCheckRadius, gapMask);
     }
@@ -66,6 +76,8 @@ public class BasicAI : MonoBehaviour {
 
     void Update()
     {
+
+        //Rudimentäre Methode um Gegner den Klon kurzzeitig als Primärziel auszuwählen
         if (GameObject.Find("Klon"))
         {
             rigplayer = (Rigidbody2D)GameObject.Find("Klon").GetComponent(typeof(Rigidbody2D));
@@ -79,10 +91,14 @@ public class BasicAI : MonoBehaviour {
         inAttackRangex = (distancex <= minimumDistancex && distancex > 0) || (distancex >= -minimumDistancex && distancex < 0);
         inAttackRangey = (distancey <= minimumDistancey && distancey > 0) || (distancey >= -minimumDistancey && distancey < 0);
 
+
+        //Während eine Angriffanimation läuft, soll nicht angegriffen werden
         if (anim.GetBool("AttackInProgress"))
             return;
-            //Begin Chasing
-            if (!inAttackRangex && vision.playerVisible)
+
+        //Wenn sich Spieler nicht in Reichweite zum Angreifen befindet, aber Sichtkontakt besteht, nimm Verfolgung auf
+        //Ruft die Bewegungsmethode des Movementssystem auf.
+        if (!inAttackRangex && vision.playerVisible)
         {
             if (movement.grounded)
             {
@@ -95,7 +111,8 @@ public class BasicAI : MonoBehaviour {
                 movement.move(0.0f);
         }
 
-        //Should be able to attack now, if cooldowns are up
+        //Wenn in Angriffsreichweite, und der Spieler sichtbar ist, bleibe stehen beginne anzugreifen
+        //Ruft die Angriffsmethode des RangedSystems auf
         if ((inAttackRangex && inAttackRangey) && vision.playerVisible)
         {
             movement.move(0.0f);
@@ -104,13 +121,16 @@ public class BasicAI : MonoBehaviour {
         }
 
 
-        //Patrolling behaviour if not attacking or chasing
+        //Wenn das Ziel nicht sichtbar ist, soll patrolliert werden
         if (!vision.playerVisible)
         {
+            //Wenn wir auf dem Boden befinden, beweg dich, ansonsten bleib stehen
             if (movement.grounded)
             {
+                //Befinden wir uns vor einer Wand oder einem Abgrund, drehe um.
                 if (hittingWall || onAnEdge)
                     walkingRight = !walkingRight;
+
                 if (walkingRight)
                 {
                     movement.move(1.0f);

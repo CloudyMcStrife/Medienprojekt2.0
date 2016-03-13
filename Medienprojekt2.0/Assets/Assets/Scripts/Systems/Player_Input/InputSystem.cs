@@ -36,7 +36,7 @@ public class InputSystem : MonoBehaviour {
         //Funktion für Springen
         if (Input.GetKey("w"))
         {
-			if (!meleeSys.blocking)
+			if (!meleeSys.blocking && !movement.unableToMove)
             	StartCoroutine(movement.jump());
         }
         //Funktion für Rollen

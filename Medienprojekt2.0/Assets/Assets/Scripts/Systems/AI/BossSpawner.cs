@@ -7,9 +7,10 @@ public class BossSpawner : MonoBehaviour {
     bool triggered = false;
     bool spawned = false;
     public BossScript boss;
+    public GameObject thunder;
 	// Use this for initialization
 	void Start () {
-        
+        thunder.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -39,6 +40,7 @@ public class BossSpawner : MonoBehaviour {
     void SpawnBoss()
     {
         boss.Spawn();
+        thunder.SetActive(true);
     }
 
     void StuffWhileSpawned()

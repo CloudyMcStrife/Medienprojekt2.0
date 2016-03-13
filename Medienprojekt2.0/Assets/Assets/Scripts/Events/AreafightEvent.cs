@@ -7,6 +7,7 @@ public class AreafightEvent : MonoBehaviour {
 	GameObject enemy11;
 	GameObject enemy12;
 	GameObject enemy13;
+    GameObject alarm;
 	int timer;
 	bool triggered = false;
 	bool spawned;
@@ -24,7 +25,7 @@ public class AreafightEvent : MonoBehaviour {
 		enemy12.SetActive (false);
 		enemy13.SetActive (false);
 
-        GameObject alarm = GameObject.Find("Alarm");
+        alarm = GameObject.Find("Alarm");
         alarmSystem = alarm.GetComponent<AlarmSystem>();
     }
 	

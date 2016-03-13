@@ -41,7 +41,7 @@ public class Projectile : MonoBehaviour {
         s_type = Shooting_Type.NORMAL;
 
         normal_shot = Resources.Load<Sprite>("Sprites/Projectile/Normal_Shot") as Sprite;
-        special_shot = Resources.Load<Sprite>("Sprites/Projectile/Special_Shot") as Sprite;
+        special_shot = Resources.Load<Sprite>("Sprites/Projectile/PlasmaKugel_1") as Sprite;
 	}
 	
 	// Update is called once per frame

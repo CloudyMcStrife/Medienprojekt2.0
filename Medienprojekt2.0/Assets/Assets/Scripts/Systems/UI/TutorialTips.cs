@@ -23,7 +23,7 @@ public class TutorialTips : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        showControls = false;     
+        showControls = false;
 	}
 	
 	// Update is called once per frame

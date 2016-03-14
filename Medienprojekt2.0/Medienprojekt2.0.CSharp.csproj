@@ -91,7 +91,6 @@
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\HealthSystem.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\LevelManager.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\MeleeSystem.cs" />
-    <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\NavigationSystem.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\Projectile.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\ProjectilePoolingSystem.cs" />
     <Compile Include="Assets\Assets\Scripts\Systems\Gamelogic\RangedSystem.cs" />

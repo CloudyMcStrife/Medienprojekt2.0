@@ -3,8 +3,6 @@ using System.Collections;
 
 public class EbeneNavigationSystem : MonoBehaviour {
 
-	BoxCollider2D playercoll;
-	BoxCollider2D telecoll;
 	public GameObject screenFader;
 	GUITexture fadeTexture;
     GameObject player;
@@ -12,12 +10,7 @@ public class EbeneNavigationSystem : MonoBehaviour {
 	public GameObject targetObject;
 	Transform target;
 	Transform cam;
-	int timer = 3;
 
-	float fadingTime = 2.0f;
-	float currentFade = 0.0f;
-	bool fade = true;
-	bool black = false;
 	bool isFading = true;
 
 	bool fadeToBlack = false;
@@ -29,10 +22,8 @@ public class EbeneNavigationSystem : MonoBehaviour {
         player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
-            playercoll = player.GetComponent<BoxCollider2D>();
             playerTransform = player.transform;
         }
-		telecoll = (BoxCollider2D)this.GetComponent (typeof(BoxCollider2D));
 		target = (Transform)targetObject.GetComponent(typeof(Transform));
 		cam = (Transform)GameObject.FindGameObjectWithTag ("MainCamera").GetComponent(typeof(Transform));
 		fadeTexture.pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
@@ -41,47 +32,46 @@ public class EbeneNavigationSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		/*if(fade)
-			FadeToClear ();
-		if (black)
-			FadeToBlack ();
-*/
+
 		if (fadeToBlack && isFading)
 			FadeToBlack ();
 		else if(!fadeToBlack && isFading)
 			FadeToClear ();
 	}
 
+
 	void OnTriggerStay2D(Collider2D other)
 	{
 		if (other.tag == "Player" && Input.GetKeyDown ("e") && !isFading) {
-				black = true;
 				isFading = true;
 				fadeToBlack = true;
 		}
 	}
 
+    //Zum aufklaren des Bildschirms
+    //Lerpt zwischen der momentanen Farbe der Textur und "Klar" bis der Alphawert der Textur kleiner als 0.1 ist.
+    //Danach wird die Farbe auf "Klar" gesetzt.
 	void FadeToClear()
-	{
+    { 
 			fadeTexture.color = Color.Lerp (fadeTexture.color, Color.clear, 1.5f * Time.deltaTime);
 			if(fadeTexture.color.a <= 0.1f)
 			{
 				fadeTexture.color = Color.clear;
 				fadeTexture.enabled = false;
-				fade = false;
 				isFading = false;
 			}
 	}
 
-	void FadeToBlack()
+    //Um den Bildschirm schwarz zu färben
+    //Lerpt zwischen der momentanen Farbe der Textur und "Schwarz" bis der Alphawert der Textur größer als 0.8 ist.
+    //Danach wird die Farbe auf "Schwarz" gesetzt.
+    void FadeToBlack()
 	{
 		fadeTexture.enabled = true;
 		fadeTexture.color = Color.Lerp (fadeTexture.color, Color.black, 1.5f * Time.deltaTime);
 		if (fadeTexture.color.a >= 0.8f) {
 			fadeTexture.color = Color.black;
 			fadeToBlack = false;
-			black = false;
-			fade = true;
 			playerTransform.position = target.position;
 			cam.position = new Vector3 (target.position.x, target.position.y, cam.position.z);
 		}

@@ -42,7 +42,6 @@ public class AttributeComponent : MonoBehaviour {
         if (staminaPerSecond > 0.0f && stamina < maxStamina && !meleeSys.animationRunning)
         {
             stamina = Mathf.Clamp(stamina+staminaPerSecond * Time.deltaTime,0,maxStamina);
-            Debug.Log(stamina);
         }   
 	}
 

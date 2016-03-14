@@ -1,1 +1,24 @@
 \chapter{Spielobjekte}
+\section{Truhe}
+	Eine simple Truhe die mit der Taste ``E``-Taste ge"offnet werden kann, solange man sich im Collider befindet. Hierbei wird aus einer Liste an GameObjects zu"fallig ausgew"ahlt und aus der Kiste gedroppt.
+\section{Pickups}
+Es gibt verschiedene Pickups, wie etwa Health Potions die Leben regenerieren, oder Munition f"ur den Spezialschuss. Diese sind durch den Collider aufsammelbar, und schweben an der Stelle wo sie liegen leicht auf und ab. Dies wurde mit Hilfe einer Smoothstep Funktion umgesetzt, die in einer glatten Kurve zwischen zwei Extrempunkten interpoliert.
+
+\begin{lstlisting}[breaklines=true]
+//Smoothstep Funktion die einen Wert der zwischen 0 und 1 oszilliert "glaettet" um eine gleichmaessige Kurve zu erzeugen
+void smoothStep(float parameter)
+{
+    xParameter =0.5f* (1.0f - Mathf.Cos(Mathf.PI * parameter * xFrequency));
+    yParameter =0.5f* (1.0f - Mathf.Cos(Mathf.PI * parameter * yFrequency));
+}
+
+//Letztendliche Berechnung der Position
+void Interpolate()
+{
+	float currentX = minX + xParameter * (maxX - minX);
+	float currentY = minY + yParameter * (maxY - minY);
+
+	this.transform.position = new Vector2(currentX, currentY);
+}
+\end{lstlisting}
+

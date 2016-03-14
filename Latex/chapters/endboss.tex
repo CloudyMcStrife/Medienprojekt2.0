@@ -1,5 +1,8 @@
 \chapter{Endboss}
-Der Kampf mit dem Endboss, welcher auf der obersten Plattform des Levels zu finden ist, wurde speziell f"ur den Bosskampf gescriptet. Hierzu wurden "ahnliche Logikabfragen wie bei der normalen Gegner KI implementiert, jedoch in einer spezielleren Form, da sich durch gew"unschte Bossf"ahigkeiten diese nicht mit dem normalen KI Script umsetzen lassen.
+Der Kampf mit dem Endboss, welcher auf der obersten Plattform des Levels zu finden ist, wurde speziell f"ur den Bosskampf gescriptet.
+Er erscheint "uber eine Colliderbox, die beim betreten den Spawn des Bosses startet. Nach Ablauf eines kurzen Timers beginnt dieser zu erscheinen.\newline
+
+Im Kampf selbst wurden "ahnliche Logikabfragen wie bei der normalen Gegner KI implementiert, jedoch in einer spezielleren Form, da sich durch gew"unschte Bossf"ahigkeiten diese nicht mit dem normalen KI Script umsetzen lassen.
 
 Der Boss hat 3 Angriffe die von bestimmte Bedingungen haben:
 \begin{description}[align=left]
@@ -18,3 +21,45 @@ Beim ersten Angriff besteht also f"ur jede Funktion eine Chance von $\frac{1}{3}
 Wird dann beispielsweise der Schlag mit der linken Hand ausgef"uhrt, ist die Chance f"ur nochmals diese Aktion $\frac{1}{5}$, f"ur den Schrei und den Schlag mit der rechten Hand jeweils $\frac{2}{5}$.\newline
 
 Besonderheit hierbei ist, dass die Schl"age zweimal hintereinander ausgef"uhrt werden, der Z"ahler wird lediglich auf 1 zur"uckgesetzt, w"ahrend es ausgeschlossen ist, dass zweimal ein Schrei ausgef"uhrt wird.
+
+Beispielsweise der Code f"ur eine der gew"ahlten Aktionen und f"ur die Berechnung der Wahrscheinlichkeiten.
+
+\begin{lstlisting}[breaklines=true]
+void RightHandHit()
+{
+	//Variablen fuer den Code, welche attacke benutzt werden soll
+	timesSinceScream++;
+	timesSinceLeftHand++;
+	timesSinceRightHand = 1;
+	
+	//Variablen für die Animation
+	idleStateExecuted = false;
+	anim.SetTrigger("RightHandAttack");
+}
+
+
+void getProbabilities()
+{
+	int options = timesSinceScream;
+	if (inLeftHitBox)
+	{ 
+		options += timesSinceLeftHand;
+	}
+	if(inRightHitBox)
+	{
+		options += timesSinceRightHand;
+	}
+	screamProb = (float)timesSinceScream / (float)options;
+	
+	leftHandProb = inLeftHitBox ? (float)timesSinceLeftHand / (float)options : 0.0f;
+	rightHandProb = inRightHitBox ? (float)timesSinceRightHand / (float)options : 0.0f;
+}
+\end{lstlisting}
+
+Die Entscheidungen des Bosskampfes in einem Behaviour Tree dargestellt k"onnte folgenderma"sen aussehen:
+\begin{figure}
+	\centering
+	\includegraphics[height=9cm]{images/behaviour_boss.png}
+	\caption{Verhalten des Endboss' als Behaviour Tree}
+	\label{fig:behaviour_tree_boss}
+\end{figure}

@@ -1,17 +1,18 @@
 \select@language {ngerman}
 \select@language {ngerman}
-\contentsline {chapter}{\numberline {1}Vorwort}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Konzeptionierung}{2}{chapter.2}
-\contentsline {chapter}{\numberline {3}Die Kamera}{3}{chapter.3}
-\contentsline {chapter}{\numberline {4}GameObject ``Player`` \& Komponenten}{4}{chapter.4}
-\contentsline {chapter}{\numberline {5}Enemies}{5}{chapter.5}
-\contentsline {chapter}{\numberline {6}Endboss}{8}{chapter.6}
-\contentsline {chapter}{\numberline {7}Grafiken und Animationen}{9}{chapter.7}
-\contentsline {chapter}{\numberline {8}Sounds}{10}{chapter.8}
-\contentsline {chapter}{\numberline {9}Spielobjekte}{11}{chapter.9}
-\contentsline {chapter}{\numberline {10}Events}{12}{chapter.10}
-\contentsline {chapter}{\numberline {11}Demolevel}{13}{chapter.11}
-\contentsline {chapter}{\numberline {12}Men"uf"uhrung}{14}{chapter.12}
-\contentsline {chapter}{\numberline {13}Head-Up-Display \& Tooltips}{15}{chapter.13}
-\contentsline {chapter}{\numberline {14}Zielsetzung}{16}{chapter.14}
-\contentsline {chapter}{\numberline {15}Abschlussanalyse}{17}{chapter.15}
+\contentsline {chapter}{\numberline {1}Konzeptionierung}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Die Kamera}{2}{chapter.2}
+\contentsline {chapter}{\numberline {3}GameObject ``Player`` \& Komponenten}{3}{chapter.3}
+\contentsline {chapter}{\numberline {4}Enemies}{4}{chapter.4}
+\contentsline {chapter}{\numberline {5}Endboss}{7}{chapter.5}
+\contentsline {chapter}{\numberline {6}Grafiken und Animationen}{9}{chapter.6}
+\contentsline {chapter}{\numberline {7}Sounds}{10}{chapter.7}
+\contentsline {chapter}{\numberline {8}Spielobjekte}{11}{chapter.8}
+\contentsline {section}{\numberline {8.1}Truhe}{11}{section.8.1}
+\contentsline {section}{\numberline {8.2}Pickups}{11}{section.8.2}
+\contentsline {chapter}{\numberline {9}Events}{12}{chapter.9}
+\contentsline {chapter}{\numberline {10}Demolevel}{13}{chapter.10}
+\contentsline {chapter}{\numberline {11}Men"uf"uhrung}{14}{chapter.11}
+\contentsline {chapter}{\numberline {12}Head-Up-Display \& Tooltips}{15}{chapter.12}
+\contentsline {chapter}{\numberline {13}Zielsetzung}{16}{chapter.13}
+\contentsline {chapter}{\numberline {14}Abschlussanalyse}{17}{chapter.14}

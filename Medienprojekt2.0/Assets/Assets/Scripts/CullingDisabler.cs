@@ -15,7 +15,6 @@ public class CullingDisabler : MonoBehaviour {
 
         if (cam == thisCamera)
         {
-            Debug.Log("MyPreRender: " + cam.gameObject.name);
             cam.fieldOfView = 60;
         }
     }
@@ -25,9 +24,7 @@ public class CullingDisabler : MonoBehaviour {
     {
         if (cam == thisCamera)
         {
-            Debug.Log("PreCull: " + cam.gameObject.name);
             cam.fieldOfView = 70;
-
             //These are needed for the FOV change to take effect.
             cam.ResetWorldToCameraMatrix();
             cam.ResetProjectionMatrix();

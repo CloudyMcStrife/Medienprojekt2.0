@@ -11,6 +11,7 @@ public class LiftMovement : MonoBehaviour {
 	void Update () {
 	}
 
+    //Fügt dem Spieler auf der y-Achse geschwindigkeit hinzu
 	void OnTriggerStay2D(Collider2D other)
 	{
 		if(other.tag == "Player")

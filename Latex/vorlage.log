@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.24)  14 MAR 2016 19:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.24)  14 MAR 2016 20:32
 entering extended mode
 **vorlage.tex
 (vorlage.tex
@@ -747,60 +747,75 @@ Package pdftex.def Info: images/behaviour_tree_enemies.png used on input line 3
  [5
 
 
-]) (chapters/endboss.tex
-Overfull \hbox (14.0545pt too wide) in paragraph at lines 42--1
+]
+Overfull \hbox (14.0545pt too wide) in paragraph at lines 42--43
 []\OT1/cmr/m/n/12 Implementiert wur-de der Ent-schei-dungs-al-go-rith-mus je-do
 ch nur mit if-Bedingungen
  []
 
-[6 <./images/behaviour_tree_enemies.png>]
+[6 <./images/behaviour_tree_enemies.png>]) (chapters/endboss.tex [7]
 Kapitel 6.
-) (chapters/graphics.tex [7
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--19
+
+ []
+
+) (chapters/graphics.tex [8
 
 
 ]
 Kapitel 7.
-) (chapters/sounds.tex [8
+) (chapters/sounds.tex [9
 
 
 ]
 Kapitel 8.
-) (chapters/gameobjects.tex [9
+) (chapters/gameobjects.tex [10
 
 
 ]
 Kapitel 9.
-) (chapters/events.tex [10
+) (chapters/events.tex [11
 
 
 ]
 Kapitel 10.
-) (chapters/demolevel.tex [11
+) (chapters/demolevel.tex [12
 
 
 ]
 Kapitel 11.
-) (chapters/menu.tex [12
+) (chapters/menu.tex [13
 
 
 ]
 Kapitel 12.
-) (chapters/hud.tex [13
+) (chapters/hud.tex [14
 
 
 ]
 Kapitel 13.
-) (chapters/zielsetzung.tex [14
+) (chapters/zielsetzung.tex [15
 
 
 ]
 Kapitel 14.
-) (chapters/abschlussanalyse.tex [15
+) (chapters/abschlussanalyse.tex [16
 
 
 ]
 Kapitel 15.
-) [16
+) [17
 
 
 ]
@@ -815,13 +830,13 @@ Package rerunfilecheck Info: File `vorlage.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 136.
  ) 
 Here is how much of TeX's memory you used:
- 10993 strings out of 493673
- 154663 string characters out of 3141520
- 352225 words of memory out of 3000000
- 14090 multiletter control sequences out of 15000+200000
+ 11042 strings out of 493673
+ 155377 string characters out of 3141520
+ 384225 words of memory out of 3000000
+ 14091 multiletter control sequences out of 15000+200000
  10440 words of font info for 40 fonts, out of 3000000 for 9000
  1030 hyphenation exceptions out of 8191
- 29i,8n,32p,601b,1294s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,9n,32p,601b,1947s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
@@ -829,9 +844,9 @@ ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on vorlage.pdf (18 pages, 301459 bytes).
+Output written on vorlage.pdf (19 pages, 315224 bytes).
 PDF statistics:
- 261 PDF objects out of 1000 (max. 8388607)
- 59 named destinations out of 1000 (max. 500000)
+ 322 PDF objects out of 1000 (max. 8388607)
+ 107 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

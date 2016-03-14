@@ -96,9 +96,19 @@ public class BasicAI : MonoBehaviour {
         if (anim.GetBool("AttackInProgress"))
             return;
 
+
+        //Wenn in Angriffsreichweite, und der Spieler sichtbar ist, bleibe stehen beginne anzugreifen
+        //Ruft die Angriffsmethode des RangedSystems auf
+        if ((inAttackRangex && inAttackRangey) && vision.playerVisible)
+        {
+            movement.move(0.0f);
+            anim.SetBool("AttackInProgress", true);
+            StartCoroutine(rangeSys.shoot(true));
+        }
+
         //Wenn sich Spieler nicht in Reichweite zum Angreifen befindet, aber Sichtkontakt besteht, nimm Verfolgung auf
         //Ruft die Bewegungsmethode des Movementssystem auf.
-        if (!inAttackRangex && vision.playerVisible)
+        if (!inAttackRangex && inAttackRangey && vision.playerVisible)
         {
             if (movement.grounded)
             {
@@ -109,15 +119,6 @@ public class BasicAI : MonoBehaviour {
             }
             else
                 movement.move(0.0f);
-        }
-
-        //Wenn in Angriffsreichweite, und der Spieler sichtbar ist, bleibe stehen beginne anzugreifen
-        //Ruft die Angriffsmethode des RangedSystems auf
-        if ((inAttackRangex && inAttackRangey) && vision.playerVisible)
-        {
-            movement.move(0.0f);
-            anim.SetBool("AttackInProgress", true);
-            StartCoroutine(rangeSys.shoot(true));
         }
 
 

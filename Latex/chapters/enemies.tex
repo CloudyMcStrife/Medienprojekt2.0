@@ -41,3 +41,51 @@ Diese Entscheidungskaskade k"onnte man als Behaviour Tree folgenderma"sen visual
 
 Implementiert wurde der Entscheidungsalgorithmus jedoch nur mit if-Bedingungen und nicht mit einem Behaviour Tree oder einer State Machine.
 
+\begin{lstlisting}[breaklines=true]
+//Wenn in Angriffsreichweite, und der Spieler sichtbar ist, bleibe stehen beginne anzugreifen
+//Ruft die Angriffsmethode des RangedSystems auf
+if ((inAttackRangex && inAttackRangey) && vision.playerVisible)
+{
+	movement.move(0.0f);
+	anim.SetBool("AttackInProgress", true);
+	StartCoroutine(rangeSys.shoot(true));
+}
+
+//Wenn sich Spieler nicht in Reichweite zum Angreifen befindet, aber Sichtkontakt besteht, nimm Verfolgung auf
+//Ruft die Bewegungsmethode des Movementssystem auf.
+if (!inAttackRangex && inAttackRangey && vision.playerVisible)
+{
+	if (movement.grounded)
+	{
+		if (walkingRight)
+			movement.move(1.0f);
+		else
+			movement.move(-1.0f);
+	}
+	else
+		movement.move(0.0f);
+}
+
+
+//Wenn das Ziel nicht sichtbar ist, soll patrolliert werden
+if (!vision.playerVisible)
+{
+	//Wenn wir auf dem Boden befinden, beweg dich, ansonsten bleib stehen
+	if (movement.grounded)
+	{
+		//Befinden wir uns vor einer Wand oder einem Abgrund, drehe um.
+		if (hittingWall || onAnEdge)
+			walkingRight = !walkingRight;
+		if (walkingRight)
+		{
+			movement.move(1.0f);
+		}
+		else
+		{
+			movement.move(-1.0f);
+		}
+	}
+	else
+		movement.move(0.0f);
+}
+\end{lstlisting}

@@ -29,8 +29,15 @@ else
 
 \end{lstlisting}
 
-Allgemein ist 
+Mit Hilfe dieses Sichtbarkeitschecks, kann die KI verschiedene Aktionen abh"angig von verschiedenen Bedingungen w"ahlen.
+Diese Entscheidungskaskade k"onnte man als Behaviour Tree folgenderma"sen visualisieren:
 
-\begin{lstlisting}[breaklines=true]
+\begin{figure}
+	\centering
+	\includegraphics[height=5cm]{images/behaviour_tree_enemies.png}
+	\caption{Verhalten des Gegners als Behaviour Tree}
+	\label{fig:screen_pre}
+\end{figure}
 
-\end{lstlisting}
+Implementiert wurde der Entscheidungsalgorithmus jedoch nur mit if-Bedingungen und nicht mit einem Behaviour Tree oder einer State Machine.
+

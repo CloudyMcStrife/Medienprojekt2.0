@@ -26,7 +26,6 @@ public class SpawnToad : MonoBehaviour {
 
         if (timer <= 0)
         {
-            Debug.Log("Hll");
             showText = true;
         }
 	}
@@ -49,7 +48,6 @@ public class SpawnToad : MonoBehaviour {
     void OnGUI()
     {
         Vector3 p = Camera.main.WorldToScreenPoint(pos.position);
-        Debug.Log(Camera.main.pixelHeight);
         if(showText)
             GUI.Label(new Rect(p.x - textureToDisplay.width*0.5f, Camera.main.pixelHeight - p.y - textureToDisplay.height*2.0f, textureToDisplay.width, textureToDisplay.height),
             textureToDisplay);

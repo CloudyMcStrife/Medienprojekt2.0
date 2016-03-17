@@ -241,7 +241,7 @@ public class BossScript : MonoBehaviour
         timesSinceLeftHand++;
         timesSinceRightHand = 1;
 
-        //Real Stuff
+        //Variablen für die Animation
         idleStateExecuted = false;
         anim.SetTrigger("RightHandAttack");
     }

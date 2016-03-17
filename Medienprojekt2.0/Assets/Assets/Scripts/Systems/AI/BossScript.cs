@@ -29,6 +29,7 @@ public class BossScript : MonoBehaviour
     public bool inRightHitBox;
     int timesSinceRightHand;
     float rightHandProb;
+    public GameObject door;
 
 
     int timesSinceScream;
@@ -107,6 +108,7 @@ public class BossScript : MonoBehaviour
     //Called by Spawn Trigger to spawn the boss
     public void Spawn()
     {
+        door.GetComponent<EbeneNavigationSystem>().isOpen = false;
         anim.SetTrigger("Spawn");
     }
 
@@ -262,6 +264,7 @@ public class BossScript : MonoBehaviour
         //Real Stuff
         idleStateExecuted = false;
         anim.SetTrigger("Scream");
+        this.GetComponent<AudioSource>().Play();
     }
 
     //Wird von der Animation im entspr. Keyframe aufgerufen.
@@ -281,6 +284,7 @@ public class BossScript : MonoBehaviour
             yield return null;
 
         playerMovement.unableToMove = false;
+        
     }
 
     void getProbabilities()

@@ -19,6 +19,7 @@ public class EbeneNavigationSystem : MonoBehaviour {
 	bool fade = true;
 	bool black = false;
 	bool isFading = true;
+    public bool isOpen = true;
 
 	bool fadeToBlack = false;
 	//Setup a default blank texture for fading if none is supplied
@@ -54,7 +55,7 @@ public class EbeneNavigationSystem : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D other)
 	{
-		if (other.tag == "Player" && Input.GetKeyDown ("e") && !isFading) {
+		if (other.tag == "Player" && Input.GetKeyDown ("e") && !isFading && isOpen ) {
 				black = true;
 				isFading = true;
 				fadeToBlack = true;

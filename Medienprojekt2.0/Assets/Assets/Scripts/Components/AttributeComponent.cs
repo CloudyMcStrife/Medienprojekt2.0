@@ -2,45 +2,48 @@
 using System.Collections;
 
 public class AttributeComponent : MonoBehaviour {
-
-    public float health;
-    public float maxHealth;
-    public float maxStamina = 100f;
-    public float stamina = 100f;
-    public float staminaPerSecond = 0f;
-	public float damage;
+    //Lebenspunkte, maximale Lebenspunkte, Rüstung und Schaden
+    public float health, maxHealth, armor, damage;
+    //Maximale Ausdauer, Ausdauer und regenerierte Ausdauer pro Sekunde
+    public float maxStamina, stamina, staminaPerSecond;
+    //Munition, Munitionskapazität und Reichweite
+    //Range = 0 -> Nahkampf / Range > 0 -> Fernkampf
+    public int ammo, ammoCap, range;
+    //Klon aktiv?
     public bool cloneAlive = false;
-	float armor;
-    //current ammo
-	public int ammo;
-    //max ammo player can carry
-    public int ammoCap;
-	//int range gibt an ob fernkampf und wie weit die range des Spielers/Gegners ist. 0 = nahkampf, > 0 = fernkampf
-	public int range;
 
     //Cooldown für Plasma-Schuss
     static float cooldown1 = 1.0f;
+    //Läuft cooldown für Plasmaschuss?
     bool cooldown1Active = false;
-    bool skill1cooldown = false;
 
+    //Cooldown für Klonfähigkeit
     static float cooldown2 = 10.0f;
+    //Time-to-live für Klon
     static float ttl = 5.0f;
+    //Aktuelle Time-To-Live
     float attl = ttl;
+    //Läuft cooldown für Klon?
     bool cooldown2Active = false;
-    bool skill2cooldown = false;
 
     MeleeSystem meleeSys;
 
 	// Use this for initialization
 	void Start () {
         health = maxHealth;
+        stamina = maxStamina = 100f;
+        
         meleeSys = (MeleeSystem)GetComponent(typeof(MeleeSystem));
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+        /*Fülle Ausdauert über Zeit wieder auf solange maximalStamina nicht erreicht ist und die
+        Spielfigur sich nicht bewegt*/
         if (staminaPerSecond > 0.0f && stamina < maxStamina && !meleeSys.animationRunning)
         {
+            //Stelle sicher, dass Stamina nicht kleiner als 0 oder größer als maximalStamina gesetzt wird
             stamina = Mathf.Clamp(stamina+staminaPerSecond * Time.deltaTime,0,maxStamina);
         }   
 	}

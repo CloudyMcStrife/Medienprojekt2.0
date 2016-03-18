@@ -26,7 +26,7 @@ Um den Spieler an die Steuerung zu gew"ohnen wird er schon fr"uh mehrere Spr"ung
 
 Weiterhin wurden T"uren und Aufz"uge genutzt um den Spieler gro"se Abschnitte weiter nach oben Steigen oder ihn ins innere des Turms wechseln zu lassen. Daf"ur wurde ein Script genutzt das aktiviert wird sobald der Spieler innerhalb des Colliders "e" dr"uckt. Dadurch f"arbt sich der Bildschirm schwarz und der Spieler sowie die Kamera wird zur Ausgangst"ur bewegt. Danach klart der Bildschirm wieder auf.
 
-\begin{lstlisting}[breaklines = true]
+\begin{lstlisting}[breaklines=true]
 	[...]
 	void OnTriggerStay2D(Collider2D other)
 	{
@@ -64,3 +64,4 @@ Weiterhin wurden T"uren und Aufz"uge genutzt um den Spieler gro"se Abschnitte we
 			cam.position = new Vector3 (target.position.x, target.position.y, cam.position.z);
 		}
 	}
+\end{lstlisting}

@@ -73,6 +73,17 @@ cloneAlive = false;
 
 
 \section{MeleeSystem Skript}
+Der Nahkampf der Spielers ist wie folgt konzeptioniert:
+Dr"uckt ein Spieler die entsprechende Taste, wird ein Schlag ausgef"uhrt. Dr"uckt der Spieler w"ahrend dieser Schlag durchgef"uhrt wird erneut die Schlagtaste, wird eine Folgeschlag eingereiht, welche unmittelbar danach begonnen wird. Somit wird eine Art Nahkampf-Kombo-System umgesetzt, welches bis zu vier Schl"age ausf"uhren kann. Danach wird wieder mit dem ersten Schlag begonnen. Erleidet der Spieler w"ahrend des Kombos einen Treffer, so soll die Kombo abbrechen, und er muss erneut von vorne beginnen.
+
+In diesem Skript arbeiten die Animator Component von Unity eng mit dem MeleeSystem Skript zusammen. Wird der Schlag bet"atigt, wird ein Trigger im Animator ausgel"ost, der die entsprechende Animation aufruft. In dieser Animation wird an einem enstprechenden Keyframe der Schaden durchgef"uhrt, sodass es passend zur Animation stattfindet. W"ahrend die Animation l"auft, ist ein bool'scher Wert so gesetzt, dass neue Schlagaktionen als Kombo interpretiert werden. Ist das der Fall, wechselt der Animator am Ende einer Schlaganimation in die entsprechend n"achste. Erfolgt kein Tastendruck zum Schlagen, wird der Spieler getroffen, oder ist die letzte Schlaganimation erreicht, so wird per Animator zur"uck in den Idle State  gewechselt. Dann werden neue Schlagaktionen als Beginn einer neuen Kombo aufgefasst, und die erste Schlaganimation wird durchgef"uhrt.
+
+Um das ganze spielerisch attraktiv zu machen, ist die letzte Schlaganimation so gew"ahlt, dass hier an mehreren verschiedenen Keyframes Schaden ausgeteilt wird.
 
 
 \section{HealthSystem Skript}
+
+\section{RangedSystem Skript}
+"Ahnlich wie bei dem MeleeSystem ist hier ein Zusammenspiel zwischen Animator und Skript ausschlaggebend, jedoch ist hier der Ausl"oser entweder durch Spielerinput oder im Falle von Gegnern durch das entsprechende KI Skript.
+
+Erfolgt der Befehl zum schie"sen, wechselt der Animator in die Animation zum schie"sen. Das Skript wartet nun auf den Animator. Am entsprechenden Keyframe l"auft die Schussfunktion weiter und es wird je nach gew"ahlter Munition beziehungsweise Schussart ein Projektil aus dem Pooling System geholt, aktiviert und mit entsprechenden Werten wie Schaden und Sprite bef"ullt und anschlie"send in Blickrichtung abgeschossen.

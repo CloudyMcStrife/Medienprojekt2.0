@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.19)  18 MAR 2016 18:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.19)  31 MAR 2016 23:00
 entering extended mode
 **./vorlage.tex
 (vorlage.tex
@@ -673,7 +673,7 @@ Man spricht deutsch.
 
 bibgerm.sty: babel.sty detected
 
-<fhlogo_new.pdf, id=71, 208.22191pt x 64.9889pt>
+<fhlogo_new.pdf, id=87, 208.22191pt x 64.9889pt>
 File: fhlogo_new.pdf Graphic file (type pdf)
  <use fhlogo_new.pdf>
 Package pdftex.def Info: fhlogo_new.pdf used on input line 96.
@@ -714,7 +714,7 @@ Kapitel 2.
 
 ]
 Kapitel 3.
-<images/AnimationenZusammenschnitt.jpg, id=127, 307.90031pt x 126.4725pt>
+<images/AnimationenZusammenschnitt.jpg, id=164, 307.90031pt x 126.4725pt>
 File: images/AnimationenZusammenschnitt.jpg Graphic file (type jpg)
 
 <use images/AnimationenZusammenschnitt.jpg>
@@ -752,7 +752,7 @@ Overfull \hbox (4.0533pt too wide) in paragraph at lines 32--34
 hie-de-ne Ak-tio-nen abh[]angig
  []
 
-<images/behaviour_tree_enemies.png, id=191, 620.3175pt x 309.155pt>
+<images/behaviour_tree_enemies.png, id=228, 620.3175pt x 309.155pt>
 File: images/behaviour_tree_enemies.png Graphic file (type png)
 
 <use images/behaviour_tree_enemies.png>
@@ -793,7 +793,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--22
 [8
 
 
-] <images/behaviour_boss.png, id=282, 636.3775pt x 489.83pt>
+] <images/behaviour_boss.png, id=319, 636.3775pt x 489.83pt>
 File: images/behaviour_boss.png Graphic file (type png)
 
 <use images/behaviour_boss.png>
@@ -821,7 +821,7 @@ Kapitel 9.
 
 ]
 Kapitel 10.
-<images/tileset.jpg, id=352, 562.1pt x 369.38pt>
+<images/tileset.jpg, id=389, 562.1pt x 369.38pt>
 File: images/tileset.jpg Graphic file (type jpg)
  <use images/tileset.jpg>
 Package pdftex.def Info: images/tileset.jpg used on input line 6.
@@ -857,15 +857,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
 (vorlage.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 135.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 135.
-
-
-Package rerunfilecheck Warning: File `vorlage.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `vorlage.out':
-(rerunfilecheck)             Before: DD790C59795D84B212B92F1ABED2CEE6;945
-(rerunfilecheck)             After:  D6BC3051948E50171B68951329900152;1170.
+Package rerunfilecheck Info: File `vorlage.out' has not changed.
+(rerunfilecheck)             Checksum: D6BC3051948E50171B68951329900152;1170.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
  )
 (\end occurred inside a group at level 1)
@@ -873,10 +866,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10991 strings out of 493634
- 156354 string characters out of 3145355
- 434791 words of memory out of 3000000
- 13922 multiletter control sequences out of 15000+200000
+ 10995 strings out of 493634
+ 156402 string characters out of 3145355
+ 434792 words of memory out of 3000000
+ 13926 multiletter control sequences out of 15000+200000
  11421 words of font info for 43 fonts, out of 3000000 for 9000
  1030 hyphenation exceptions out of 8191
  29i,9n,32p,636b,4661s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -889,9 +882,9 @@ pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Progr
 am Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on vorlage.pdf (21 pages, 435841 bytes).
+Output written on vorlage.pdf (21 pages, 442678 bytes).
 PDF statistics:
- 521 PDF objects out of 1000 (max. 8388607)
+ 554 PDF objects out of 1000 (max. 8388607)
  259 named destinations out of 1000 (max. 500000)
- 162 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 

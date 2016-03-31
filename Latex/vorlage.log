@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.19)  31 MAR 2016 23:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.19)  1 APR 2016 01:20
 entering extended mode
 **./vorlage.tex
 (vorlage.tex
@@ -673,7 +673,7 @@ Man spricht deutsch.
 
 bibgerm.sty: babel.sty detected
 
-<fhlogo_new.pdf, id=87, 208.22191pt x 64.9889pt>
+<fhlogo_new.pdf, id=95, 208.22191pt x 64.9889pt>
 File: fhlogo_new.pdf Graphic file (type pdf)
  <use fhlogo_new.pdf>
 Package pdftex.def Info: fhlogo_new.pdf used on input line 96.
@@ -690,17 +690,17 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 102.
 
 ("C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (vorlage.toc)
+) (vorlage.toc [2
+
+
+
+
+])
 \tf@toc=\write5
 \openout5 = `vorlage.toc'.
 
- [2
 
-
-
-
-]
-(chapters/konzeptionierung.tex
+[3] (chapters/konzeptionierung.tex
 Kapitel 1.
 ) (chapters/kamera.tex [1
 
@@ -714,7 +714,7 @@ Kapitel 2.
 
 ]
 Kapitel 3.
-<images/AnimationenZusammenschnitt.jpg, id=164, 307.90031pt x 126.4725pt>
+<images/AnimationenZusammenschnitt.jpg, id=179, 307.90031pt x 126.4725pt>
 File: images/AnimationenZusammenschnitt.jpg Graphic file (type jpg)
 
 <use images/AnimationenZusammenschnitt.jpg>
@@ -738,8 +738,23 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
-)
-(chapters/enemies.tex [4]
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+) (chapters/enemies.tex [6]
 Kapitel 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
@@ -752,14 +767,14 @@ Overfull \hbox (4.0533pt too wide) in paragraph at lines 32--34
 hie-de-ne Ak-tio-nen abh[]angig
  []
 
-<images/behaviour_tree_enemies.png, id=228, 620.3175pt x 309.155pt>
+<images/behaviour_tree_enemies.png, id=276, 620.3175pt x 309.155pt>
 File: images/behaviour_tree_enemies.png Graphic file (type png)
 
 <use images/behaviour_tree_enemies.png>
 Package pdftex.def Info: images/behaviour_tree_enemies.png used on input line 3
 7.
 (pdftex.def)             Requested size: 285.4631pt x 142.26378pt.
- [5
+ [7
 
 
 ]
@@ -768,7 +783,7 @@ Overfull \hbox (14.0545pt too wide) in paragraph at lines 42--43
 ch nur mit if-Bedingungen
  []
 
-[6 <./images/behaviour_tree_enemies.png>]) (chapters/endboss.tex [7]
+[8 <./images/behaviour_tree_enemies.png>]) (chapters/endboss.tex [9]
 Kapitel 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--4
@@ -790,64 +805,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--22
 
  []
 
-[8
+[10
 
 
-] <images/behaviour_boss.png, id=319, 636.3775pt x 489.83pt>
+] <images/behaviour_boss.png, id=367, 636.3775pt x 489.83pt>
 File: images/behaviour_boss.png Graphic file (type png)
 
 <use images/behaviour_boss.png>
 Package pdftex.def Info: images/behaviour_boss.png used on input line 62.
 (pdftex.def)             Requested size: 332.69519pt x 256.0748pt.
-) (chapters/graphics.tex [9 <./images/behaviour_boss.png>]
+) (chapters/graphics.tex [11 <./images/behaviour_boss.png>]
 Kapitel 6.
-) (chapters/sounds.tex [10
+) (chapters/sounds.tex [12
 
 
 ]
 Kapitel 7.
-) (chapters/gameobjects.tex [11
+) (chapters/gameobjects.tex [13
 
 
 ]
 Kapitel 8.
-) (chapters/events.tex [12
+) (chapters/events.tex [14
 
 
 ]
 Kapitel 9.
-) (chapters/demolevel.tex [13
+) (chapters/demolevel.tex [15
 
 
 ]
 Kapitel 10.
-<images/tileset.jpg, id=389, 562.1pt x 369.38pt>
+<images/tileset.jpg, id=436, 562.1pt x 369.38pt>
 File: images/tileset.jpg Graphic file (type jpg)
  <use images/tileset.jpg>
 Package pdftex.def Info: images/tileset.jpg used on input line 6.
 (pdftex.def)             Requested size: 216.49065pt x 142.26378pt.
 
-[14
+[16
 
 
- <./images/tileset.jpg>]) (chapters/menu.tex [15]
+ <./images/tileset.jpg>]) (chapters/menu.tex [17]
 Kapitel 11.
-) (chapters/hud.tex [16
+) (chapters/hud.tex [18
 
 
 ]
 Kapitel 12.
-) (chapters/zielsetzung.tex [17
+) (chapters/zielsetzung.tex [19
 
 
 ]
 Kapitel 13.
-) (chapters/abschlussanalyse.tex [18
+) (chapters/abschlussanalyse.tex [20
 
 
 ]
 Kapitel 14.
-) [19
+) [21
 
 
 ]
@@ -858,7 +873,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 135.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 135.
 Package rerunfilecheck Info: File `vorlage.out' has not changed.
-(rerunfilecheck)             Checksum: D6BC3051948E50171B68951329900152;1170.
+(rerunfilecheck)             Checksum: E080D30FE166B2DE6213B5E4C6344DA2;1310.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
  )
 (\end occurred inside a group at level 1)
@@ -866,25 +881,24 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10995 strings out of 493634
- 156402 string characters out of 3145355
- 434792 words of memory out of 3000000
- 13926 multiletter control sequences out of 15000+200000
- 11421 words of font info for 43 fonts, out of 3000000 for 9000
+ 11024 strings out of 493634
+ 156827 string characters out of 3145355
+ 434791 words of memory out of 3000000
+ 13925 multiletter control sequences out of 15000+200000
+ 11084 words of font info for 42 fonts, out of 3000000 for 9000
  1030 hyphenation exceptions out of 8191
- 29i,9n,32p,636b,4661s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,9n,32p,932b,4659s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Shentoza\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\tcrm0800.pk> <C:\Users\Shentoza\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.
-pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Progr
-am Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmsy8.pfb>
-Output written on vorlage.pdf (21 pages, 442678 bytes).
+nappen\ec\dpi600\tcrm0800.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.
+pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progr
+am Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb>
+Output written on vorlage.pdf (24 pages, 454571 bytes).
 PDF statistics:
- 554 PDF objects out of 1000 (max. 8388607)
- 259 named destinations out of 1000 (max. 500000)
- 194 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 601 PDF objects out of 1000 (max. 8388607)
+ 290 named destinations out of 1000 (max. 500000)
+ 210 words of extra memory for PDF output out of 10000 (max. 10000000)
 

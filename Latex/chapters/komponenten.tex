@@ -107,6 +107,85 @@ public void storeProjectile(GameObject projectile)
 }
 \end{lstlisting}
 
+\section{InputSystem Skript}
+Beim InputSystem des Spielers wurde darauf geachtet das wirklich nur der Input abgefragt und nicht die Ausführung der jeweiligen Aktion mit implementiert wird. Alle Aktionen des Spielers werden über die Tastatur gesteuert.
+
+Hier eine Auflistung der Tasten und ihrer Aktionen:
+
+\begin{itemize}
+	\item W = springen
+	\item K = Klon erzeugen
+	\item S = schie"sen
+	\item B = blocken
+	\item C = Waffe wechseln
+	\item J = schlagen
+	\item A/D = links/rechts laufen
+\end{itemize}
+
+\begin{lstlisting}[breaklines = true]
+[...]
+void Update()
+{
+	float movePlayerVector = Input.GetAxis("Horizontal");
+	bool isFacingRight;
+	if (movePlayerVector >= 0)
+		isFacingRight = true;
+	else
+		isFacingRight = false;
+
+
+	//Funktion für Springen
+	if (Input.GetKey("w"))
+	{
+		if (!meleeSys.blocking && !movement.unableToMove)
+			StartCoroutine(movement.jump());
+	}
+	//Funktion für Schiessen
+	if (Input.GetKeyDown("s"))
+	{
+		StartCoroutine(rangedSys.shoot(primaryShot));
+	}
+
+	if (Input.GetKeyDown("b"))
+	{
+		meleeSys.block();
+	}
+
+	if (Input.GetKeyUp("b"))
+	{
+		meleeSys.unblock();
+	}
+
+	if (Input.GetKeyDown("c"))
+	{
+		rangedSys.switchWeapon();
+		primaryShot = !primaryShot;
+	}
+
+	if(Input.GetKeyDown("k"))
+	{
+		if (!attComp.getCooldown2Active())
+		{
+			abilitySys.clone();
+		} 
+	}
+
+	if (Input.GetKeyDown ("j")) 
+	{
+		if(movement.grounded && meleeSys.anim != null && !meleeSys.anim.GetBool("MeleeAttackInQueue"))
+		{
+			movePlayerVector = 0.0f;
+			meleeSys.punch();
+		}
+	}
+
+
+
+	if (meleeSys.animationRunning || meleeSys.blocking || movement.unableToMove)
+		movePlayerVector = 0.0f;
+	movement.move(movePlayerVector);
+}
+\end{lstlisting}
 
 \section{CharacterMovement Skript}
 

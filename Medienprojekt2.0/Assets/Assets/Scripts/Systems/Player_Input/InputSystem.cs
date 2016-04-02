@@ -7,7 +7,6 @@ public class InputSystem : MonoBehaviour {
     AttributeComponent attComp;
     RangedSystem rangedSys;
     MeleeSystem meleeSys;
-    Collider2D playerColl;
     AbilitySystem abilitySys;
     bool primaryShot = true;
     
@@ -18,7 +17,6 @@ public class InputSystem : MonoBehaviour {
         movement = (CharacterMovement)gameObject.GetComponent(typeof(CharacterMovement));
         meleeSys = (MeleeSystem)gameObject.GetComponent(typeof(MeleeSystem));
         rangedSys = (RangedSystem)GetComponent(typeof(RangedSystem));
-        playerColl = (Collider2D)GetComponent(typeof(Collider2D));
         abilitySys = (AbilitySystem)GetComponent(typeof(AbilitySystem));
 	}
 	

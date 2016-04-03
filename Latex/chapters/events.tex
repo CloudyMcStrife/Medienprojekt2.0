@@ -1,1 +1,66 @@
 \chapter{Events}
+
+\section {Arena Kampf}
+Dieses Event startet sobald der Spieler im innen Raum einen unsichtbaren Collider betritt. Daraufhin schaltet sich der Luftstrom ab und rot blinkende Lichter sowie ein Alarm-Sound erscheinen. Daraufhin spawnen drei Einheiten in kurzen Zeitabst"anden. Hat der Spielers diese besiegt schaltet sich der Alarm ab und der Luftstrom wieder an.
+
+\begin{lstlisting}[breaklines = true]
+
+	void Start () {
+		booster = GameObject.Find ("BoosterEbene6");
+		
+		Vector3 spawnPosition = GameObject.Find("DoorEbene" + level).transform.position;
+		enemy11 = (GameObject)Instantiate(enemyPrefab, spawnPosition, Quaternion.Euler(0,0,0));
+		enemy12 = (GameObject)Instantiate(enemyPrefab, spawnPosition, Quaternion.Euler(0, 0, 0));
+		enemy13 = (GameObject)Instantiate(enemyPrefab, spawnPosition, Quaternion.Euler(0, 0, 0));
+		enemy11.SetActive (false);
+		enemy12.SetActive (false);
+		enemy13.SetActive (false);
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		if (triggered)
+		{
+			timeSpawn += Time.deltaTime;
+			alarmSystem.alarmActivated = true;
+			
+			if (enemy11 != null)
+			{
+				enemy11.SetActive(true);
+				booster.SetActive(false);
+			}
+			if (timeSpawn >= 10 && enemy12 != null)
+			{
+				enemy12.SetActive(true);
+			}
+			if (timeSpawn >= 20 && enemy13 != null)
+			{
+				enemy13.SetActive(true);
+			}
+			
+			if (enemy11 == null && enemy12 == null && enemy13 == null)
+			{
+				booster.SetActive(true);
+				if (alarmSystem != null)
+				alarmSystem.alarmActivated = false;
+				
+				lightsToDisable.SetActive(true);
+				this.enabled = false;
+			}
+		}
+	}
+		
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.gameObject.name == "Player")
+		{
+			lightsToDisable.SetActive(false);
+			GameObject alarm = GameObject.Find("Alarm");
+				
+			alarmSystem = alarm.GetComponent<AlarmSystem>();
+			triggered = true;
+		
+		}
+	}
+
+\end{lstlisting}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.19)  3 APR 2016 19:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.19)  3 APR 2016 19:11
 entering extended mode
 **./vorlage.tex
 (vorlage.tex
@@ -738,20 +738,6 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
 
 
  <./images/AnimationenZusammenschnitt.jpg>] [4] [5] [6] [7]
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.260 		 //Kraftstoß 
-                      nach oben
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 270--272
 
  []
@@ -914,7 +900,7 @@ pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Progr
 am Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb>
-Output written on vorlage.pdf (28 pages, 520132 bytes).
+Output written on vorlage.pdf (28 pages, 520115 bytes).
 PDF statistics:
  939 PDF objects out of 1000 (max. 8388607)
  545 named destinations out of 1000 (max. 500000)

@@ -68,6 +68,23 @@ cloneAlive = false;
 }
 \end{lstlisting}
 
+Getter- und Settermethoden f"ur die jeweiligen Variablen sind ebenfalls in der AttributeComponent enthalten.
+Desweiteren wurde eine Methode f"ur das reduzieren der Ausdauer geschrieben.
+\begin{lstlisting}[breaklines=true]
+//Returns difference between possible Stamina Damage and really done stamina dmg
+//eg. all damage can be absorbed into stamina = returns 0
+//10 Stamina left but 20  damage returns 10
+public float reduceStamina(float amount)
+{
+float potentialDamage = stamina - amount;
+stamina = Mathf.Clamp(stamina - amount, 0, maxStamina);
+if (potentialDamage < 0)
+return -1 * potentialDamage;
+else
+return 0;
+}
+\end{lstlisting}
+
 \section{Projectile Pooling System}
 Angelehnt aus dem Pooling Verfahren aus der Spieleprogrammierung Vorlesung wollten wir ein "ahnliches System f"ur unsere Projektile umsetzen, um h"aufiges Erzeugen und L"oschen von GameObjects zu vermeiden.
 
@@ -206,3 +223,24 @@ Um das ganze spielerisch attraktiv zu machen, ist die letzte Schlaganimation so 
 "Ahnlich wie bei dem MeleeSystem ist hier ein Zusammenspiel zwischen Animator und Skript ausschlaggebend, jedoch ist hier der Ausl"oser entweder durch Spielerinput oder im Falle von Gegnern durch das entsprechende KI Skript.\newline
 
 Erfolgt der Befehl zum Schie"sen, wechselt der Animator in die Animation zum schie"sen. Das Skript wartet nun auf den Animator. Am entsprechenden Keyframe l"auft die Schussfunktion weiter und es wird je nach gew"ahlter Munition beziehungsweise Schussart ein Projektil aus dem Pooling System geholt, aktiviert und mit entsprechenden Werten wie Schaden und Sprite bef"ullt und anschlie"send in Blickrichtung abgeschossen.
+
+\section{AbilitySystem Skript}
+Das AbilitySystem wurde geschrieben um verschiedene Fähigkeiten, die dem Spieler zur Verf"ugung stehen, zu implementieren. In der aktuell vorliegenden Version wurde bisher nur eine Methode f"ur die F"ahigkeit "Klonen" geschrieben.
+\begin{lstlisting}[breaklines=true]
+//Fähigkeit um Klon zu erzeugen
+public void clone()
+{
+//Setze cooldown auf aktiv
+attComp.setCooldown2Active(true);
+
+//Erstelle Klon aus Prefab
+GameObject clone = (GameObject)Instantiate(illusion);
+clone.name = "Klon";
+//Setze Klon auf aktuelle Spielerposition
+clone.transform.position = transform.position;
+//Deaktiviere Kollision zwischen Spieler und Klon
+Physics2D.IgnoreCollision(GameObject.Find("Player").GetComponent<BoxCollider2D>(), clone.GetComponent<BoxCollider2D>());
+//Setze Time-To-Live fuer Klon
+attComp.setTTL();
+}
+\end{lstlisting}

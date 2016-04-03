@@ -5,17 +5,20 @@ using System.Collections;
 public class MenuScript : MonoBehaviour {
 
 	public Canvas quitDialogue;
-	Button playText;
-	Button exitText;
+	Button play;
+	Button exit;
 	bool playing;
 	GameObject quit;
 	GameObject pauseMenu;
 
 	// Use this for initialization
 	void Start () {
+        //Canvas fuer Dialogfenster
 		quitDialogue = quitDialogue.GetComponent<Canvas>();
-		playText =  playText.GetComponent<Button>();
-		exitText =  exitText.GetComponent<Button>();
+        //Play-Button
+		play =  GameObject.Find("Play").GetComponent<Button>();
+        //Exit-Button
+		exit = GameObject.Find("Exit").GetComponent<Button>();
 		quitDialogue.enabled = false;
 	}
 
@@ -23,15 +26,15 @@ public class MenuScript : MonoBehaviour {
 	public void ExitPress()
 	{
 		quitDialogue.enabled = true;
-		playText.enabled = false;
-		exitText.enabled = false;
+		play.enabled = false;
+		exit.enabled = false;
 	}
 
 	public void NoPress()
 	{
 		quitDialogue.enabled = false;
-		playText.enabled = true;
-		exitText.enabled = true;
+		play.enabled = true;
+		exit.enabled = true;
 	}
 
 	public void PlayPress()

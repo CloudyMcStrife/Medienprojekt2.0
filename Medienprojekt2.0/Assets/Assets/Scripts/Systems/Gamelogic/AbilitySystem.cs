@@ -19,16 +19,17 @@ public class AbilitySystem : MonoBehaviour {
     //Ability to create a clone
     public void clone()
     {
-        //Sets cooldown on active
+        //Setze cooldown auf aktiv
         attComp.setCooldown2Active(true);
 
-        //Create clone from Prefab
+        //Erstelle Klon aus Prefab
         GameObject clone = (GameObject)Instantiate(illusion);
         clone.name = "Klon";
-        //Set clone at same position as player
+        //Setze Klon auf aktuelle Spielerposition
         clone.transform.position = transform.position;
-        //Disable collisions between player and clone
+        //Deaktiviere Kollision zwischen Spieler und Klon
         Physics2D.IgnoreCollision(GameObject.Find("Player").GetComponent<BoxCollider2D>(), clone.GetComponent<BoxCollider2D>());
+        //Setze Time-To-Live für Klon
         attComp.setTTL();
     }
 }

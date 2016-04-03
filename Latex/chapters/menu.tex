@@ -1,4 +1,5 @@
 \chapter{Men"uf"uhrung}
+\section{Startmen"u}
 F"ur das Hauptmen"u wurde eine eigene Scene erstellt. Es besteht aus den Buttons ``Play`` und ``Exit`` sowie einem Hintergrund. F"ur den Text wurde eine lizenfreie Schriftart aus dem Internet verwendet. F"ahrt man mit der Maus "uber einen der Buttons, faded die Textfarbe von Gelb zu Rot. \newline
 \newline
 F"ur das Handling der Aktionen wurde ein Men"uf"uhrungsskript geschrieben das im folgenden vorgestellt wird.
@@ -28,3 +29,15 @@ play.enabled = false;
 exit.enabled = false;
 }
 \end{lstlisting}
+\newpage
+\section{Pausemen"u und Todesmen"u}
+Das Pausemen"u wurde "ahnlich wie das Hauptmen"u erstellt. Nach Tastendruck wird das Spiel pausiert und das Canvas aktiviert. Vom Pausemen"ü aus lässt sich das Hauptmen"u erreichen, das Spiel komplett beenden oder zur"uck ins Spiel kommen. 
+\newline
+Das Todesmen"u entspricht dem Pausemen"u und wird automatisch aufgerufen, sobald der Spieler keine Lebenspunkte mehr hat. Der einzige Unterschied ist, dass sich durch einen Klick auf den Button ``retry`` das Level neustarten l"asst. 
+
+\begin{figure}
+	\centering
+	\includegraphics[height=5cm]{images/Todesmenu.png}
+	\caption{Todesmenue}
+	\label{fig:Todesmenue}
+\end{figure}

@@ -9,17 +9,21 @@
 \BOOKMARK [1][-]{section.3.6}{MeleeSystem Skript}{chapter.3}% 9
 \BOOKMARK [1][-]{section.3.7}{HealthSystem Skript}{chapter.3}% 10
 \BOOKMARK [1][-]{section.3.8}{RangedSystem Skript}{chapter.3}% 11
-\BOOKMARK [0][-]{chapter.4}{Enemies}{}% 12
-\BOOKMARK [0][-]{chapter.5}{Endboss}{}% 13
-\BOOKMARK [0][-]{chapter.6}{Grafiken und Animationen}{}% 14
-\BOOKMARK [0][-]{chapter.7}{Sounds}{}% 15
-\BOOKMARK [0][-]{chapter.8}{Spielobjekte}{}% 16
-\BOOKMARK [1][-]{section.8.1}{Truhe}{chapter.8}% 17
-\BOOKMARK [1][-]{section.8.2}{Pickups}{chapter.8}% 18
-\BOOKMARK [0][-]{chapter.9}{Events}{}% 19
-\BOOKMARK [1][-]{section.9.1}{Arena Kampf}{chapter.9}% 20
-\BOOKMARK [0][-]{chapter.10}{Demolevel}{}% 21
-\BOOKMARK [0][-]{chapter.11}{Men\374f\374hrung}{}% 22
-\BOOKMARK [0][-]{chapter.12}{Head-Up-Display \046 Tooltips}{}% 23
-\BOOKMARK [0][-]{chapter.13}{Zielsetzung}{}% 24
-\BOOKMARK [0][-]{chapter.14}{Abschlussanalyse}{}% 25
+\BOOKMARK [1][-]{section.3.9}{AbilitySystem Skript}{chapter.3}% 12
+\BOOKMARK [0][-]{chapter.4}{Enemies}{}% 13
+\BOOKMARK [0][-]{chapter.5}{Endboss}{}% 14
+\BOOKMARK [0][-]{chapter.6}{Grafiken und Animationen}{}% 15
+\BOOKMARK [0][-]{chapter.7}{Sounds}{}% 16
+\BOOKMARK [0][-]{chapter.8}{Spielobjekte}{}% 17
+\BOOKMARK [1][-]{section.8.1}{Truhe}{chapter.8}% 18
+\BOOKMARK [1][-]{section.8.2}{Pickups}{chapter.8}% 19
+\BOOKMARK [0][-]{chapter.9}{Events}{}% 20
+\BOOKMARK [1][-]{section.9.1}{Arena Kampf}{chapter.9}% 21
+\BOOKMARK [0][-]{chapter.10}{Demolevel}{}% 22
+\BOOKMARK [0][-]{chapter.11}{Men\374f\374hrung}{}% 23
+\BOOKMARK [1][-]{section.11.1}{Startmen\374}{chapter.11}% 24
+\BOOKMARK [1][-]{section.11.2}{Pausemen\374 und Todesmen\374}{chapter.11}% 25
+\BOOKMARK [0][-]{chapter.12}{Head-Up-Display \046 Tooltips}{}% 26
+\BOOKMARK [1][-]{section.12.1}{Lebens- und Ausdaueranzeige}{chapter.12}% 27
+\BOOKMARK [1][-]{section.12.2}{Munitionsanzeige}{chapter.12}% 28
+\BOOKMARK [1][-]{section.12.3}{Skill-Icons}{chapter.12}% 29

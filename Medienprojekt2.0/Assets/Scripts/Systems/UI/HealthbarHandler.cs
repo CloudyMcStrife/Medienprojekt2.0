@@ -4,17 +4,19 @@ using UnityEngine.UI;
 
 public class HealthbarHandler : MonoBehaviour {
 
+    //Transform der Lebensleiste
     RectTransform healthTransform;
+    //y-Position der Leiste
     float cachedY;
     float maxXPos;
     float minXPos;
+    //aktuelle Lebenspunkte
     float currentHealth;
     float maxHealth;
     float newXPos;
     AttributeComponent attComp;
     Image visualHealth;
 
-    float timer = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -56,6 +58,7 @@ public class HealthbarHandler : MonoBehaviour {
 
     }
 
+    //Methode zum mappen der Position und Lebenspunkte
     private float MapValues(float x, float inMin, float inMax, float outMin, float outMax)
     {
         return (x - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;

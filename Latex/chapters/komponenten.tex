@@ -205,7 +205,65 @@ void Update()
 \end{lstlisting}
 
 \section{CharacterMovement Skript}
+Das CharacterMovement Skript dient dazu den Charakter durch das Level zu man"ovrieren. Dieses Skript wird entweder durch das Input System des Spielers gesteuert, oder im Falle von NPCs durch das entsprechende KI System, welches Methoden in diesem Skript aufruft.
+ Zu Beginn wird dieses Skript mit einem Wert initialisiert, der angibt, ob der Sprite des Objektes nach links oder rechts schaut. An diesem bool`schen Wert orientiert sich die Bewegung. Startet ein Charakter beispielsweise nach links ausgerichtet, und soll sich nun nach rechts bewegen, so wird der bool'sche Wert invertiert und der Sprite gespiegelt.
 
+\begin{lstlisting}[breaklines=true] 
+public void move(float movePlayerVector)
+{
+	float xScale = scaling;
+	//MoveplayerVector ist ein float zwischen -1 und 1 und gibt an, wie stark sich in welche Richtung bewegt werden soll.
+	float newSpeed = movePlayerVector * speed;
+	//Waehrend dem Rollen soll keine Bewegung moeglich sein
+	if (!rolling)
+	{
+		//Setze die Geschwindigkeit des RigidBodys entsprechend
+		rigplayer.velocity = new Vector2(newSpeed, rigplayer.velocity.y);
+		//Wenn die Bewegung nach links ausgefuehrt werden soll, aber noch //nach rechts geschaut wird
+		if (movePlayerVector < 0 && facingRight)
+		{
+			facingRight = false;
+			//spiegele das gesamte Objekt 
+			xScale *= startingRight ? -1 : 1;
+			trans.localScale = new Vector3(xScale, trans.localScale.y, trans.localScale.z);
+		}
+		//Wenn die Bewegung nach rechts ausgefuehrt werden soll, aber noch //nach links geschaut wird
+		if (movePlayerVector > 0 && !facingRight)
+		{
+			facingRight = true;
+			xScale *= startingRight ? 1 : -1;
+			//renderer.flipX = !facingRight;
+			trans.localScale = new Vector3(xScale, trans.localScale.y, trans.localScale.z);
+			
+		}
+	}
+	if (anim != null)
+	anim.SetFloat("Speedx", Mathf.Abs(newSpeed));
+}
+\end{lstlisting}
+
+Neben dem Laufen wird auch das Springen "uber dieses Skript abgehandelt.
+Ein kleines Gameobjekt an den F"u"sen des Spielobjekts wird benutzt um zu pr"ufen, ob man sich auf dem Boden befindet. Das ist Voraussetzung damit ein Sprung ausgef"uhrt werden kann. Somit kann immer direkt beim aufkommen abgesprungen werden. Wird der Sprung ausgef"uhrt wird die Y Velocity des Characters auf einen anpassbaren Wert gesetzt.
+Da dies anf"anglich noch mit einer Animation "ubereinstimmen musste, ist hier der Code noch als IEnumerator implementiert, wird praktisch jedoch nicht genutzt.
+
+\begin{lstlisting}[breaklines=true]
+ public IEnumerator jump()
+ {
+	 //Wenn sich die Figur auf dem Boden befindet
+	 if (grounded)
+	 {
+		 //Ueberbleibsel vom animationssynchronem Springen, tritt nie ein
+		 if (jumpReady)
+			 yield return null;  
+			 
+			 
+		 //Kraftstoß nach oben
+		 rigplayer.velocity = new Vector2(rigplayer.velocity.x, jumpheight);
+		 //Somit wird ein mehrfaches Abspringen verhindert
+		 jumpReady = grounded = false;
+	 }
+ }
+\end{lstlisting}
 
 
 \section{MeleeSystem Skript}

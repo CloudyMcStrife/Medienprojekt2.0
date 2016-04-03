@@ -1,1 +1,33 @@
 \chapter{Die Kamera}
+Die Kamera ist eine einfache Verfolgerkamera. Diese verfolgt die Spielerfigur, wenn sich dieser in X- oder Y-Richtung eine gewisse Entfernung entfernt, und f"ahrt je nach Entfernung langsamer oder schneller dem Spieler hinterher. Hierbei war es wichtig die Grenzen korrekt einzustellen, ab wann die Kamera dem Spieler verfolgen soll, um in allen Situationen den besten "Uberblick zu gew"ahren. So war es beispielsweise sinnvoll f"ur das Springen eine geringe Toleranz zu w"ahlen, sodass die Kamera schnell folgt. Andernfalls traten Probleme auf, einzusch"atzen wie in vertikalen Levels der Pfad zu w"ahlen ist.
+Die ma"sgebliche Schleife f"ur die Kamera wird im LateUpdate von Unity aufgerufen, da dies geschehen soll, nachdem Bewegungen oder "Ahnliches im normalen Update durchgef"uhrt wurden.
+Sie sieht folgenderma"sen aus:
+\begin{lstlisting}[breaklines=true]
+void LateUpdate()
+{
+	//Standartmaessig sind die gewuenschten Koordinaten, die unveraendert bleiben sollen.
+	float targetX = transform.position.x+xOffset;
+	float targetY = transform.position.y+yOffset;
+	// Wenn der Spieler sich zu weit in X Richtung entfernt
+	if (CheckXMargin ()) {
+		//Soll der Zielpunkt dem Spieler hinterher interpolieren um eine glatte
+		//Kamerafahrt zu ermoeglichen
+		targetX = Mathf.Lerp(transform.position.x,player.position.x+xOffset, xSmooth * Time.deltaTime);
+	}
+
+	// Wenn der Spieler sich zu weit in Y Richtung entfernt
+	if (CheckYMargin ()) {
+		//Soll der Zielpunkt dem Spieler hinterher interpolieren um eine glatte
+		//Kamerafahrt zu ermoeglichen
+		targetY = Mathf.Lerp (transform.position.y,
+		player.position.y+yOffset, ySmooth *
+		Time.deltaTime);
+	}
+	
+	//Fur Levelgrenzen wird der Zielwert auf Minimal- und Maximalwerte festgehalten
+	targetX = Mathf.Clamp(targetX, minXAndY.x, maxXAndY.x);
+	targetY = Mathf.Clamp(targetY, minXAndY.y, maxXAndY.y);
+	//Setze die Kameraposition auf die errechnete Positon
+	transform.position = new Vector3(targetX, targetY, transform.position.z);
+}
+\end{lstlisting}

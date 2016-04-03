@@ -205,7 +205,65 @@ void Update()
 \end{lstlisting}
 
 \section{CharacterMovement Skript}
+Das CharacterMovement Skript dient dazu den Charakter durch das Level zu man"ovrieren. Dieses Skript wird entweder durch das Input System des Spielers gesteuert, oder im Falle von NPCs durch das entsprechende KI System, welches Methoden in diesem Skript aufruft.
+nun nach rechts bewegen, so wird der bool'sche Wert invertiert und der Sprite gespiegelt.
 
+\begin{lstlisting}[breaklines=true] 
+tor)
+
+	float xScale = scaling;
+ein float zwischen -1 und 1 und gibt an, wie stark sich in welche Richtung bewegt werden soll.
+
+	//Waehrend dem Rollen soll keine Bewegung moeglich sein
+
+	{
+//Setze die Geschwindigkeit des RigidBodys entsprechend
+locity.y);
+ //nach rechts geschaut wird
+
+		{
+facingRight = false;
+te Objekt 
+ 1;
+cale, trans.localScale.y, trans.localScale.z);
+
+		//Wenn die Bewegung nach rechts ausgefuehrt werden soll, aber noch //nach links geschaut wird
+
+		{
+facingRight = true;
+ight ? 1 : -1;
+
+			trans.localScale = new Vector3(xScale, trans.localScale.y, trans.localScale.z);
+
+		}
+
+	if (anim != null)
+eedx", Mathf.Abs(newSpeed));
+
+\end{lstlisting}
+
+Neben dem Laufen wird auch das Springen "uber dieses Skript abgehandelt.
+u pr"ufen, ob man sich auf dem Boden befindet. Das ist Voraussetzung damit ein Sprung ausgef"uhrt werden kann. Somit kann immer direkt beim aufkommen abgesprungen werden. Wird der Sprung ausgef"uhrt wird die Y Velocity des Characters auf einen anpassbaren Wert gesetzt.
+
+
+\begin{lstlisting}[breaklines=true]
+
+ {
+//Wenn sich die Figur auf dem Boden befindet
+
+	 {
+//Ueberbleibsel vom animationssynchronem Springen, tritt nie ein
+
+			 yield return null;  
+
+			 
+/Kraftstoss nach oben
+ew Vector2(rigplayer.velocity.x, jumpheight);
+
+		 jumpReady = grounded = false;
+
+ }
+\end{lstlisting}
 
 
 \section{MeleeSystem Skript}
@@ -218,6 +276,54 @@ Um das ganze spielerisch attraktiv zu machen, ist die letzte Schlaganimation so 
 
 
 \section{HealthSystem Skript}
+
+
+Das HealthSystem dient nur dazu die Lebenspunkte der Gegner sowie des Spielers zu ver"andern. So wird, wenn der Spieler getroffen wird, im HealtSystem die Funktion lowerHealth aufgerufen, die auf die AttributeComponent des Spielers zugreift und dort die HP verringert.
+
+Sollte die HP dabei unter 0 fallen wird das GameObject zerst"ort. Bei dem Boss sowie beim Spieler wird ein jeweilges Event gestartet.
+
+"Ahnlich verh"alt es sich beim aufnehmen eines Medikits.
+
+\begin{lstlisting}[breakline = true]
+[...]
+public void lowerHealth(float damage)
+{
+	if (meleeSys != null && meleeSys.blocking)
+	{
+		damage = ac.reduceStamina(damage);
+	}
+	if (damage >= 0)
+	{
+		ac.setHealth(ac.getHealth() - damage);
+	if (anim != null)
+		anim.SetTrigger("MeleeInterrupt");
+	}
+	//Falls die HP eines Gegners = oder unter 0 sind wird er Zerstört (Stirbt der Boss wird ein Event ausgeloest)
+	if (ac.getHealth() <= 0)
+	{
+		if(this.gameObject.tag != "Player")
+		{
+			Destroy (this.gameObject);
+		}
+		if(this.gameObject.name == "Boss")
+		{
+			SpawnToad td = (SpawnToad)GameObject.Find("Toad").GetComponent(typeof(SpawnToad));
+			CharacterMovement cm = (CharacterMovement)GameObject.Find("Player").GetComponent(typeof(CharacterMovement));
+			td.spawn();
+			cm.unableToMove = false;
+		}
+		ac.setHealth(0);
+	}
+}
+
+//Erhöht HP des Spielers/Gegners. MAX HP = 100
+public void raiseHealth(float hp)
+{
+	ac.setHealth(ac.getHealth() + hp);
+	if (ac.getHealth () > 100)
+	ac.setHealth (100);
+}
+\end{lstlisting}
 
 \section{RangedSystem Skript}
 "Ahnlich wie bei dem MeleeSystem ist hier ein Zusammenspiel zwischen Animator und Skript ausschlaggebend, jedoch ist hier der Ausl"oser entweder durch Spielerinput oder im Falle von Gegnern durch das entsprechende KI Skript.\newline

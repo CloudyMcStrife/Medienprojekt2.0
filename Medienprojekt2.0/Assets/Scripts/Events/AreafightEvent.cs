@@ -62,7 +62,6 @@ public class AreafightEvent : MonoBehaviour {
                     alarmSystem.alarmActivated = false;
 
                 lightsToDisable.SetActive(true);
-                //Hier sollten wir dieses Gameobject abschalten, da es nicht mehr gebraucht wird (Oder einer neuen Etage zuweisen?)
                 this.enabled = false;
             }
         }
